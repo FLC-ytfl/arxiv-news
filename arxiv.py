@@ -33,9 +33,10 @@ def get_latest_papers(category="cs.CV", category_name="计算机视觉"):
         if result.published.date() == latest_date:
             count += 1
             authors = ', '.join(a.name for a in result.authors[:3])
+            summary = result.summary[:200].replace('\n', ' ')
             content += f"{count}. **[{result.title}]({result.entry_id})**\n"
             content += f"   - **作者**: {authors}\n"
-            content += f"   - **摘要**: {result.summary[:200].replace('\\n', ' ')}...\n\n"
+            content += f"   - **摘要**: {summary}...\n\n"
         else:
             break
 
