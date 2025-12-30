@@ -25,10 +25,25 @@ jobs:
       - name: Run script
         run: python main.py
 
+      - name: Archive previous README
+        run: |
+          if [ -f README.md ]; then
+            # 获取前一天的日期
+            PREV_DATE=$(date -d "yesterday" +'%Y.%m.%d')
+            YEAR=$(date -d "yesterday" +'%Y')
+            MONTH=$(date -d "yesterday" +'%m')
+            
+            # 创建 history 目录结构
+            mkdir -p "history/${YEAR}/${MONTH}"
+            
+            # 复制当前 README 到 history（使用前一天日期命名）
+            cp README.md "history/${YEAR}/${MONTH}/${PREV_DATE}.md"
+          fi
+
       - name: Commit and push changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add README.md
+          git add README.md history/
           git commit -m "Auto update ArXiv news: $(date +'%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
           git push

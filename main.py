@@ -40,7 +40,7 @@ def get_latest_papers(category="cs.CV", category_name="计算机视觉"):
         else:
             break
 
-    content += f"抓取完成：共找到 {count} 篇论文。\n\n---\n"
+    content += f"{category}共找到 {count} 篇论文。\n\n---\n"
     return content
 
 if __name__ == "__main__":
