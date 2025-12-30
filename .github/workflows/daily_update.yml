@@ -22,9 +22,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run script
-        run: python main.py
-
       - name: Archive previous README
         run: |
           if [ -f README.md ]; then
@@ -39,6 +36,9 @@ jobs:
             # 复制当前 README 到 history（使用前一天日期命名）
             cp README.md "history/${YEAR}/${MONTH}/${PREV_DATE}.md"
           fi
+
+      - name: Run script
+        run: python main.py
 
       - name: Commit and push changes
         run: |

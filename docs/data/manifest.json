@@ -1,0 +1,28 @@
+{
+  "generated_at": "2025-12-30T17:38:43Z",
+  "dates": [
+    "2025-12-29"
+  ],
+  "categories": [
+    {
+      "code": "cs.CV",
+      "name": "计算机视觉"
+    },
+    {
+      "code": "cs.AI",
+      "name": "人工智能"
+    },
+    {
+      "code": "cs.LG",
+      "name": "机器学习"
+    },
+    {
+      "code": "cs.CL",
+      "name": "计算语言学 (NLP)"
+    },
+    {
+      "code": "cs.RO",
+      "name": "机器人学"
+    }
+  ]
+}
