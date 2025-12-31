@@ -1,814 +1,291 @@
 <!DOCTYPE html>
 <html lang="zh-CN" data-theme="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ArXiv News</title>
-    <meta
-      name="description"
-      content="每日更新的 ArXiv 分类论文快报，支持搜索、筛选、主题切换与历史归档。"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      referrerpolicy="no-referrer"
-    />
-    <style>
-      :root {
-        /* Base Colors - Galaxy/Tech Theme */
-        --bg-color: #020617;
-        --text-primary: #f8fafc;
-        --text-secondary: #94a3b8;
-        --text-accent: #38bdf8;
-        
-        /* Glass Panel Colors */
-        --glass-bg: rgba(15, 23, 42, 0.6);
-        --glass-border: rgba(148, 163, 184, 0.1);
-        --glass-highlight: rgba(255, 255, 255, 0.05);
-        
-        /* Brand Colors */
-        --brand-primary: #38bdf8; /* Sky Blue */
-        --brand-secondary: #8b5cf6; /* Violet */
-        --brand-success: #10b981;
-        --brand-danger: #ef4444;
-        
-        /* Accents */
-        --accent-gradient: linear-gradient(135deg, #38bdf8 0%, #8b5cf6 100%);
-        --card-hover-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.4);
 
-        /* Calendar */
-        --cal-bg: rgba(30, 41, 59, 0.5);
-        --cal-active-bg: var(--brand-primary);
-        --cal-today-border: var(--brand-secondary);
-        
-        /* Layout */
-        --sidebar-width: 340px;
-        --header-height: 70px;
-        --radius-lg: 16px;
-        --radius-md: 12px;
-        --radius-sm: 8px;
-        
-        --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArXiv News</title>
+  <meta name="description" content="每日更新的 ArXiv 分类论文快报，支持搜索、筛选、主题切换与历史归档。" />
 
-      html[data-theme="light"] {
-        --bg-color: #f0f4f8;
-        --text-primary: #0f172a;
-        --text-secondary: #64748b;
-        --text-accent: #0284c7;
-        
-        --glass-bg: rgba(255, 255, 255, 0.75);
-        --glass-border: rgba(148, 163, 184, 0.2);
-        --glass-highlight: rgba(255, 255, 255, 0.5);
-        
-        --cal-bg: rgba(255, 255, 255, 0.5);
-        --card-hover-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
-      }
+  <!-- SEO & Social Meta -->
+  <meta property="og:title" content="ArXiv News - 每日论文快报" />
+  <meta property="og:description" content="第一时间获取 ArXiv 最新分类论文，简单高效的科研资讯阅读工具。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://arxiv-news.github.io/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
 
-      * { box-sizing: border-box; }
-      
-      body {
-        margin: 0;
-        font-family: var(--font-sans);
-        background-color: var(--bg-color);
-        background-image: 
-          radial-gradient(circle at 15% 0%, rgba(56, 189, 248, 0.15), transparent 40%),
-          radial-gradient(circle at 85% 30%, rgba(139, 92, 246, 0.15), transparent 40%);
-        background-attachment: fixed;
-        color: var(--text-primary);
-        line-height: 1.6;
-        min-height: 100vh;
-      }
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-      /* Scrollbar */
-      ::-webkit-scrollbar { width: 8px; height: 8px; }
-      ::-webkit-scrollbar-track { background: transparent; }
-      ::-webkit-scrollbar-thumb { background: var(--glass-border); border-radius: 4px; }
-      ::-webkit-scrollbar-thumb:hover { background: var(--text-secondary); }
+<body>
+  <div id="app">
+    <!-- SEO Fallback / Loading State for Crawler -->
+    <div v-if="loading && !snapshot"
+      style="position:fixed;inset:0;display:flex;align-items:center;justify-content:center;z-index:0;opacity:0.5;pointer-events:none">
+      <div style="text-align:center">
+        <h1>ArXiv News</h1>
+        <p>每日 ArXiv 论文速递 / Daily ArXiv Papers</p>
+        <p>正在加载最新数据...</p>
+      </div>
+    </div>
 
-      /* Utilities */
-      .glass {
-        background: var(--glass-bg);
-        backdrop-filter: blur(16px);
-        -webkit-backdrop-filter: blur(16px);
-        border: 1px solid var(--glass-border);
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-      }
-      
-      .btn {
-        cursor: pointer;
-        user-select: none;
-        transition: all 0.2s ease;
-        border: 1px solid var(--glass-border);
-        background: rgba(255,255,255,0.03);
-        color: var(--text-primary);
-        border-radius: var(--radius-md);
-        padding: 8px 16px;
-        font-family: inherit;
-        font-weight: 500;
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-      }
-      .btn:hover:not(:disabled) {
-        background: rgba(255,255,255,0.08);
-        border-color: var(--text-secondary);
-        transform: translateY(-1px);
-      }
-      .btn:disabled { opacity: 0.5; cursor: not-allowed; }
-      .btn-primary {
-        background: var(--accent-gradient);
-        border: none;
-        color: white;
-      }
-      .btn-primary:hover:not(:disabled) {
-        box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
-      }
-      .btn-icon { padding: 8px; border-radius: 50%; width: 36px; height: 36px; justify-content: center; }
+    <!-- Mobile Sidebar Toggle -->
+    <button class="btn btn-icon mobile-toggle glass" @click="sidebarOpen = !sidebarOpen" v-if="isMobile">
+      <i class="fa-solid fa-bars"></i>
+    </button>
 
-      /* Layout */
-      .app-layout {
-        display: grid;
-        grid-template-columns: var(--sidebar-width) 1fr;
-        min-height: 100vh;
-      }
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" v-if="isMobile && sidebarOpen" @click="sidebarOpen = false"></div>
 
-      /* Mobile Overlay */
-      .mobile-overlay {
-        position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 40;
-        backdrop-filter: blur(4px);
-      }
+    <div class="app-layout">
+      <!-- Sidebar -->
+      <aside class="sidebar" :class="{ open: sidebarOpen }">
+        <div class="brand">
+          <div class="brand-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div style="flex:1">ArXiv News</div>
+          <button class="btn btn-icon btn-reset" @click="toggleTheme"
+            style="width:32px;height:32px;color:var(--text-secondary);opacity:0.7"
+            :aria-label="theme === 'dark' ? '切换到浅色模式' : '切换到深色模式'">
+            <i class="fa-solid" :class="theme === 'dark' ? 'fa-moon' : 'fa-sun'"></i>
+          </button>
+        </div>
 
-      /* Sidebar */
-      .sidebar {
-        position: sticky;
-        top: 0;
-        height: 100vh;
-        overflow-y: auto;
-        padding: 24px;
-        border-right: 1px solid var(--glass-border);
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-        z-index: 50;
-        transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-        background: var(--glass-bg); /* For mobile opaque background */
-      }
-
-      .brand {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        font-size: 1.5rem;
-        font-weight: 800;
-        letter-spacing: -0.02em;
-        color: var(--text-primary);
-      }
-      .brand-icon {
-        width: 40px; height: 40px;
-        border-radius: 12px;
-        background: var(--accent-gradient);
-        display: grid;
-        place-items: center;
-        color: white;
-        font-size: 1.2rem;
-      }
-
-      /* Calendar Widget */
-      .calendar-widget {
-        background: var(--cal-bg);
-        border-radius: var(--radius-lg);
-        padding: 16px;
-        border: 1px solid var(--glass-border);
-      }
-      .cal-header {
-        display: flex; justify-content: space-between; align-items: center;
-        margin-bottom: 12px;
-        font-weight: 600;
-      }
-      .cal-grid {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        gap: 4px;
-        text-align: center;
-      }
-      .cal-day-name {
-        font-size: 0.75rem;
-        color: var(--text-secondary);
-        margin-bottom: 4px;
-      }
-      .cal-day {
-        aspect-ratio: 1;
-        display: grid;
-        place-items: center;
-        font-size: 0.85rem;
-        border-radius: 8px;
-        cursor: default;
-        position: relative;
-        transition: all 0.2s;
-        color: var(--text-secondary);
-      }
-      .cal-day.current-month { color: var(--text-primary); }
-      .cal-day.has-data {
-        background: rgba(255,255,255,0.05);
-        cursor: pointer;
-        font-weight: 600;
-      }
-      .cal-day.has-data:hover {
-        background: rgba(255,255,255,0.1);
-        color: var(--brand-primary);
-      }
-      .cal-day.selected {
-        background: var(--brand-primary) !important;
-        color: white !important;
-        box-shadow: 0 4px 12px rgba(56, 189, 248, 0.4);
-      }
-      .cal-day.is-today::after {
-        content: ''; position: absolute; bottom: 4px;
-        width: 4px; height: 4px; border-radius: 50%;
-        background: var(--brand-secondary);
-      }
-
-      /* Category List */
-      .category-nav { display: flex; flex-direction: column; gap: 6px; }
-      .cat-item {
-        display: flex; justify-content: space-between; align-items: center;
-        padding: 10px 14px;
-        border-radius: var(--radius-md);
-        cursor: pointer;
-        transition: all 0.2s;
-        color: var(--text-secondary);
-        border: 1px solid transparent;
-      }
-      .cat-item:hover {
-        background: rgba(255,255,255,0.03);
-        color: var(--text-primary);
-      }
-      .cat-item.active {
-        background: linear-gradient(90deg, rgba(56, 189, 248, 0.1), transparent);
-        border-left: 3px solid var(--brand-primary);
-        color: var(--brand-primary);
-      }
-      .cat-count {
-        font-size: 0.75rem;
-        padding: 2px 8px;
-        background: rgba(255,255,255,0.05);
-        border-radius: 99px;
-      }
-
-      /* Main Content */
-      .main-content {
-        padding: 32px 40px;
-        max-width: 1200px;
-        margin: 0 auto;
-        width: 100%;
-      }
-      
-      .top-tools {
-        display: flex; gap: 16px; margin-bottom: 32px; flex-wrap: wrap;
-        align-items: center;
-        position: sticky; top: 20px; z-index: 40;
-      }
-      
-      .search-bar {
-        flex: 1;
-        position: relative;
-        min-width: 280px;
-      }
-      .search-bar input {
-        width: 100%;
-        padding: 12px 16px 12px 48px;
-        border-radius: var(--radius-lg);
-        border: 1px solid var(--glass-border);
-        background: var(--glass-bg);
-        color: var(--text-primary);
-        font-family: inherit;
-        outline: none;
-        backdrop-filter: blur(12px);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-        transition: all 0.2s;
-      }
-      .search-bar input:focus {
-        border-color: var(--brand-primary);
-        box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
-      }
-      .search-icon {
-        position: absolute; left: 16px; top: 50%; transform: translateY(-50%);
-        color: var(--text-secondary);
-      }
-
-      /* Paper List */
-      .paper-list { display: flex; flex-direction: column; gap: 20px; }
-      
-      .paper-card {
-        border-radius: var(--radius-lg);
-        position: relative;
-        border: 1px solid var(--glass-border);
-        transition: all 0.3s ease;
-        overflow: hidden;
-      }
-      .paper-card:hover {
-        transform: translateY(-4px);
-        box-shadow: var(--card-hover-shadow);
-        border-color: rgba(56, 189, 248, 0.3);
-      }
-      
-      .card-body { padding: 20px; }
-      
-      .paper-title {
-        font-size: 1.15rem;
-        font-weight: 700;
-        margin: 0 0 12px;
-        line-height: 1.4;
-      }
-      .paper-title a {
-        color: var(--text-primary);
-        text-decoration: none;
-        background: linear-gradient(90deg, var(--text-primary), var(--text-primary));
-        background-size: 0% 1px;
-        background-repeat: no-repeat;
-        background-position: left bottom;
-        transition: background-size 0.3s;
-      }
-      .paper-title a:hover {
-        color: var(--brand-primary);
-        background-size: 100% 1px;
-      }
-
-      .meta-row {
-        display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px;
-        align-items: center;
-        font-size: 0.85rem;
-        color: var(--text-secondary);
-      }
-      .pill {
-        padding: 4px 10px;
-        border-radius: 6px;
-        background: rgba(255,255,255,0.05);
-        border: 1px solid var(--glass-border);
-      }
-      .pill.venue {
-        background: rgba(139, 92, 246, 0.1);
-        color: #a78bfa;
-        border-color: rgba(139, 92, 246, 0.2);
-      }
-      
-      .authors-row {
-        display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px;
-      }
-      .author-chip {
-        font-size: 0.8rem;
-        padding: 4px 10px;
-        border-radius: 99px;
-        background: transparent;
-        border: 1px solid var(--glass-border);
-        color: var(--text-secondary);
-        cursor: pointer;
-        transition: all 0.15s;
-      }
-      .author-chip:hover {
-        border-color: var(--brand-primary);
-        color: var(--brand-primary);
-      }
-      .author-chip.active {
-        background: var(--brand-primary);
-        color: white;
-        border-color: var(--brand-primary);
-      }
-
-      .abstract-box {
-        background: rgba(0,0,0,0.2);
-        border-radius: var(--radius-md);
-        overflow: hidden;
-      }
-      .abstract-content {
-        padding: 16px;
-        font-size: 0.95rem;
-        color: var(--text-secondary);
-        border-top: 1px solid var(--glass-border);
-      }
-
-      /* Transitions */
-      .slide-enter-active, .slide-leave-active { transition: all 0.3s ease; }
-      .slide-enter-from, .slide-leave-to { opacity: 0; transform: translateY(10px); }
-
-      /* Mobile Responsive */
-      @media (max-width: 900px) {
-        .app-layout { grid-template-columns: 1fr; }
-        .sidebar {
-          position: fixed; inset: 0; width: 80%; max-width: 320px;
-          transform: translateX(-100%);
-        }
-        .sidebar.open { transform: translateX(0); }
-        .main-content { padding: 80px 16px 40px; }
-        .mobile-toggle {
-          position: fixed; top: 16px; left: 16px; z-index: 100;
-          backdrop-filter: blur(8px);
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="app">
-      <!-- Mobile Sidebar Toggle -->
-      <button class="btn btn-icon mobile-toggle glass" @click="sidebarOpen = !sidebarOpen" v-if="isMobile">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-
-      <!-- Mobile Overlay -->
-      <div class="mobile-overlay" v-if="isMobile && sidebarOpen" @click="sidebarOpen = false"></div>
-
-      <div class="app-layout">
-        <!-- Sidebar -->
-        <aside class="sidebar" :class="{ open: sidebarOpen }">
-          <div class="brand">
-            <div class="brand-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-            <div>ArXiv News</div>
+        <!-- Calendar Widget -->
+        <div class="calendar-widget">
+          <div class="cal-header">
+            <button class="btn btn-icon" aria-label="上个月" @click="changeMonth(-1)">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <span>{{ currentMonthLabel }}</span>
+            <button class="btn btn-icon" aria-label="下个月" @click="changeMonth(1)">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
           </div>
-
-          <!-- Calendar Widget -->
-          <div class="calendar-widget">
-            <div class="cal-header">
-              <button class="btn btn-icon" style="width:28px;height:28px" @click="changeMonth(-1)">
-                <i class="fa-solid fa-chevron-left"></i>
-              </button>
-              <span>{{ currentMonthLabel }}</span>
-              <button class="btn btn-icon" style="width:28px;height:28px" @click="changeMonth(1)">
-                <i class="fa-solid fa-chevron-right"></i>
-              </button>
-            </div>
-            <div class="cal-grid">
-              <div class="cal-day-name" v-for="d in ['日','一','二','三','四','五','六']">{{d}}</div>
-              <div 
-                v-for="(day, idx) in calendarDays" 
-                :key="idx" 
-                class="cal-day"
-                :class="{ 
+          <div class="cal-grid" role="grid">
+            <div class="cal-day-name" v-for="d in ['日','一','二','三','四','五','六']" aria-hidden="true">{{d}}</div>
+            <button v-for="(day, idx) in calendarDays" :key="idx" class="cal-day btn-reset" :class="{ 
                   'current-month': day.isCurrentMonth, 
                   'has-data': day.hasData,
                   'selected': day.dateStr === selectedDate,
                   'is-today': day.dateStr === todayStr
-                }"
-                @click="day.hasData && selectDate(day.dateStr)"
-              >
-                {{ day.dayNum }}
+                }" :disabled="!day.hasData" :aria-label="day.dateStr" :aria-selected="day.dateStr === selectedDate"
+              @click="day.hasData && selectDate(day.dateStr)">
+              {{ day.dayNum }}
+            </button>
+          </div>
+          <div style="margin-top:12px;text-align:center">
+            <button class="btn" style="width:100%;font-size:0.8rem" @click="jumpToLatest"
+              :disabled="!availableDates.length">
+              <i class="fa-solid fa-bolt"></i> 回到最新 ({{ latestDate }})
+            </button>
+          </div>
+        </div>
+
+        <!-- Categories -->
+        <nav class="category-nav" v-if="snapshot" aria-label="分类导航">
+          <div class="label" id="cat-label"
+            style="font-size:0.8rem;text-transform:uppercase;color:var(--text-secondary);margin-bottom:8px;font-weight:600">
+            Categories</div>
+          <button class="cat-item btn-reset" v-for="cat in snapshot.categories" :key="cat.code"
+            :class="{ active: cat.code === activeCategoryCode }"
+            :aria-current="cat.code === activeCategoryCode ? 'page' : null" @click="selectCategory(cat.code)">
+            <div>
+              <div style="font-weight:600">{{ cat.name }}</div>
+              <div style="font-size:0.75rem;opacity:0.6">{{ cat.code }}</div>
+            </div>
+            <span class="cat-count">{{ (cat.papers || []).length }}</span>
+          </button>
+        </nav>
+
+        <!-- Feature Nav -->
+        <nav class="category-nav" style="margin-top: 20px" aria-label="功能导航">
+          <div class="label"
+            style="font-size:0.8rem;text-transform:uppercase;color:var(--text-secondary);margin-bottom:8px;font-weight:600">
+            Features
+          </div>
+          <button class="cat-item btn-reset" :class="{ active: currentView === 'favorites' }"
+            @click="switchView('favorites')">
+            <div>
+              <div style="font-weight:600"><i class="fa-solid fa-star" style="color:#fbbf24;margin-right:8px"></i>My
+                Favorites</div>
+            </div>
+            <span class="cat-count">{{ favorites.length }}</span>
+          </button>
+          <button class="cat-item btn-reset" :class="{ active: currentView === 'trends' }"
+            @click="switchView('trends')">
+            <div>
+              <div style="font-weight:600"><i class="fa-solid fa-chart-line"
+                  style="color:#34d399;margin-right:8px"></i>Trends</div>
+            </div>
+          </button>
+        </nav>
+
+        <div style="margin-top:auto; font-size:0.8rem; color:var(--text-secondary)">
+          <div style="text-align:center; opacity:0.6">
+            Data updated: {{ snapshot?.generated_at?.split('T')[0] || '-' }}
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <div class="top-tools glass" style="border-radius: var(--radius-lg); padding: 12px;">
+          <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" v-model="searchParam" placeholder="搜索论文标题、作者..." />
+          </div>
+
+          <div v-if="selectedAuthor" class="pill"
+            style="display:flex;align-items:center;gap:8px;padding-right:4px;background:rgba(16, 185, 129, 0.1);color:#34d399;border-color:rgba(16, 185, 129, 0.2)">
+            <i class="fa-solid fa-user"></i> {{ selectedAuthor }}
+            <button class="btn btn-icon" style="width:24px;height:24px;border:none;background:rgba(0,0,0,0.2)"
+              @click="selectedAuthor = ''"><i class="fa-solid fa-times"></i></button>
+          </div>
+
+          <div class="pill" style="margin-left:auto">
+            {{ filteredPapers.length }} 篇论文
+          </div>
+        </div>
+
+        <div v-if="error" style="text-align:center;padding:40px;color:var(--brand-danger)">
+          <i class="fa-solid fa-triangle-exclamation fa-3x" style="margin-bottom:16px;opacity:0.8"></i>
+          <p>{{ error }}</p>
+          <button class="btn" style="margin-top:16px" @click="loadManifest">
+            <i class="fa-solid fa-rotate-right"></i> 重试
+          </button>
+        </div>
+
+        <div v-if="loading" style="display:flex;flex-direction:column;gap:20px">
+          <div class="paper-card glass" v-for="i in 5" :key="i" style="padding:24px">
+            <div class="skeleton skeleton-title"></div>
+            <div style="display:flex;gap:8px;margin-bottom:16px">
+              <div class="skeleton skeleton-pill"></div>
+              <div class="skeleton skeleton-pill"></div>
+            </div>
+            <div class="skeleton skeleton-text"></div>
+            <div class="skeleton skeleton-text" style="width:80%"></div>
+          </div>
+        </div>
+
+        <div v-else-if="!filteredPapers.length" style="text-align:center;padding:60px;color:var(--text-secondary)">
+          <i class="fa-solid fa-folder-open fa-3x" style="opacity:0.3;margin-bottom:16px"></i>
+          <p>没有找到相关论文</p>
+        </div>
+
+        <div class="paper-list" v-else-if="currentView !== 'trends'">
+          <transition-group name="slide">
+            <article class="paper-card glass" v-for="(paper, index) in visiblePapers" :key="paper.id || paper.url">
+              <div class="card-body">
+                <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
+                  <h3 class="paper-title" style="flex:1">
+                    <span style="color:#fbbf24;margin-right:8px;font-weight:bold;font-size:0.9em;opacity:0.8">{{ index +
+                      1 }}.</span>
+                    <a :href="paper.url" target="_blank">{{ paper.title }}</a>
+                  </h3>
+                  <button class="btn btn-icon" :class="{ 'btn-favorite': isFavorite(paper) }"
+                    @click.stop="toggleFavorite(paper)" :aria-label="isFavorite(paper) ? '取消收藏' : '收藏'">
+                    <i class="fa-solid" :class="isFavorite(paper) ? 'fa-star' : 'fa-star-o'"
+                      style="font-family:'Font Awesome 6 Free';font-weight:900"></i>
+                  </button>
+                </div>
+
+                <div class="meta-row" style="align-items: center; flex-wrap: wrap; gap: 8px;">
+                  <span class="pill venue" v-if="paper.venue"><i class="fa-solid fa-star"></i> {{ paper.venue }}</span>
+                  <span class="pill"><i class="fa-regular fa-calendar"></i> {{ paper.published }}</span>
+                  <span class="pill" v-if="paper.primary_category">{{ paper.primary_category }}</span>
+
+                  <!-- Separator -->
+                  <span
+                    style="color:var(--glass-border);height:14px;width:1px;background:var(--glass-border);margin:0 4px"></span>
+
+                  <!-- Toggle Button (First) -->
+                  <button class="author-toggle btn-reset" v-if="paper.authors.length > 3"
+                    @click.stop="toggleAuthorsExpanded(paper)" style="margin-right:0">
+                    {{ isAuthorsExpanded(paper) ? '收起' : '+' + (paper.authors.length - 3) }}
+                  </button>
+
+                  <!-- Authors -->
+                  <button class="author-chip btn-reset"
+                    v-for="author in (isAuthorsExpanded(paper) ? paper.authors : paper.authors.slice(0, 3))"
+                    :key="author" :class="{ active: selectedAuthor === author }"
+                    @click.stop="currentView === 'papers' ? (selectedAuthor = selectedAuthor === author ? '' : author) : null">
+                    {{ author }}
+                  </button>
+                </div>
+
+                <div v-if="paper.summary">
+                  <button class="btn" style="font-size:0.8rem;padding:6px 12px" @click="toggleExpanded(paper)">
+                    <i class="fa-solid" :class="isExpanded(paper) ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+                    {{ isExpanded(paper) ? '收起摘要' : '查看摘要' }}
+                  </button>
+                  <button class="btn" @click.stop="openPdfPreview(paper.pdf_url || paper.url.replace('/abs/', '/pdf/'))"
+                    style="font-size:0.8rem;padding:6px 12px;margin-left:8px">
+                    <i class="fa-solid fa-file-pdf"></i> PDF
+                  </button>
+                </div>
               </div>
-            </div>
-            <div style="margin-top:12px;text-align:center">
-               <button class="btn" style="width:100%;font-size:0.8rem" @click="jumpToLatest" :disabled="!availableDates.length">
-                 <i class="fa-solid fa-bolt"></i> 回到最新 ({{ latestDate }})
-               </button>
-            </div>
+
+              <div class="abstract-box" v-if="isExpanded(paper)">
+                <div class="abstract-content">
+                  {{ paper.summary }}
+                </div>
+              </div>
+            </article>
+          </transition-group>
+
+          <!-- Sentinel for Infinite Scroll -->
+          <div id="scroll-sentinel"
+            style="height: 60px; display: flex; align-items: center; justify-content: center; color: var(--text-secondary);">
+            <i v-if="hasMorePapers" class="fa-solid fa-circle-notch fa-spin fa-lg"></i>
+            <span v-else-if="filteredPapers.length > 0" style="opacity: 0.5; font-size: 0.9rem;">— 已显示全部内容 —</span>
           </div>
+        </div>
 
-          <!-- Categories -->
-          <nav class="category-nav" v-if="snapshot">
-             <div class="label" style="font-size:0.8rem;text-transform:uppercase;color:var(--text-secondary);margin-bottom:8px;font-weight:600">Categories</div>
-             <div 
-               class="cat-item" 
-               v-for="cat in snapshot.categories" 
-               :key="cat.code"
-               :class="{ active: cat.code === activeCategoryCode }"
-               @click="selectCategory(cat.code)"
-             >
-               <div>
-                 <div style="font-weight:600">{{ cat.name }}</div>
-                 <div style="font-size:0.75rem;opacity:0.6">{{ cat.code }}</div>
-               </div>
-               <span class="cat-count">{{ (cat.papers || []).length }}</span>
-             </div>
-          </nav>
-          
-          <div style="margin-top:auto; font-size:0.8rem; color:var(--text-secondary)">
-             <button class="btn" style="width:100%; justify-content:center; margin-bottom:10px" @click="toggleTheme">
-                <i class="fa-solid" :class="theme === 'dark' ? 'fa-moon' : 'fa-sun'"></i> 
-                {{ theme === 'dark' ? '深色模式' : '浅色模式' }}
-             </button>
-             <div style="text-align:center; opacity:0.6">
-                Data updated: {{ snapshot?.generated_at?.split('T')[0] || '-' }}
-             </div>
-          </div>
-        </aside>
-
-        <!-- Main Content -->
-        <main class="main-content">
-          <div class="top-tools glass" style="border-radius: var(--radius-lg); padding: 12px;">
-             <div class="search-bar">
-                <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                <input type="text" v-model="searchQuery" placeholder="搜索论文标题、作者..." />
-             </div>
-             
-             <div v-if="selectedAuthor" class="pill" style="display:flex;align-items:center;gap:8px;padding-right:4px;background:rgba(16, 185, 129, 0.1);color:#34d399;border-color:rgba(16, 185, 129, 0.2)">
-                <i class="fa-solid fa-user"></i> {{ selectedAuthor }}
-                <button class="btn btn-icon" style="width:24px;height:24px;border:none;background:rgba(0,0,0,0.2)" @click="selectedAuthor = ''"><i class="fa-solid fa-times"></i></button>
-             </div>
-
-             <div class="pill" style="margin-left:auto">
-                {{ filteredPapers.length }} 篇论文
-             </div>
-          </div>
-
-          <div v-if="loading" style="text-align:center;padding:40px;color:var(--text-secondary)">
-             <i class="fa-solid fa-spinner fa-spin fa-2x"></i>
-             <p style="margin-top:10px">正在加载数据...</p>
-          </div>
-          
-          <div v-else-if="!filteredPapers.length" style="text-align:center;padding:60px;color:var(--text-secondary)">
-             <i class="fa-solid fa-folder-open fa-3x" style="opacity:0.3;margin-bottom:16px"></i>
-             <p>没有找到相关论文</p>
-          </div>
-
-          <div class="paper-list" v-else>
-             <transition-group name="slide">
-               <article class="paper-card glass" v-for="paper in filteredPapers" :key="paper.id || paper.url">
-                  <div class="card-body">
-                    <h3 class="paper-title">
-                      <a :href="paper.url" target="_blank">{{ paper.title }}</a>
-                    </h3>
-                    
-                    <div class="meta-row">
-                       <span class="pill venue" v-if="paper.venue"><i class="fa-solid fa-star"></i> {{ paper.venue }}</span>
-                       <span class="pill"><i class="fa-regular fa-calendar"></i> {{ paper.published }}</span>
-                       <span class="pill" v-if="paper.primary_category">{{ paper.primary_category }}</span>
-                    </div>
-
-                    <div class="authors-row">
-                       <span 
-                         class="author-chip" 
-                         v-for="author in paper.authors" 
-                         :key="author"
-                         :class="{ active: selectedAuthor === author }"
-                         @click="selectedAuthor = selectedAuthor === author ? '' : author"
-                       >
-                         {{ author }}
-                       </span>
-                    </div>
-
-                    <div v-if="paper.summary">
-                       <button class="btn" style="font-size:0.8rem;padding:6px 12px" @click="toggleExpanded(paper)">
-                          <i class="fa-solid" :class="isExpanded(paper) ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
-                          {{ isExpanded(paper) ? '收起摘要' : '查看摘要' }}
-                       </button>
-                       <a class="btn" :href="paper.pdf_url || paper.url.replace('/abs/', '/pdf/')" target="_blank" style="font-size:0.8rem;padding:6px 12px;margin-left:8px">
-                          <i class="fa-solid fa-file-pdf"></i> PDF
-                       </a>
-                    </div>
-                  </div>
-                  
-                  <div class="abstract-box" v-if="isExpanded(paper)">
-                     <div class="abstract-content">
-                        {{ paper.summary }}
-                     </div>
-                  </div>
-               </article>
-             </transition-group>
-          </div>
-        </main>
-      </div>
+        <!-- Trends View -->
+        <div v-show="currentView === 'trends'" class="glass"
+          style="padding:24px;border-radius:var(--radius-lg);margin-top:20px;height:600px;position:relative">
+          <canvas id="trendChart"></canvas>
+        </div>
+      </main>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
-    <script>
-      const { createApp, ref, computed, onMounted, watch } = Vue;
+    <!-- PDF Preview Modal -->
+    <div class="pdf-modal-overlay" v-if="pdfPreviewUrl" @click.self="closePdfPreview">
+      <div class="pdf-modal-content">
+        <div class="pdf-modal-header">
+          <h3 style="margin:0;font-size:1.1rem;font-weight:600">PDF Preview</h3>
+          <div style="display:flex;gap:12px;align-items:center">
+            <a :href="pdfPreviewUrl" target="_blank" class="btn" style="font-size:0.85rem">
+              <i class="fa-solid fa-external-link-alt"></i> Open in New Tab
+            </a>
+            <button class="btn btn-icon btn-reset" @click="closePdfPreview"
+              style="font-size:1.2rem;width:32px;height:32px">
+              <i class="fa-solid fa-times"></i>
+            </button>
+          </div>
+        </div>
+        <div class="pdf-modal-body">
+          <iframe :src="pdfPreviewUrl" class="pdf-iframe" title="PDF Preview"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
 
-      createApp({
-        setup() {
-          /* --- State --- */
-          const manifest = ref(null);
-          const snapshot = ref(null);
-          const loading = ref(true);
-          const sidebarOpen = ref(false);
-          const isMobile = ref(window.innerWidth <= 900);
-          
-          // Data Selection
-          const activeCategoryCode = ref("");
-          const availableDates = ref([]);
-          const selectedDate = ref("");
-          const selectedAuthor = ref("");
-          const searchQuery = ref("");
-          const expandedSet = ref(new Set());
-          
-          // Theme
-          const theme = ref(localStorage.getItem('theme') || 'dark');
-          
-          // Calendar State
-          const today = new Date();
-          const viewDate = ref(new Date(today.getFullYear(), today.getMonth(), 1)); // First day of current view month
-
-          /* --- Methods --- */
-          
-          // Fetch Helper
-          const fetchJson = async (url) => {
-             const res = await fetch(url + '?t=' + Date.now());
-             if(!res.ok) throw new Error('Failed to load ' + url);
-             return await res.json();
-          };
-
-          // Theme Logic
-          const applyTheme = () => document.documentElement.setAttribute("data-theme", theme.value);
-          const toggleTheme = () => {
-             theme.value = theme.value === 'dark' ? 'light' : 'dark';
-             localStorage.setItem('theme', theme.value);
-             applyTheme();
-          };
-          applyTheme();
-
-          // Calendar Logic
-          const todayStr = computed(() => today.toISOString().slice(0, 10));
-          const currentMonthLabel = computed(() => {
-             return viewDate.value.toLocaleString('default', { year: 'numeric', month: 'long' });
-          });
-
-          const calendarDays = computed(() => {
-             const year = viewDate.value.getFullYear();
-             const month = viewDate.value.getMonth();
-             
-             const firstDayOfMonth = new Date(year, month, 1);
-             const lastDayOfMonth = new Date(year, month + 1, 0);
-             
-             const days = [];
-             
-             // Padding days from prev month
-             const startDay = firstDayOfMonth.getDay(); // 0 is Sunday
-             for (let i = 0; i < startDay; i++) {
-                days.push({ dayNum: '', isCurrentMonth: false });
-             }
-             
-             // Days of current month
-             for (let d = 1; d <= lastDayOfMonth.getDate(); d++) {
-                const dateObj = new Date(year, month, d);
-                // Convert to YYYY-MM-DD manually to avoid timezone issues
-                const isoDate = [
-                  year, 
-                  String(month + 1).padStart(2, '0'), 
-                  String(d).padStart(2, '0')
-                ].join('-');
-                
-                days.push({
-                   dayNum: d,
-                   isCurrentMonth: true,
-                   dateStr: isoDate,
-                   hasData: availableDates.value.includes(isoDate)
-                });
-             }
-             
-             return days;
-          });
-
-          const changeMonth = (delta) => {
-             const newDate = new Date(viewDate.value);
-             newDate.setMonth(newDate.getMonth() + delta);
-             viewDate.value = newDate;
-          };
-
-          const selectDate = async (date) => {
-             if (selectedDate.value === date) return;
-             selectedDate.value = date;
-             await loadSnapshot(date);
-             if (isMobile.value) sidebarOpen.value = false;
-          };
-
-          const jumpToLatest = () => {
-             if (availableDates.value.length) selectDate(availableDates.value[0]);
-          };
-
-          const latestDate = computed(() => availableDates.value[0] || '');
-
-          // Data Loading
-          const loadManifest = async () => {
-             try {
-                const data = await fetchJson('./data/manifest.json');
-                manifest.value = data;
-                availableDates.value = data.dates || [];
-                
-                // Get URL params
-                const params = new URLSearchParams(window.location.search);
-                const qDate = params.get('date');
-                const qCat = params.get('cat');
-                
-                // Set Date
-                if (qDate && availableDates.value.includes(qDate)) {
-                   selectedDate.value = qDate;
-                } else if (availableDates.value.length) {
-                   selectedDate.value = availableDates.value[0];
-                }
-                
-                // Sync Calendar view to selected date
-                if (selectedDate.value) {
-                   viewDate.value = new Date(selectedDate.value);
-                   // Reset to first day to avoid issues
-                   viewDate.value.setDate(1); 
-                }
-
-                // Initial Load
-                if (selectedDate.value) await loadSnapshot(selectedDate.value);
-                
-                // Set Category
-                if (qCat) activeCategoryCode.value = qCat;
-                
-             } catch (e) {
-                console.error(e);
-             } finally {
-                loading.value = false;
-             }
-          };
-
-          const loadSnapshot = async (date) => {
-             loading.value = true;
-             try {
-                const data = await fetchJson(`./data/snapshots/${date}.json`);
-                snapshot.value = data;
-                
-                // Determine active category
-                if (!activeCategoryCode.value && data.categories.length) {
-                   activeCategoryCode.value = data.categories[0].code;
-                } else {
-                   // Verify active category exists in new snapshot
-                   const exists = data.categories.find(c => c.code === activeCategoryCode.value);
-                   if (!exists && data.categories.length) {
-                      activeCategoryCode.value = data.categories[0].code;
-                   }
-                }
-                
-                // Update URL
-                const url = new URL(window.location);
-                url.searchParams.set('date', date);
-                url.searchParams.set('cat', activeCategoryCode.value);
-                window.history.replaceState({}, '', url);
-                
-             } catch(e) {
-                console.error(e);
-             } finally {
-                loading.value = false;
-             }
-          };
-
-          const selectCategory = (code) => {
-             activeCategoryCode.value = code;
-             window.scrollTo({ top: 0, behavior: 'smooth' });
-             const url = new URL(window.location);
-             url.searchParams.set('cat', code);
-             window.history.replaceState({}, '', url);
-             if (isMobile.value) sidebarOpen.value = false;
-          };
-
-          // Filtering
-          const activeCategory = computed(() => {
-             return snapshot.value?.categories?.find(c => c.code === activeCategoryCode.value);
-          });
-
-          const filteredPapers = computed(() => {
-             if (!activeCategory.value) return [];
-             let papers = activeCategory.value.papers;
-             
-             if (searchQuery.value) {
-                const q = searchQuery.value.toLowerCase();
-                papers = papers.filter(p => 
-                   p.title.toLowerCase().includes(q) || 
-                   p.authors.some(a => a.toLowerCase().includes(q))
-                );
-             }
-             
-             if (selectedAuthor.value) {
-                papers = papers.filter(p => p.authors.includes(selectedAuthor.value));
-             }
-             
-             return papers;
-          });
-
-          // Helpers
-          const isExpanded = (p) => expandedSet.value.has(p.id || p.url);
-          const toggleExpanded = (p) => {
-             const key = p.id || p.url;
-             if (expandedSet.value.has(key)) expandedSet.value.delete(key);
-             else expandedSet.value.add(key);
-          };
-
-          // Init
-          onMounted(() => {
-             window.addEventListener('resize', () => isMobile.value = window.innerWidth <= 900);
-             loadManifest();
-          });
-
-          return {
-             theme, toggleTheme,
-             sidebarOpen, isMobile,
-             loading,
-             availableDates, selectedDate, latestDate,
-             calendarDays, currentMonthLabel, changeMonth, selectDate, jumpToLatest, todayStr,
-             snapshot, activeCategoryCode, selectCategory,
-             searchQuery, selectedAuthor,
-             filteredPapers,
-             isExpanded, toggleExpanded
-          };
+  <script type="importmap">
+      {
+        "imports": {
+          "vue": "https://cdn.jsdelivr.net/npm/vue@3/dist/vue.esm-browser.prod.js"
         }
-      }).mount('#app');
+      }
     </script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="module" src="js/app.js"></script>
+
+</body>
+
 </html>
