@@ -5,6 +5,13 @@
 
 📚 自动追踪 arXiv 最新论文，每日更新，支持历史浏览。
 
+## 🏗️ToDo List
+
+- [ ] AI翻译
+- [ ] 每日精读
+
+
+
 ## 🌟 特性
 
 - **自动化抓取**：每天 UTC 0:00（北京时间 8:00）自动抓取指定分类的最新 arXiv 论文
@@ -58,19 +65,6 @@ categories = ["cs.CV", "cs.AI", "cs.LG"]
 ```python
 # 默认每个分类抓取 100 篇
 max_results = 100
-```
-
-### 自定义顶会列表
-
-编辑 `main.py` 中的 `CONFERENCE_ABBREVS` 列表：
-
-```python
-CONFERENCE_ABBREVS = [
-    "CVPR", "ICCV", "ECCV",  # 计算机视觉
-    "NeurIPS", "ICML", "ICLR",  # 机器学习
-    "ACL", "EMNLP", "NAACL",  # 自然语言处理
-    # ... 添加更多会议
-]
 ```
 
 ## 🤖 自动化工作流
@@ -134,7 +128,7 @@ CONFERENCE_ABBREVS = [
 
 ### 本地开发流程
 
-1. **修改源码**（main.py 或 docs/index.html）
+1. **修改源码**
 2. **本地测试**：
    ```bash
    python main.py  # 测试数据生成
@@ -148,15 +142,8 @@ CONFERENCE_ABBREVS = [
    ```
 4. **验证部署**：工作流运行后访问 GitHub Pages 查看效果
 
-## 📝 更新日志
+## 📝 历史版本
 
-### 2025-12-31
-- ✅ 实施方案 2：gh-pages 分支架构
-- ✅ main 分支保持干净（仅源码、配置）
-- ✅ 自动化工作流支持双分支推送
-- ✅ 历史归档迁移到 gh-pages
-
-### 历史版本
 查看 [gh-pages 分支](https://github.com/FLC-ytfl/arxiv-news/tree/gh-pages) 的 `history/` 目录。
 
 ## 🤝 贡献指南
@@ -164,6 +151,7 @@ CONFERENCE_ABBREVS = [
 欢迎提交 Issue 和 Pull Request！
 
 ### 提交 PR 前请确保：
+
 - ✅ 代码风格符合项目规范
 - ✅ 本地测试通过
 - ✅ 提交信息清晰描述改动内容
