@@ -18,3 +18,8 @@ __pycache__/
 
 .iflow/
 /helloagents
+
+# Generated files (moved to gh-pages branch)
+README.md
+docs/data/
+history/

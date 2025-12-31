@@ -5,12 +5,21 @@ on:
     - cron: '0 0 * * *' # 每天 UTC 0:00 运行 (北京时间 8:00)
   workflow_dispatch: # 允许手动触发
 
+permissions:
+  contents: write
+
+concurrency:
+  group: pages-deployment
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - name: Checkout main branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -22,28 +31,68 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Archive previous README
-        run: |
-          if [ -f README.md ]; then
-            # 获取前一天的日期
-            PREV_DATE=$(date -d "yesterday" +'%Y.%m.%d')
-            YEAR=$(date -d "yesterday" +'%Y')
-            MONTH=$(date -d "yesterday" +'%m')
-            
-            # 创建 history 目录结构
-            mkdir -p "history/${YEAR}/${MONTH}"
-            
-            # 复制当前 README 到 history（使用前一天日期命名）
-            cp README.md "history/${YEAR}/${MONTH}/${PREV_DATE}.md"
-          fi
-
       - name: Run script
         run: python main.py
 
-      - name: Commit and push changes
+      - name: Commit data to main (source data only)
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add README.md history/ docs/
-          git commit -m "Auto update ArXiv news: $(date +'%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
-          git push
+          if [ -d "data" ]; then
+            git add data/
+            git diff-index --quiet HEAD || git commit -m "Update source data: $(date +'%Y-%m-%d %H:%M:%S')"
+            git push origin main
+          fi
+
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages-branch
+
+      - name: Copy generated files to gh-pages
+        run: |
+          # 复制 README.md
+          if [ -f README.md ]; then
+            cp README.md gh-pages-branch/
+          fi
+
+          # 复制 docs/ 整个目录
+          if [ -d docs ]; then
+            cp -r docs gh-pages-branch/
+          fi
+
+          # 创建或更新 history 归档
+          if [ -f README.md ]; then
+            TODAY_DATE=$(date +'%Y.%m.%d')
+            YEAR=$(date +'%Y')
+            MONTH=$(date +'%m')
+
+            mkdir -p "gh-pages-branch/history/${YEAR}/${MONTH}"
+            cp README.md "gh-pages-branch/history/${YEAR}/${MONTH}/${TODAY_DATE}.md"
+          fi
+
+      - name: Commit and push to gh-pages
+        working-directory: gh-pages-branch
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add .
+          git diff-index --quiet HEAD || git commit -m "Update pages: $(date +'%Y-%m-%d %H:%M:%S')"
+          git push origin gh-pages
+
+      - name: Verify deployment
+        run: |
+          if [ -f gh-pages-branch/docs/data/manifest.json ]; then
+            echo "✓ manifest.json exists"
+          else
+            echo "✗ manifest.json not found"
+            exit 1
+          fi
+
+          if [ -f gh-pages-branch/README.md ]; then
+            echo "✓ README.md exists"
+          else
+            echo "✗ README.md not found"
+            exit 1
+          fi
