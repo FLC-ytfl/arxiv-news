@@ -207,10 +207,31 @@ def generate_snapshot_and_manifest(
     snapshot_path = os.path.join(snapshots_dir, f"{snapshot_date.isoformat()}.json")
     write_json(snapshot_path, snapshot_payload)
 
+    # 聚合历史统计数据
+    stats: List[Dict[str, Any]] = []
+    snapshot_files = sorted(
+        [f for f in os.listdir(snapshots_dir) if f.endswith(".json")], reverse=True
+    )
+    
+    # 限制统计最近30天的数据以保持manifest轻量，或者读取全部（这里读取全部，前端自己裁切）
+    for filename in snapshot_files:
+        try:
+            with open(os.path.join(snapshots_dir, filename), "r", encoding="utf-8") as f:
+                data = json.load(f)
+                date_str = data.get("date", filename.replace(".json", ""))
+                counts = {}
+                for cat in data.get("categories", []):
+                    counts[cat["code"]] = len(cat.get("papers", []))
+                stats.append({"date": date_str, "counts": counts})
+        except Exception as e:
+            print(f"Error reading {filename} for stats: {e}")
+            continue
+
     manifest_payload: Dict[str, Any] = {
         "generated_at": generated_at,
         "dates": list_snapshot_dates(snapshots_dir),
         "categories": [{"code": code, "name": name} for code, name in categories.items()],
+        "stats": stats,
     }
 
     manifest_path = os.path.join(data_dir, "manifest.json")
