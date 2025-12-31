@@ -1,809 +1,814 @@
 <!DOCTYPE html>
 <html lang="zh-CN" data-theme="dark">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ArXiv News</title>
-  <meta name="description" content="每日更新的 ArXiv 分类论文快报，支持搜索、筛选、主题切换与历史归档。" />
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    referrerpolicy="no-referrer"
-  />
-  <style>
-    :root {
-      --bg: #0f172a;
-      --panel: #0b1223;
-      --card: #1e293b;
-      --border: rgba(226, 232, 240, 0.12);
-      --text: #e2e8f0;
-      --muted: rgba(226, 232, 240, 0.7);
-      --primary: #38bdf8;
-      --success: #10b981;
-      --violet: #8b5cf6;
-      --danger: #fb7185;
-      --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
-      --radius: 14px;
-      --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
-        "Noto Sans", "Liberation Sans", sans-serif;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArXiv News</title>
+    <meta
+      name="description"
+      content="每日更新的 ArXiv 分类论文快报，支持搜索、筛选、主题切换与历史归档。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      :root {
+        /* Base Colors - Galaxy/Tech Theme */
+        --bg-color: #020617;
+        --text-primary: #f8fafc;
+        --text-secondary: #94a3b8;
+        --text-accent: #38bdf8;
+        
+        /* Glass Panel Colors */
+        --glass-bg: rgba(15, 23, 42, 0.6);
+        --glass-border: rgba(148, 163, 184, 0.1);
+        --glass-highlight: rgba(255, 255, 255, 0.05);
+        
+        /* Brand Colors */
+        --brand-primary: #38bdf8; /* Sky Blue */
+        --brand-secondary: #8b5cf6; /* Violet */
+        --brand-success: #10b981;
+        --brand-danger: #ef4444;
+        
+        /* Accents */
+        --accent-gradient: linear-gradient(135deg, #38bdf8 0%, #8b5cf6 100%);
+        --card-hover-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.4);
 
-    html[data-theme="light"] {
-      --bg: #f8fafc;
-      --panel: #ffffff;
-      --card: #ffffff;
-      --border: rgba(15, 23, 42, 0.12);
-      --text: #0f172a;
-      --muted: rgba(15, 23, 42, 0.7);
-      --primary: #0284c7;
-      --success: #059669;
-      --violet: #7c3aed;
-      --danger: #e11d48;
-      --shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      background: radial-gradient(1200px 600px at 20% 0%, rgba(56, 189, 248, 0.15), transparent 60%),
-        radial-gradient(1000px 600px at 90% 20%, rgba(139, 92, 246, 0.12), transparent 55%), var(--bg);
-      color: var(--text);
-      font-family: var(--font);
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .layout {
-      min-height: 100vh;
-      display: grid;
-      grid-template-columns: 320px 1fr;
-    }
-
-    @media (max-width: 980px) {
-      .layout {
-        grid-template-columns: 1fr;
+        /* Calendar */
+        --cal-bg: rgba(30, 41, 59, 0.5);
+        --cal-active-bg: var(--brand-primary);
+        --cal-today-border: var(--brand-secondary);
+        
+        /* Layout */
+        --sidebar-width: 340px;
+        --header-height: 70px;
+        --radius-lg: 16px;
+        --radius-md: 12px;
+        --radius-sm: 8px;
+        
+        --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
       }
-    }
 
-    .topbar {
-      position: sticky;
-      top: 0;
-      z-index: 30;
-      backdrop-filter: blur(14px);
-      background: color-mix(in oklab, var(--bg) 75%, transparent);
-      border-bottom: 1px solid var(--border);
-    }
+      html[data-theme="light"] {
+        --bg-color: #f0f4f8;
+        --text-primary: #0f172a;
+        --text-secondary: #64748b;
+        --text-accent: #0284c7;
+        
+        --glass-bg: rgba(255, 255, 255, 0.75);
+        --glass-border: rgba(148, 163, 184, 0.2);
+        --glass-highlight: rgba(255, 255, 255, 0.5);
+        
+        --cal-bg: rgba(255, 255, 255, 0.5);
+        --card-hover-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
+      }
 
-    .topbar-inner {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 14px 16px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
+      * { box-sizing: border-box; }
+      
+      body {
+        margin: 0;
+        font-family: var(--font-sans);
+        background-color: var(--bg-color);
+        background-image: 
+          radial-gradient(circle at 15% 0%, rgba(56, 189, 248, 0.15), transparent 40%),
+          radial-gradient(circle at 85% 30%, rgba(139, 92, 246, 0.15), transparent 40%);
+        background-attachment: fixed;
+        color: var(--text-primary);
+        line-height: 1.6;
+        min-height: 100vh;
+      }
 
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-weight: 800;
-      letter-spacing: 0.2px;
-    }
+      /* Scrollbar */
+      ::-webkit-scrollbar { width: 8px; height: 8px; }
+      ::-webkit-scrollbar-track { background: transparent; }
+      ::-webkit-scrollbar-thumb { background: var(--glass-border); border-radius: 4px; }
+      ::-webkit-scrollbar-thumb:hover { background: var(--text-secondary); }
 
-    .brand-badge {
-      width: 34px;
-      height: 34px;
-      display: grid;
-      place-items: center;
-      border-radius: 12px;
-      background: linear-gradient(135deg, color-mix(in oklab, var(--primary) 90%, white), var(--violet));
-      color: #0b1223;
-      box-shadow: var(--shadow);
-    }
+      /* Utilities */
+      .glass {
+        background: var(--glass-bg);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid var(--glass-border);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      }
+      
+      .btn {
+        cursor: pointer;
+        user-select: none;
+        transition: all 0.2s ease;
+        border: 1px solid var(--glass-border);
+        background: rgba(255,255,255,0.03);
+        color: var(--text-primary);
+        border-radius: var(--radius-md);
+        padding: 8px 16px;
+        font-family: inherit;
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .btn:hover:not(:disabled) {
+        background: rgba(255,255,255,0.08);
+        border-color: var(--text-secondary);
+        transform: translateY(-1px);
+      }
+      .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+      .btn-primary {
+        background: var(--accent-gradient);
+        border: none;
+        color: white;
+      }
+      .btn-primary:hover:not(:disabled) {
+        box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+      }
+      .btn-icon { padding: 8px; border-radius: 50%; width: 36px; height: 36px; justify-content: center; }
 
-    .spacer {
-      flex: 1;
-    }
+      /* Layout */
+      .app-layout {
+        display: grid;
+        grid-template-columns: var(--sidebar-width) 1fr;
+        min-height: 100vh;
+      }
 
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      border: 1px solid var(--border);
-      background: color-mix(in oklab, var(--panel) 80%, transparent);
-      color: var(--text);
-      padding: 10px 12px;
-      border-radius: 12px;
-      cursor: pointer;
-      transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
-      user-select: none;
-    }
+      /* Mobile Overlay */
+      .mobile-overlay {
+        position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 40;
+        backdrop-filter: blur(4px);
+      }
 
-    .btn:hover {
-      transform: translateY(-1px);
-      border-color: color-mix(in oklab, var(--primary) 45%, var(--border));
-    }
-
-    .btn:active {
-      transform: translateY(0);
-    }
-
-    .btn-primary {
-      background: linear-gradient(135deg, color-mix(in oklab, var(--primary) 55%, transparent), transparent);
-      border-color: color-mix(in oklab, var(--primary) 45%, var(--border));
-    }
-
-    .container {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 18px 16px 48px;
-    }
-
-    .sidebar {
-      position: sticky;
-      top: 64px;
-      height: calc(100vh - 64px);
-      padding: 18px 14px 24px 16px;
-      border-right: 1px solid var(--border);
-    }
-
-    @media (max-width: 980px) {
+      /* Sidebar */
       .sidebar {
-        position: fixed;
-        inset: 64px 0 0 0;
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        overflow-y: auto;
+        padding: 24px;
+        border-right: 1px solid var(--glass-border);
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        z-index: 50;
+        transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        background: var(--glass-bg); /* For mobile opaque background */
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 1.5rem;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        color: var(--text-primary);
+      }
+      .brand-icon {
+        width: 40px; height: 40px;
+        border-radius: 12px;
+        background: var(--accent-gradient);
+        display: grid;
+        place-items: center;
+        color: white;
+        font-size: 1.2rem;
+      }
+
+      /* Calendar Widget */
+      .calendar-widget {
+        background: var(--cal-bg);
+        border-radius: var(--radius-lg);
+        padding: 16px;
+        border: 1px solid var(--glass-border);
+      }
+      .cal-header {
+        display: flex; justify-content: space-between; align-items: center;
+        margin-bottom: 12px;
+        font-weight: 600;
+      }
+      .cal-grid {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 4px;
+        text-align: center;
+      }
+      .cal-day-name {
+        font-size: 0.75rem;
+        color: var(--text-secondary);
+        margin-bottom: 4px;
+      }
+      .cal-day {
+        aspect-ratio: 1;
+        display: grid;
+        place-items: center;
+        font-size: 0.85rem;
+        border-radius: 8px;
+        cursor: default;
+        position: relative;
+        transition: all 0.2s;
+        color: var(--text-secondary);
+      }
+      .cal-day.current-month { color: var(--text-primary); }
+      .cal-day.has-data {
+        background: rgba(255,255,255,0.05);
+        cursor: pointer;
+        font-weight: 600;
+      }
+      .cal-day.has-data:hover {
+        background: rgba(255,255,255,0.1);
+        color: var(--brand-primary);
+      }
+      .cal-day.selected {
+        background: var(--brand-primary) !important;
+        color: white !important;
+        box-shadow: 0 4px 12px rgba(56, 189, 248, 0.4);
+      }
+      .cal-day.is-today::after {
+        content: ''; position: absolute; bottom: 4px;
+        width: 4px; height: 4px; border-radius: 50%;
+        background: var(--brand-secondary);
+      }
+
+      /* Category List */
+      .category-nav { display: flex; flex-direction: column; gap: 6px; }
+      .cat-item {
+        display: flex; justify-content: space-between; align-items: center;
+        padding: 10px 14px;
+        border-radius: var(--radius-md);
+        cursor: pointer;
+        transition: all 0.2s;
+        color: var(--text-secondary);
+        border: 1px solid transparent;
+      }
+      .cat-item:hover {
+        background: rgba(255,255,255,0.03);
+        color: var(--text-primary);
+      }
+      .cat-item.active {
+        background: linear-gradient(90deg, rgba(56, 189, 248, 0.1), transparent);
+        border-left: 3px solid var(--brand-primary);
+        color: var(--brand-primary);
+      }
+      .cat-count {
+        font-size: 0.75rem;
+        padding: 2px 8px;
+        background: rgba(255,255,255,0.05);
+        border-radius: 99px;
+      }
+
+      /* Main Content */
+      .main-content {
+        padding: 32px 40px;
+        max-width: 1200px;
+        margin: 0 auto;
         width: 100%;
-        max-width: 420px;
-        background: color-mix(in oklab, var(--bg) 90%, black);
-        border-right: 1px solid var(--border);
-        transform: translateX(-110%);
-        transition: transform 0.2s ease;
-        z-index: 40;
+      }
+      
+      .top-tools {
+        display: flex; gap: 16px; margin-bottom: 32px; flex-wrap: wrap;
+        align-items: center;
+        position: sticky; top: 20px; z-index: 40;
+      }
+      
+      .search-bar {
+        flex: 1;
+        position: relative;
+        min-width: 280px;
+      }
+      .search-bar input {
+        width: 100%;
+        padding: 12px 16px 12px 48px;
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--glass-border);
+        background: var(--glass-bg);
+        color: var(--text-primary);
+        font-family: inherit;
+        outline: none;
+        backdrop-filter: blur(12px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        transition: all 0.2s;
+      }
+      .search-bar input:focus {
+        border-color: var(--brand-primary);
+        box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+      }
+      .search-icon {
+        position: absolute; left: 16px; top: 50%; transform: translateY(-50%);
+        color: var(--text-secondary);
       }
 
-      .sidebar.open {
-        transform: translateX(0);
+      /* Paper List */
+      .paper-list { display: flex; flex-direction: column; gap: 20px; }
+      
+      .paper-card {
+        border-radius: var(--radius-lg);
+        position: relative;
+        border: 1px solid var(--glass-border);
+        transition: all 0.3s ease;
+        overflow: hidden;
+      }
+      .paper-card:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--card-hover-shadow);
+        border-color: rgba(56, 189, 248, 0.3);
+      }
+      
+      .card-body { padding: 20px; }
+      
+      .paper-title {
+        font-size: 1.15rem;
+        font-weight: 700;
+        margin: 0 0 12px;
+        line-height: 1.4;
+      }
+      .paper-title a {
+        color: var(--text-primary);
+        text-decoration: none;
+        background: linear-gradient(90deg, var(--text-primary), var(--text-primary));
+        background-size: 0% 1px;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        transition: background-size 0.3s;
+      }
+      .paper-title a:hover {
+        color: var(--brand-primary);
+        background-size: 100% 1px;
       }
 
-      .overlay {
-        position: fixed;
-        inset: 64px 0 0 0;
-        background: rgba(0, 0, 0, 0.45);
-        z-index: 35;
+      .meta-row {
+        display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px;
+        align-items: center;
+        font-size: 0.85rem;
+        color: var(--text-secondary);
       }
-    }
-
-    .panel {
-      background: color-mix(in oklab, var(--panel) 78%, transparent);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-    }
-
-    .panel-title {
-      padding: 14px 14px 10px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 8px;
-      border-bottom: 1px solid var(--border);
-      font-weight: 700;
-    }
-
-    .panel-body {
-      padding: 12px 12px 14px;
-    }
-
-    .category-list {
-      display: grid;
-      gap: 10px;
-    }
-
-    .category-item {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      gap: 10px;
-      padding: 10px 12px;
-      border-radius: 12px;
-      border: 1px solid var(--border);
-      background: color-mix(in oklab, var(--card) 70%, transparent);
-      cursor: pointer;
-      transition: border-color 0.15s ease, transform 0.15s ease;
-    }
-
-    .category-item:hover {
-      transform: translateY(-1px);
-      border-color: color-mix(in oklab, var(--primary) 45%, var(--border));
-    }
-
-    .category-item.active {
-      border-color: color-mix(in oklab, var(--primary) 70%, var(--border));
-      background: linear-gradient(
-        135deg,
-        color-mix(in oklab, var(--primary) 25%, transparent),
-        color-mix(in oklab, var(--violet) 12%, transparent)
-      );
-    }
-
-    .pill {
-      font-size: 12px;
-      padding: 3px 10px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      color: var(--muted);
-      background: color-mix(in oklab, var(--panel) 75%, transparent);
-      white-space: nowrap;
-    }
-
-    .pill.primary {
-      color: color-mix(in oklab, var(--primary) 90%, white);
-      border-color: color-mix(in oklab, var(--primary) 55%, var(--border));
-    }
-
-    .pill.success {
-      color: color-mix(in oklab, var(--success) 90%, white);
-      border-color: color-mix(in oklab, var(--success) 55%, var(--border));
-    }
-
-    .pill.violet {
-      color: color-mix(in oklab, var(--violet) 90%, white);
-      border-color: color-mix(in oklab, var(--violet) 55%, var(--border));
-    }
-
-    .pill.danger {
-      color: color-mix(in oklab, var(--danger) 90%, white);
-      border-color: color-mix(in oklab, var(--danger) 55%, var(--border));
-    }
-
-    .label {
-      font-size: 12px;
-      color: var(--muted);
-      margin-bottom: 8px;
-    }
-
-    select,
-    input {
-      width: 100%;
-      padding: 10px 12px;
-      border-radius: 12px;
-      border: 1px solid var(--border);
-      background: color-mix(in oklab, var(--panel) 80%, transparent);
-      color: var(--text);
-      outline: none;
-    }
-
-    .search-row {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 10px;
-      align-items: center;
-    }
-
-    @media (max-width: 680px) {
-      .search-row {
-        grid-template-columns: 1fr;
+      .pill {
+        padding: 4px 10px;
+        border-radius: 6px;
+        background: rgba(255,255,255,0.05);
+        border: 1px solid var(--glass-border);
       }
-    }
+      .pill.venue {
+        background: rgba(139, 92, 246, 0.1);
+        color: #a78bfa;
+        border-color: rgba(139, 92, 246, 0.2);
+      }
+      
+      .authors-row {
+        display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px;
+      }
+      .author-chip {
+        font-size: 0.8rem;
+        padding: 4px 10px;
+        border-radius: 99px;
+        background: transparent;
+        border: 1px solid var(--glass-border);
+        color: var(--text-secondary);
+        cursor: pointer;
+        transition: all 0.15s;
+      }
+      .author-chip:hover {
+        border-color: var(--brand-primary);
+        color: var(--brand-primary);
+      }
+      .author-chip.active {
+        background: var(--brand-primary);
+        color: white;
+        border-color: var(--brand-primary);
+      }
 
-    .content-header {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 14px;
-    }
+      .abstract-box {
+        background: rgba(0,0,0,0.2);
+        border-radius: var(--radius-md);
+        overflow: hidden;
+      }
+      .abstract-content {
+        padding: 16px;
+        font-size: 0.95rem;
+        color: var(--text-secondary);
+        border-top: 1px solid var(--glass-border);
+      }
 
-    .content-title {
-      display: grid;
-      gap: 4px;
-    }
+      /* Transitions */
+      .slide-enter-active, .slide-leave-active { transition: all 0.3s ease; }
+      .slide-enter-from, .slide-leave-to { opacity: 0; transform: translateY(10px); }
 
-    .content-title h2 {
-      margin: 0;
-      font-size: 20px;
-      letter-spacing: 0.2px;
-    }
+      /* Mobile Responsive */
+      @media (max-width: 900px) {
+        .app-layout { grid-template-columns: 1fr; }
+        .sidebar {
+          position: fixed; inset: 0; width: 80%; max-width: 320px;
+          transform: translateX(-100%);
+        }
+        .sidebar.open { transform: translateX(0); }
+        .main-content { padding: 80px 16px 40px; }
+        .mobile-toggle {
+          position: fixed; top: 16px; left: 16px; z-index: 100;
+          backdrop-filter: blur(8px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <!-- Mobile Sidebar Toggle -->
+      <button class="btn btn-icon mobile-toggle glass" @click="sidebarOpen = !sidebarOpen" v-if="isMobile">
+        <i class="fa-solid fa-bars"></i>
+      </button>
 
-    .content-title p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 13px;
-    }
+      <!-- Mobile Overlay -->
+      <div class="mobile-overlay" v-if="isMobile && sidebarOpen" @click="sidebarOpen = false"></div>
 
-    .paper-list {
-      display: grid;
-      gap: 12px;
-    }
+      <div class="app-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar" :class="{ open: sidebarOpen }">
+          <div class="brand">
+            <div class="brand-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div>ArXiv News</div>
+          </div>
 
-    .paper {
-      background: color-mix(in oklab, var(--card) 80%, transparent);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 14px 14px 12px;
-      box-shadow: var(--shadow);
-      overflow: hidden;
-    }
+          <!-- Calendar Widget -->
+          <div class="calendar-widget">
+            <div class="cal-header">
+              <button class="btn btn-icon" style="width:28px;height:28px" @click="changeMonth(-1)">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <span>{{ currentMonthLabel }}</span>
+              <button class="btn btn-icon" style="width:28px;height:28px" @click="changeMonth(1)">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+            <div class="cal-grid">
+              <div class="cal-day-name" v-for="d in ['日','一','二','三','四','五','六']">{{d}}</div>
+              <div 
+                v-for="(day, idx) in calendarDays" 
+                :key="idx" 
+                class="cal-day"
+                :class="{ 
+                  'current-month': day.isCurrentMonth, 
+                  'has-data': day.hasData,
+                  'selected': day.dateStr === selectedDate,
+                  'is-today': day.dateStr === todayStr
+                }"
+                @click="day.hasData && selectDate(day.dateStr)"
+              >
+                {{ day.dayNum }}
+              </div>
+            </div>
+            <div style="margin-top:12px;text-align:center">
+               <button class="btn" style="width:100%;font-size:0.8rem" @click="jumpToLatest" :disabled="!availableDates.length">
+                 <i class="fa-solid fa-bolt"></i> 回到最新 ({{ latestDate }})
+               </button>
+            </div>
+          </div>
 
-    .paper h3 {
-      margin: 0 0 8px;
-      font-size: 16px;
-      line-height: 1.35;
-      letter-spacing: 0.1px;
-    }
+          <!-- Categories -->
+          <nav class="category-nav" v-if="snapshot">
+             <div class="label" style="font-size:0.8rem;text-transform:uppercase;color:var(--text-secondary);margin-bottom:8px;font-weight:600">Categories</div>
+             <div 
+               class="cat-item" 
+               v-for="cat in snapshot.categories" 
+               :key="cat.code"
+               :class="{ active: cat.code === activeCategoryCode }"
+               @click="selectCategory(cat.code)"
+             >
+               <div>
+                 <div style="font-weight:600">{{ cat.name }}</div>
+                 <div style="font-size:0.75rem;opacity:0.6">{{ cat.code }}</div>
+               </div>
+               <span class="cat-count">{{ (cat.papers || []).length }}</span>
+             </div>
+          </nav>
+          
+          <div style="margin-top:auto; font-size:0.8rem; color:var(--text-secondary)">
+             <button class="btn" style="width:100%; justify-content:center; margin-bottom:10px" @click="toggleTheme">
+                <i class="fa-solid" :class="theme === 'dark' ? 'fa-moon' : 'fa-sun'"></i> 
+                {{ theme === 'dark' ? '深色模式' : '浅色模式' }}
+             </button>
+             <div style="text-align:center; opacity:0.6">
+                Data updated: {{ snapshot?.generated_at?.split('T')[0] || '-' }}
+             </div>
+          </div>
+        </aside>
 
-    .paper h3 a {
-      color: color-mix(in oklab, var(--primary) 90%, white);
-    }
+        <!-- Main Content -->
+        <main class="main-content">
+          <div class="top-tools glass" style="border-radius: var(--radius-lg); padding: 12px;">
+             <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" v-model="searchQuery" placeholder="搜索论文标题、作者..." />
+             </div>
+             
+             <div v-if="selectedAuthor" class="pill" style="display:flex;align-items:center;gap:8px;padding-right:4px;background:rgba(16, 185, 129, 0.1);color:#34d399;border-color:rgba(16, 185, 129, 0.2)">
+                <i class="fa-solid fa-user"></i> {{ selectedAuthor }}
+                <button class="btn btn-icon" style="width:24px;height:24px;border:none;background:rgba(0,0,0,0.2)" @click="selectedAuthor = ''"><i class="fa-solid fa-times"></i></button>
+             </div>
 
-    .meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      align-items: center;
-      margin-bottom: 10px;
-    }
+             <div class="pill" style="margin-left:auto">
+                {{ filteredPapers.length }} 篇论文
+             </div>
+          </div>
 
-    .authors {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin: 8px 0 10px;
-    }
+          <div v-if="loading" style="text-align:center;padding:40px;color:var(--text-secondary)">
+             <i class="fa-solid fa-spinner fa-spin fa-2x"></i>
+             <p style="margin-top:10px">正在加载数据...</p>
+          </div>
+          
+          <div v-else-if="!filteredPapers.length" style="text-align:center;padding:60px;color:var(--text-secondary)">
+             <i class="fa-solid fa-folder-open fa-3x" style="opacity:0.3;margin-bottom:16px"></i>
+             <p>没有找到相关论文</p>
+          </div>
 
-    .chip {
-      font-size: 12px;
-      padding: 6px 10px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      background: color-mix(in oklab, var(--panel) 78%, transparent);
-      color: var(--text);
-      cursor: pointer;
-    }
+          <div class="paper-list" v-else>
+             <transition-group name="slide">
+               <article class="paper-card glass" v-for="paper in filteredPapers" :key="paper.id || paper.url">
+                  <div class="card-body">
+                    <h3 class="paper-title">
+                      <a :href="paper.url" target="_blank">{{ paper.title }}</a>
+                    </h3>
+                    
+                    <div class="meta-row">
+                       <span class="pill venue" v-if="paper.venue"><i class="fa-solid fa-star"></i> {{ paper.venue }}</span>
+                       <span class="pill"><i class="fa-regular fa-calendar"></i> {{ paper.published }}</span>
+                       <span class="pill" v-if="paper.primary_category">{{ paper.primary_category }}</span>
+                    </div>
 
-    .chip.active {
-      border-color: color-mix(in oklab, var(--primary) 65%, var(--border));
-      background: color-mix(in oklab, var(--primary) 18%, transparent);
-    }
+                    <div class="authors-row">
+                       <span 
+                         class="author-chip" 
+                         v-for="author in paper.authors" 
+                         :key="author"
+                         :class="{ active: selectedAuthor === author }"
+                         @click="selectedAuthor = selectedAuthor === author ? '' : author"
+                       >
+                         {{ author }}
+                       </span>
+                    </div>
 
-    .summary {
-      color: var(--muted);
-      line-height: 1.6;
-      font-size: 13px;
-    }
-
-    .summary.clamped {
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 3;
-      overflow: hidden;
-    }
-
-    .footer {
-      margin-top: 16px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 10px;
-      color: var(--muted);
-      font-size: 12px;
-    }
-
-    .backtop {
-      position: fixed;
-      right: 18px;
-      bottom: 18px;
-      z-index: 50;
-    }
-
-    .status {
-      padding: 14px;
-      color: var(--muted);
-      border: 1px dashed var(--border);
-      border-radius: var(--radius);
-      background: color-mix(in oklab, var(--panel) 68%, transparent);
-    }
-  </style>
-</head>
-<body>
-  <div id="app">
-    <header class="topbar">
-      <div class="topbar-inner">
-        <button class="btn" @click="sidebarOpen = true" v-if="isMobile" aria-label="打开侧边栏">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-        <div class="brand">
-          <div class="brand-badge"><i class="fa-solid fa-book-open"></i></div>
-          <div>ArXiv News</div>
-        </div>
-        <div class="spacer"></div>
-        <a class="btn" href="https://github.com/flc-ytfl/arxiv-news" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-github"></i>
-          <span>GitHub</span>
-        </a>
-        <button class="btn btn-primary" @click="toggleTheme" aria-label="切换主题">
-          <i class="fa-solid" :class="theme === 'dark' ? 'fa-moon' : 'fa-sun'"></i>
-          <span>{{ theme === 'dark' ? '深色' : '浅色' }}</span>
-        </button>
+                    <div v-if="paper.summary">
+                       <button class="btn" style="font-size:0.8rem;padding:6px 12px" @click="toggleExpanded(paper)">
+                          <i class="fa-solid" :class="isExpanded(paper) ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+                          {{ isExpanded(paper) ? '收起摘要' : '查看摘要' }}
+                       </button>
+                       <a class="btn" :href="paper.pdf_url || paper.url.replace('/abs/', '/pdf/')" target="_blank" style="font-size:0.8rem;padding:6px 12px;margin-left:8px">
+                          <i class="fa-solid fa-file-pdf"></i> PDF
+                       </a>
+                    </div>
+                  </div>
+                  
+                  <div class="abstract-box" v-if="isExpanded(paper)">
+                     <div class="abstract-content">
+                        {{ paper.summary }}
+                     </div>
+                  </div>
+               </article>
+             </transition-group>
+          </div>
+        </main>
       </div>
-    </header>
-
-    <div class="layout">
-      <div class="overlay" v-if="isMobile && sidebarOpen" @click="sidebarOpen = false"></div>
-
-      <aside class="sidebar" :class="{ open: sidebarOpen }">
-        <div class="panel" style="margin-bottom: 14px">
-          <div class="panel-title">
-            <span><i class="fa-solid fa-calendar-days"></i> 历史归档</span>
-            <span class="pill primary" v-if="selectedDate">{{ selectedDate }}</span>
-          </div>
-          <div class="panel-body">
-            <div style="margin-bottom: 10px">
-              <div class="label">选择日期</div>
-              <select v-model="selectedDate" :disabled="!manifest || loading">
-                <option v-for="d in availableDates" :key="d" :value="d">{{ d }}</option>
-              </select>
-            </div>
-            <div>
-              <div class="label">快速跳转</div>
-              <button class="btn" style="width: 100%" @click="jumpToLatest" :disabled="!availableDates.length">
-                <i class="fa-solid fa-bolt"></i>
-                <span>最新快照</span>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="panel">
-          <div class="panel-title">
-            <span><i class="fa-solid fa-layer-group"></i> 分类</span>
-            <span class="pill" v-if="activeCategory">{{ filteredPapers.length }} / {{ totalPapers }}</span>
-          </div>
-          <div class="panel-body">
-            <div class="category-list" v-if="snapshot">
-              <button
-                class="category-item"
-                v-for="cat in snapshot.categories"
-                :key="cat.code"
-                :class="{ active: cat.code === activeCategoryCode }"
-                @click="selectCategory(cat.code)"
-              >
-                <span>{{ cat.code }}</span>
-                <span class="pill">{{ (cat.papers || []).length }}</span>
-              </button>
-            </div>
-            <div class="status" v-else>
-              <div v-if="loading"><i class="fa-solid fa-spinner fa-spin"></i> 正在加载数据…</div>
-              <div v-else-if="error"><span class="pill danger">加载失败</span> {{ error }}</div>
-              <div v-else>暂无数据，请稍后再试。</div>
-            </div>
-          </div>
-        </div>
-      </aside>
-
-      <main class="container">
-        <div class="content-header">
-          <div class="content-title">
-            <h2>
-              <span v-if="activeCategory">{{ activeCategory.name }}（{{ activeCategory.code }}）</span>
-              <span v-else>论文列表</span>
-            </h2>
-            <p v-if="snapshot">
-              <span class="pill primary"><i class="fa-solid fa-clock"></i> 生成时间 {{ snapshot.generated_at }}</span>
-            </p>
-          </div>
-
-          <div class="search-row" style="min-width: min(620px, 100%)">
-            <input v-model.trim="searchQuery" type="search" placeholder="搜索标题/作者…" :disabled="!snapshot" />
-            <button class="btn" @click="clearFilters" :disabled="!searchQuery && !selectedAuthor">
-              <i class="fa-solid fa-filter-circle-xmark"></i>
-              <span>清除筛选</span>
-            </button>
-          </div>
-        </div>
-
-        <div class="panel" style="padding: 14px; margin-bottom: 14px" v-if="selectedAuthor">
-          <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
-            <span class="pill success"><i class="fa-solid fa-user"></i> 作者筛选</span>
-            <span>{{ selectedAuthor }}</span>
-            <button class="btn" @click="selectedAuthor = ''"><i class="fa-solid fa-xmark"></i> 取消</button>
-          </div>
-        </div>
-
-        <div v-if="loading" class="status"><i class="fa-solid fa-spinner fa-spin"></i> 正在加载快照数据…</div>
-        <div v-else-if="error" class="status"><span class="pill danger">加载失败</span> {{ error }}</div>
-        <div v-else-if="!snapshot" class="status">暂无数据。</div>
-
-        <div v-else class="paper-list">
-          <div class="paper" v-for="paper in filteredPapers" :key="paper.id || paper.url">
-            <h3>
-              <a :href="paper.url" target="_blank" rel="noopener noreferrer">{{ paper.title || "(无标题)" }}</a>
-            </h3>
-            <div class="meta">
-              <span class="pill violet" v-if="paper.venue"><i class="fa-solid fa-tag"></i> {{ paper.venue }}</span>
-              <span class="pill"><i class="fa-solid fa-calendar"></i> {{ paper.published || "-" }}</span>
-              <span class="pill" v-if="paper.primary_category"
-                ><i class="fa-solid fa-hashtag"></i> {{ paper.primary_category }}</span
-              >
-            </div>
-
-            <div class="authors" v-if="paper.authors && paper.authors.length">
-              <button
-                class="chip"
-                v-for="author in paper.authors"
-                :key="author"
-                :class="{ active: selectedAuthor === author }"
-                @click="toggleAuthor(author)"
-              >
-                {{ author }}
-              </button>
-            </div>
-
-            <div class="summary" :class="{ clamped: !isExpanded(paper) }" v-if="paper.summary">{{ paper.summary }}</div>
-            <div style="margin-top: 10px; display: flex; gap: 10px; align-items: center">
-              <button class="btn" @click="toggleExpanded(paper)" v-if="paper.summary">
-                <i class="fa-solid" :class="isExpanded(paper) ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
-                <span>{{ isExpanded(paper) ? "收起摘要" : "展开摘要" }}</span>
-              </button>
-              <a class="btn" :href="paper.url" target="_blank" rel="noopener noreferrer">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                <span>打开 arXiv</span>
-              </a>
-            </div>
-          </div>
-
-          <div class="footer">
-            <div>
-              <span class="pill">日期：{{ snapshot.date }}</span>
-              <span class="pill" style="margin-left: 8px">论文：{{ filteredPapers.length }}</span>
-            </div>
-            <div>数据来自 arXiv | 前端：Vue CDN</div>
-          </div>
-        </div>
-      </main>
     </div>
 
-    <div class="backtop" v-if="showBackToTop">
-      <button class="btn btn-primary" @click="backToTop"><i class="fa-solid fa-arrow-up"></i><span>顶部</span></button>
-    </div>
-  </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
+    <script>
+      const { createApp, ref, computed, onMounted, watch } = Vue;
 
-  <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
-  <script>
-    const { createApp, computed, onMounted, ref, watch } = Vue;
+      createApp({
+        setup() {
+          /* --- State --- */
+          const manifest = ref(null);
+          const snapshot = ref(null);
+          const loading = ref(true);
+          const sidebarOpen = ref(false);
+          const isMobile = ref(window.innerWidth <= 900);
+          
+          // Data Selection
+          const activeCategoryCode = ref("");
+          const availableDates = ref([]);
+          const selectedDate = ref("");
+          const selectedAuthor = ref("");
+          const searchQuery = ref("");
+          const expandedSet = ref(new Set());
+          
+          // Theme
+          const theme = ref(localStorage.getItem('theme') || 'dark');
+          
+          // Calendar State
+          const today = new Date();
+          const viewDate = ref(new Date(today.getFullYear(), today.getMonth(), 1)); // First day of current view month
 
-    const STORAGE_KEY_THEME = "arxiv_news_theme";
+          /* --- Methods --- */
+          
+          // Fetch Helper
+          const fetchJson = async (url) => {
+             const res = await fetch(url + '?t=' + Date.now());
+             if(!res.ok) throw new Error('Failed to load ' + url);
+             return await res.json();
+          };
 
-    function getQueryParam(name) {
-      const url = new URL(window.location.href);
-      return url.searchParams.get(name) || "";
-    }
+          // Theme Logic
+          const applyTheme = () => document.documentElement.setAttribute("data-theme", theme.value);
+          const toggleTheme = () => {
+             theme.value = theme.value === 'dark' ? 'light' : 'dark';
+             localStorage.setItem('theme', theme.value);
+             applyTheme();
+          };
+          applyTheme();
 
-    function replaceQuery(params) {
-      const url = new URL(window.location.href);
-      Object.entries(params).forEach(([key, value]) => {
-        if (!value) url.searchParams.delete(key);
-        else url.searchParams.set(key, value);
-      });
-      window.history.replaceState({}, "", url.toString());
-    }
-
-    function applyTheme(theme) {
-      document.documentElement.setAttribute("data-theme", theme);
-    }
-
-    async function fetchJson(path) {
-      const resp = await fetch(path, { cache: "no-store" });
-      if (!resp.ok) throw new Error(`请求失败 ${resp.status}: ${path}`);
-      return await resp.json();
-    }
-
-    createApp({
-      setup() {
-        const manifest = ref(null);
-        const snapshot = ref(null);
-        const loading = ref(false);
-        const error = ref("");
-
-        const sidebarOpen = ref(false);
-        const isMobile = ref(window.matchMedia && window.matchMedia("(max-width: 980px)").matches);
-
-        const availableDates = ref([]);
-        const selectedDate = ref("");
-
-        const activeCategoryCode = ref("");
-        const searchQuery = ref("");
-        const selectedAuthor = ref("");
-        const expanded = ref(new Set());
-
-        const theme = ref(localStorage.getItem(STORAGE_KEY_THEME) || "dark");
-        applyTheme(theme.value);
-
-        const showBackToTop = ref(false);
-
-        const activeCategory = computed(() => {
-          if (!snapshot.value) return null;
-          return (snapshot.value.categories || []).find((c) => c.code === activeCategoryCode.value) || null;
-        });
-
-        const totalPapers = computed(() => {
-          const cat = activeCategory.value;
-          return cat && cat.papers ? cat.papers.length : 0;
-        });
-
-        const filteredPapers = computed(() => {
-          const cat = activeCategory.value;
-          const papers = (cat && cat.papers) || [];
-
-          const q = (searchQuery.value || "").toLowerCase();
-          const author = selectedAuthor.value;
-
-          return papers.filter((p) => {
-            const title = (p.title || "").toLowerCase();
-            const authors = (p.authors || []).join(" ").toLowerCase();
-            const matchQuery = !q || title.includes(q) || authors.includes(q);
-            const matchAuthor = !author || (p.authors || []).includes(author);
-            return matchQuery && matchAuthor;
-          });
-        });
-
-        function isExpanded(paper) {
-          const key = paper.id || paper.url || "";
-          return expanded.value.has(key);
-        }
-
-        function toggleExpanded(paper) {
-          const key = paper.id || paper.url || "";
-          if (!key) return;
-          const next = new Set(expanded.value);
-          if (next.has(key)) next.delete(key);
-          else next.add(key);
-          expanded.value = next;
-        }
-
-        function toggleTheme() {
-          theme.value = theme.value === "dark" ? "light" : "dark";
-          localStorage.setItem(STORAGE_KEY_THEME, theme.value);
-          applyTheme(theme.value);
-        }
-
-        function selectCategory(code) {
-          activeCategoryCode.value = code;
-          selectedAuthor.value = "";
-          expanded.value = new Set();
-          if (isMobile.value) sidebarOpen.value = false;
-          replaceQuery({ cat: code });
-        }
-
-        function toggleAuthor(author) {
-          selectedAuthor.value = selectedAuthor.value === author ? "" : author;
-          expanded.value = new Set();
-        }
-
-        function clearFilters() {
-          searchQuery.value = "";
-          selectedAuthor.value = "";
-          expanded.value = new Set();
-        }
-
-        function jumpToLatest() {
-          if (!availableDates.value.length) return;
-          selectedDate.value = availableDates.value[0];
-        }
-
-        async function loadManifest() {
-          loading.value = true;
-          error.value = "";
-          try {
-            const data = await fetchJson("./data/manifest.json");
-            manifest.value = data;
-            availableDates.value = Array.isArray(data.dates) ? data.dates : [];
-
-            const qDate = getQueryParam("date");
-            const qCat = getQueryParam("cat");
-
-            selectedDate.value =
-              (qDate && availableDates.value.includes(qDate) && qDate) || availableDates.value[0] || "";
-
-            const defaultCat = (data.categories && data.categories[0] && data.categories[0].code) || "";
-            activeCategoryCode.value = qCat || defaultCat;
-          } catch (e) {
-            error.value = e && e.message ? e.message : String(e);
-          } finally {
-            loading.value = false;
-          }
-        }
-
-        async function loadSnapshot(date) {
-          if (!date) return;
-          loading.value = true;
-          error.value = "";
-          try {
-            const data = await fetchJson(`./data/snapshots/${date}.json`);
-            snapshot.value = data;
-
-            const categories = (data.categories || []).map((c) => c.code);
-            if (!categories.includes(activeCategoryCode.value)) {
-              activeCategoryCode.value = categories[0] || "";
-            }
-
-            replaceQuery({ date, cat: activeCategoryCode.value });
-          } catch (e) {
-            snapshot.value = null;
-            error.value = e && e.message ? e.message : String(e);
-          } finally {
-            loading.value = false;
-          }
-        }
-
-        function backToTop() {
-          window.scrollTo({ top: 0, behavior: "smooth" });
-        }
-
-        onMounted(async () => {
-          window.addEventListener("scroll", () => {
-            showBackToTop.value = window.scrollY > 700;
+          // Calendar Logic
+          const todayStr = computed(() => today.toISOString().slice(0, 10));
+          const currentMonthLabel = computed(() => {
+             return viewDate.value.toLocaleString('default', { year: 'numeric', month: 'long' });
           });
 
-          const media = window.matchMedia ? window.matchMedia("(max-width: 980px)") : null;
-          if (media) {
-            const handler = (e) => {
-              isMobile.value = !!e.matches;
-              if (!isMobile.value) sidebarOpen.value = false;
-            };
-            media.addEventListener ? media.addEventListener("change", handler) : media.addListener(handler);
-          }
+          const calendarDays = computed(() => {
+             const year = viewDate.value.getFullYear();
+             const month = viewDate.value.getMonth();
+             
+             const firstDayOfMonth = new Date(year, month, 1);
+             const lastDayOfMonth = new Date(year, month + 1, 0);
+             
+             const days = [];
+             
+             // Padding days from prev month
+             const startDay = firstDayOfMonth.getDay(); // 0 is Sunday
+             for (let i = 0; i < startDay; i++) {
+                days.push({ dayNum: '', isCurrentMonth: false });
+             }
+             
+             // Days of current month
+             for (let d = 1; d <= lastDayOfMonth.getDate(); d++) {
+                const dateObj = new Date(year, month, d);
+                // Convert to YYYY-MM-DD manually to avoid timezone issues
+                const isoDate = [
+                  year, 
+                  String(month + 1).padStart(2, '0'), 
+                  String(d).padStart(2, '0')
+                ].join('-');
+                
+                days.push({
+                   dayNum: d,
+                   isCurrentMonth: true,
+                   dateStr: isoDate,
+                   hasData: availableDates.value.includes(isoDate)
+                });
+             }
+             
+             return days;
+          });
 
-          await loadManifest();
-          if (selectedDate.value) await loadSnapshot(selectedDate.value);
-        });
+          const changeMonth = (delta) => {
+             const newDate = new Date(viewDate.value);
+             newDate.setMonth(newDate.getMonth() + delta);
+             viewDate.value = newDate;
+          };
 
-        watch(selectedDate, async (val, oldVal) => {
-          if (!val || val === oldVal) return;
-          selectedAuthor.value = "";
-          searchQuery.value = "";
-          expanded.value = new Set();
-          await loadSnapshot(val);
-        });
+          const selectDate = async (date) => {
+             if (selectedDate.value === date) return;
+             selectedDate.value = date;
+             await loadSnapshot(date);
+             if (isMobile.value) sidebarOpen.value = false;
+          };
 
-        return {
-          manifest,
-          snapshot,
-          loading,
-          error,
-          sidebarOpen,
-          isMobile,
-          availableDates,
-          selectedDate,
-          activeCategoryCode,
-          activeCategory,
-          totalPapers,
-          searchQuery,
-          selectedAuthor,
-          filteredPapers,
-          theme,
-          showBackToTop,
-          toggleTheme,
-          selectCategory,
-          toggleAuthor,
-          clearFilters,
-          jumpToLatest,
-          backToTop,
-          isExpanded,
-          toggleExpanded,
-        };
-      },
-    }).mount("#app");
-  </script>
-</body>
+          const jumpToLatest = () => {
+             if (availableDates.value.length) selectDate(availableDates.value[0]);
+          };
+
+          const latestDate = computed(() => availableDates.value[0] || '');
+
+          // Data Loading
+          const loadManifest = async () => {
+             try {
+                const data = await fetchJson('./data/manifest.json');
+                manifest.value = data;
+                availableDates.value = data.dates || [];
+                
+                // Get URL params
+                const params = new URLSearchParams(window.location.search);
+                const qDate = params.get('date');
+                const qCat = params.get('cat');
+                
+                // Set Date
+                if (qDate && availableDates.value.includes(qDate)) {
+                   selectedDate.value = qDate;
+                } else if (availableDates.value.length) {
+                   selectedDate.value = availableDates.value[0];
+                }
+                
+                // Sync Calendar view to selected date
+                if (selectedDate.value) {
+                   viewDate.value = new Date(selectedDate.value);
+                   // Reset to first day to avoid issues
+                   viewDate.value.setDate(1); 
+                }
+
+                // Initial Load
+                if (selectedDate.value) await loadSnapshot(selectedDate.value);
+                
+                // Set Category
+                if (qCat) activeCategoryCode.value = qCat;
+                
+             } catch (e) {
+                console.error(e);
+             } finally {
+                loading.value = false;
+             }
+          };
+
+          const loadSnapshot = async (date) => {
+             loading.value = true;
+             try {
+                const data = await fetchJson(`./data/snapshots/${date}.json`);
+                snapshot.value = data;
+                
+                // Determine active category
+                if (!activeCategoryCode.value && data.categories.length) {
+                   activeCategoryCode.value = data.categories[0].code;
+                } else {
+                   // Verify active category exists in new snapshot
+                   const exists = data.categories.find(c => c.code === activeCategoryCode.value);
+                   if (!exists && data.categories.length) {
+                      activeCategoryCode.value = data.categories[0].code;
+                   }
+                }
+                
+                // Update URL
+                const url = new URL(window.location);
+                url.searchParams.set('date', date);
+                url.searchParams.set('cat', activeCategoryCode.value);
+                window.history.replaceState({}, '', url);
+                
+             } catch(e) {
+                console.error(e);
+             } finally {
+                loading.value = false;
+             }
+          };
+
+          const selectCategory = (code) => {
+             activeCategoryCode.value = code;
+             window.scrollTo({ top: 0, behavior: 'smooth' });
+             const url = new URL(window.location);
+             url.searchParams.set('cat', code);
+             window.history.replaceState({}, '', url);
+             if (isMobile.value) sidebarOpen.value = false;
+          };
+
+          // Filtering
+          const activeCategory = computed(() => {
+             return snapshot.value?.categories?.find(c => c.code === activeCategoryCode.value);
+          });
+
+          const filteredPapers = computed(() => {
+             if (!activeCategory.value) return [];
+             let papers = activeCategory.value.papers;
+             
+             if (searchQuery.value) {
+                const q = searchQuery.value.toLowerCase();
+                papers = papers.filter(p => 
+                   p.title.toLowerCase().includes(q) || 
+                   p.authors.some(a => a.toLowerCase().includes(q))
+                );
+             }
+             
+             if (selectedAuthor.value) {
+                papers = papers.filter(p => p.authors.includes(selectedAuthor.value));
+             }
+             
+             return papers;
+          });
+
+          // Helpers
+          const isExpanded = (p) => expandedSet.value.has(p.id || p.url);
+          const toggleExpanded = (p) => {
+             const key = p.id || p.url;
+             if (expandedSet.value.has(key)) expandedSet.value.delete(key);
+             else expandedSet.value.add(key);
+          };
+
+          // Init
+          onMounted(() => {
+             window.addEventListener('resize', () => isMobile.value = window.innerWidth <= 900);
+             loadManifest();
+          });
+
+          return {
+             theme, toggleTheme,
+             sidebarOpen, isMobile,
+             loading,
+             availableDates, selectedDate, latestDate,
+             calendarDays, currentMonthLabel, changeMonth, selectDate, jumpToLatest, todayStr,
+             snapshot, activeCategoryCode, selectCategory,
+             searchQuery, selectedAuthor,
+             filteredPapers,
+             isExpanded, toggleExpanded
+          };
+        }
+      }).mount('#app');
+    </script>
+  </body>
 </html>
-
