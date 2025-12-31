@@ -1,0 +1,69 @@
+name: Deploy Frontend to GitHub Pages
+
+on:
+  # 当 docs/index.html 被修改时自动触发
+  push:
+    branches:
+      - main
+    paths:
+      - 'docs/**'
+  # 也支持手动触发
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: frontend-deployment
+  cancel-in-progress: false
+
+jobs:
+  deploy-frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages-branch
+
+      - name: Copy frontend files to gh-pages
+        run: |
+          # 复制 docs/ 目录（保留现有的 docs/data/）
+          if [ -d docs ]; then
+            # 只复制 index.html 和其他静态资源，不覆盖 data/
+            cp docs/index.html gh-pages-branch/docs/
+
+            # 如果有其他静态资源（CSS、JS、图片等），也复制过去
+            if [ -d docs/assets ]; then
+              cp -r docs/assets gh-pages-branch/docs/
+            fi
+
+            if [ -d docs/css ]; then
+              cp -r docs/css gh-pages-branch/docs/
+            fi
+
+            if [ -d docs/js ]; then
+              cp -r docs/js gh-pages-branch/docs/
+            fi
+          fi
+
+      - name: Commit and push to gh-pages
+        working-directory: gh-pages-branch
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add docs/
+          git diff-index --quiet HEAD || git commit -m "Update frontend: $(date +'%Y-%m-%d %H:%M:%S')"
+          git push origin gh-pages
+
+      - name: Deployment summary
+        run: |
+          echo "✅ Frontend deployed to gh-pages"
+          echo "🔗 Visit: https://flc-ytfl.github.io/arxiv-news/"
+          echo "⏱️ GitHub Pages will rebuild in ~1 minute"
