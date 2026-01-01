@@ -21,10 +21,26 @@ jobs:
         with:
           ref: main
 
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages-branch
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
+
+      - name: Sync history snapshots from gh-pages (for manifest generation)
+        run: |
+          mkdir -p docs/data/snapshots
+          if [ -d "gh-pages-branch/docs/data/snapshots" ]; then
+            # 同步历史快照到工作区，让 main.py 生成的 manifest.dates 覆盖所有历史日期
+            cp -r gh-pages-branch/docs/data/snapshots/*.json docs/data/snapshots/ 2>/dev/null || true
+          else
+            echo "No existing snapshots found in gh-pages, skip sync."
+          fi
 
       - name: Install dependencies
         run: |
@@ -44,22 +60,45 @@ jobs:
             git push origin main
           fi
 
-      - name: Checkout gh-pages branch
-        uses: actions/checkout@v4
-        with:
-          ref: gh-pages
-          path: gh-pages-branch
-
       - name: Copy generated files to gh-pages
         run: |
-          # 复制 README.md
+          # 复制 README.md（由 main.py 生成）
           if [ -f README.md ]; then
             cp README.md gh-pages-branch/
           fi
 
-          # 复制 docs/ 整个目录
+          # 复制前端静态资源（不覆盖 data/）
           if [ -d docs ]; then
-            cp -r docs gh-pages-branch/
+            mkdir -p gh-pages-branch/docs
+            if [ -f docs/index.html ]; then
+              cp docs/index.html gh-pages-branch/docs/
+            fi
+            if [ -d docs/assets ]; then
+              cp -r docs/assets gh-pages-branch/docs/
+            fi
+            if [ -d docs/css ]; then
+              cp -r docs/css gh-pages-branch/docs/
+            fi
+            if [ -d docs/js ]; then
+              cp -r docs/js gh-pages-branch/docs/
+            fi
+          fi
+
+          # 复制数据：manifest + 最新快照（历史快照已在 gh-pages 保留）
+          if [ -f docs/data/manifest.json ]; then
+            mkdir -p gh-pages-branch/docs/data/snapshots
+            cp docs/data/manifest.json gh-pages-branch/docs/data/manifest.json
+
+            NEW_DATE=$(python -c "import json; print((json.load(open('docs/data/manifest.json', encoding='utf-8')).get('dates') or [''])[0])")
+            if [ -n "$NEW_DATE" ] && [ -f "docs/data/snapshots/${NEW_DATE}.json" ]; then
+              cp "docs/data/snapshots/${NEW_DATE}.json" "gh-pages-branch/docs/data/snapshots/${NEW_DATE}.json"
+            else
+              echo "New snapshot not found for date=${NEW_DATE}"
+              exit 1
+            fi
+          else
+            echo "manifest.json not found under docs/data/, abort."
+            exit 1
           fi
 
           # 创建或更新 history 归档
@@ -72,6 +111,37 @@ jobs:
             cp README.md "gh-pages-branch/history/${YEAR}/${MONTH}/${TODAY_DATE}.md"
           fi
 
+      - name: Verify manifest covers all snapshots
+        working-directory: gh-pages-branch
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          manifest_path = Path("docs/data/manifest.json")
+          if not manifest_path.exists():
+              raise SystemExit("manifest.json missing in gh-pages-branch/docs/data/")
+
+          manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+          dates = manifest.get("dates") or []
+          if not isinstance(dates, list):
+              raise SystemExit("manifest.json: dates is not a list")
+
+          date_set = set(dates)
+          snapshots_dir = Path("docs/data/snapshots")
+          snapshot_dates = {p.stem for p in snapshots_dir.glob("*.json")}
+
+          missing = snapshot_dates - date_set
+          extra = date_set - snapshot_dates
+
+          if missing:
+              raise SystemExit(f"manifest.dates missing snapshot dates: {sorted(missing)[:20]}")
+          if extra:
+              raise SystemExit(f"manifest.dates has dates without snapshot files: {sorted(extra)[:20]}")
+
+          print(f"OK: snapshots={len(snapshot_dates)}, dates={len(dates)}")
+          PY
+
       - name: Commit and push to gh-pages
         working-directory: gh-pages-branch
         run: |
@@ -83,16 +153,4 @@ jobs:
 
       - name: Verify deployment
         run: |
-          if [ -f gh-pages-branch/docs/data/manifest.json ]; then
-            echo "✓ manifest.json exists"
-          else
-            echo "✗ manifest.json not found"
-            exit 1
-          fi
-
-          if [ -f gh-pages-branch/README.md ]; then
-            echo "✓ README.md exists"
-          else
-            echo "✗ README.md not found"
-            exit 1
-          fi
+          echo "Deployment verified by manifest/snapshot consistency check."
