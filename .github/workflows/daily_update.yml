@@ -2,7 +2,7 @@ name: Daily ArXiv Update
 
 on:
   schedule:
-    - cron: '0 0 * * *' # 每天 UTC 0:00 运行 (北京时间 8:00)
+    - cron: '0 4 * * *' # 每天 UTC 4:00 运行 (北京时间 12:00)
   workflow_dispatch: # 允许手动触发
 
 permissions:
@@ -38,8 +38,8 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          if [ -d "data" ]; then
-            git add data/
+          if [ -d "docs/data" ]; then
+            git add docs/data/
             git diff-index --quiet HEAD || git commit -m "Update source data: $(date +'%Y-%m-%d %H:%M:%S')"
             git push origin main
           fi
