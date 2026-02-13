@@ -17,11 +17,12 @@ __pycache__/
 .idea/
 
 .iflow/
-helloagents/
 .claude/
+.codex/
 
 # Generated files (moved to gh-pages branch)
 # Note: README.md in root is project documentation (tracked in main)
 # Generated paper list README is handled by workflow (pushed to gh-pages)
 /docs/data/
 /history/
+/helloagents
