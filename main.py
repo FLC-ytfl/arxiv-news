@@ -6,9 +6,12 @@ import datetime
 import json
 import os
 import re
+import time
 from typing import Any, Dict, List, Optional, Tuple
 
 import arxiv
+
+RETRY_BACKOFF_SECONDS = (5, 10, 30, 60, 180)
 
 CONFERENCE_ABBREVS = [
     "CVPR",
@@ -89,14 +92,39 @@ def result_to_paper(result: Any) -> Dict[str, Any]:
     }
 
 
-def fetch_results(client: arxiv.Client, category: str, max_results: int = 500) -> List[Any]:
-    search = arxiv.Search(
-        query=f"cat:{category}",
-        max_results=max_results,
-        sort_by=arxiv.SortCriterion.SubmittedDate,
-        sort_order=arxiv.SortOrder.Descending,
-    )
-    return list(client.results(search))
+def fetch_results(client: arxiv.Client, category: str, max_results: int = 2000) -> List[Any]:
+    for attempt_index in range(len(RETRY_BACKOFF_SECONDS) + 1):
+        try:
+            search = arxiv.Search(
+                query=f"cat:{category}",
+                max_results=max_results,
+                sort_by=arxiv.SortCriterion.SubmittedDate,
+                sort_order=arxiv.SortOrder.Descending,
+            )
+
+            results: List[Any] = []
+            latest_date: Optional[datetime.date] = None
+            for result in client.results(search):
+                published_date = result.published.date()
+                if latest_date is None:
+                    latest_date = published_date
+                if published_date != latest_date:
+                    break
+                results.append(result)
+
+            return results
+        except Exception as error:
+            if attempt_index >= len(RETRY_BACKOFF_SECONDS):
+                print(f"抓取 {category} 失败，已跳过：{error}")
+                return []
+
+            wait_seconds = RETRY_BACKOFF_SECONDS[attempt_index]
+            print(
+                f"抓取 {category} 失败，将在 {wait_seconds}s 后重试（第 {attempt_index + 1}/{len(RETRY_BACKOFF_SECONDS)} 次重试）：{error}"
+            )
+            time.sleep(wait_seconds)
+
+    return []
 
 
 def get_latest_date(results: List[Any]) -> Optional[datetime.date]:
@@ -172,6 +200,9 @@ def generate_snapshot_and_manifest(
     category_results: Dict[str, List[Any]],
     generated_at: Optional[str] = None,
 ) -> Tuple[str, str]:
+    data_dir, snapshots_dir = ensure_dirs()
+    generated_at = generated_at or utc_now_iso()
+
     # 计算快照日期：取所有分类中的最大最新日期。
     latest_dates: List[datetime.date] = []
     for cat_code in categories.keys():
@@ -179,33 +210,44 @@ def generate_snapshot_and_manifest(
         if latest:
             latest_dates.append(latest)
 
-    if not latest_dates:
-        raise RuntimeError("未获取到任何分类的论文结果，无法生成数据快照。")
+    snapshot_path = ""
+    if latest_dates:
+        snapshot_date = max(latest_dates)
+        snapshot_payload: Dict[str, Any] = {
+            "date": snapshot_date.isoformat(),
+            "generated_at": generated_at,
+            "categories": [],
+        }
 
-    snapshot_date = max(latest_dates)
-    generated_at = generated_at or utc_now_iso()
+        for cat_code, cat_name in categories.items():
+            results = category_results.get(cat_code, [])
+            papers_for_day = collect_results_for_date(results, snapshot_date)
+            snapshot_payload["categories"].append(
+                {
+                    "code": cat_code,
+                    "name": cat_name,
+                    "papers": [result_to_paper(r) for r in papers_for_day],
+                }
+            )
 
-    data_dir, snapshots_dir = ensure_dirs()
-
-    snapshot_payload: Dict[str, Any] = {
-        "date": snapshot_date.isoformat(),
-        "generated_at": generated_at,
-        "categories": [],
-    }
-
-    for cat_code, cat_name in categories.items():
-        results = category_results.get(cat_code, [])
-        papers_for_day = collect_results_for_date(results, snapshot_date)
-        snapshot_payload["categories"].append(
-            {
-                "code": cat_code,
-                "name": cat_name,
-                "papers": [result_to_paper(r) for r in papers_for_day],
+        snapshot_path = os.path.join(snapshots_dir, f"{snapshot_date.isoformat()}.json")
+        write_json(snapshot_path, snapshot_payload)
+    else:
+        existing_dates = list_snapshot_dates(snapshots_dir)
+        if existing_dates:
+            snapshot_path = os.path.join(snapshots_dir, f"{existing_dates[0]}.json")
+        else:
+            snapshot_date = datetime.datetime.utcnow().date()
+            snapshot_payload = {
+                "date": snapshot_date.isoformat(),
+                "generated_at": generated_at,
+                "categories": [
+                    {"code": cat_code, "name": cat_name, "papers": []}
+                    for cat_code, cat_name in categories.items()
+                ],
             }
-        )
-
-    snapshot_path = os.path.join(snapshots_dir, f"{snapshot_date.isoformat()}.json")
-    write_json(snapshot_path, snapshot_payload)
+            snapshot_path = os.path.join(snapshots_dir, f"{snapshot_date.isoformat()}.json")
+            write_json(snapshot_path, snapshot_payload)
 
     # 聚合历史统计数据
     stats: List[Dict[str, Any]] = []
@@ -224,7 +266,7 @@ def generate_snapshot_and_manifest(
                     counts[cat["code"]] = len(cat.get("papers", []))
                 stats.append({"date": date_str, "counts": counts})
         except Exception as e:
-            print(f"Error reading {filename} for stats: {e}")
+            print(f"读取 {filename} 统计失败：{e}")
             continue
 
     manifest_payload: Dict[str, Any] = {
@@ -255,7 +297,7 @@ if __name__ == "__main__":
     readme_full += f"更新时间(UTC): {generated_at}\n\n"
     readme_full += "📄 完整信息请访问 [GitHub Pages](https://flc-ytfl.github.io/arxiv-news/)\n\n"
 
-    client = arxiv.Client(page_size=100, delay_seconds=3, num_retries=3)
+    client = arxiv.Client(page_size=100, delay_seconds=3, num_retries=0)
     category_results_map: Dict[str, List[Any]] = {}
 
     for cat_code, cat_name in categories_map.items():
