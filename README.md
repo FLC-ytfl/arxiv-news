@@ -1,811 +1,826 @@
 # ArXiv Daily News
 
-更新时间(UTC): 2026-10-15T08:58:05Z
+更新时间(UTC): 2026-10-16T08:49:29Z
 
 📄 完整信息请访问 [GitHub Pages](https://flc-ytfl.github.io/arxiv-news/)
 
 ### 计算机视觉 (cs.CV)
-**最近发布日期**: 2026-10-14
+**最近发布日期**: 2026-10-15
 
-1. **[Can Learning to Answer Spatial Questions Improve Novel-View Generation?](http://arxiv.org/abs/2610.20610v1)**
-2. **[Representation Conditioning for Generation](http://arxiv.org/abs/2610.20608v1)**
-3. **[VITAL: From Visual Motion to Precise Action](http://arxiv.org/abs/2610.20604v1)**
-4. **[CommerceGen-Studio: An End-to-End Framework for Commercial-Grade Main-Image Generation](http://arxiv.org/abs/2610.20603v1)**
-5. **[DynThinker: Unifying Static 3D and Dynamic 4D Spatial Reasoning](http://arxiv.org/abs/2610.20598v1)**
-6. **[GeoThinker-$F$: Endogenous Predictive World Representations for Fast Spatial Intelligence](http://arxiv.org/abs/2610.20592v1)**
-7. **[Feed-Forward Multi-View Feature Coding for 3D Gaussian Splatting](http://arxiv.org/abs/2610.20590v1)**
-8. **[Learnable Hodge-Laplacian Driven Mixture of Experts for Steady-PDE Surrogates on Coarse Unstructured Meshes](http://arxiv.org/abs/2610.20585v1)**
-9. **[Player-1: Learning to Play from Synthetic Experience](http://arxiv.org/abs/2610.20584v1)**
-10. **[Any Time, Any Space: A World-State-Centric Framework for Agentic Video Generation](http://arxiv.org/abs/2610.20571v1)**
-11. **[A$^3$PreCore: Robust Rigid Registration for Native FLAIR-Space Brain-Mask Transfer](http://arxiv.org/abs/2610.20561v1)**
-12. **[PhySGA: A Physics-Space Grounded Agentic Framework for Generalizable and Interactive 3D Composition](http://arxiv.org/abs/2610.20560v1)**
-13. **[Speculative Sampling in Interactive Video Generation](http://arxiv.org/abs/2610.20556v1)**
-14. **[Reliability-Aware Multimodal Sentiment Prediction Under Local Modality Missingness](http://arxiv.org/abs/2610.20543v1)**
-15. **[PrismaCoder: Pushing the Boundaries of Open Multimodal Code Intelligence through Decomposed Rubric Synthesis](http://arxiv.org/abs/2610.20538v1)**
-16. **[Generative Representation Learning for Scalable Latent Tokenization](http://arxiv.org/abs/2610.20533v1)**
-17. **[ActiveEvidence: Decision-Focused Evidence Graphs with Verifiable Acquisition Gaps](http://arxiv.org/abs/2610.20532v1)**
-18. **[VascuSR: Iterative Anatomy-Aware Diffusion for CT Super-Resolution](http://arxiv.org/abs/2610.20509v1)**
-19. **[OLiVES: An Outdoor Low-Light Video Benchmark for Enhancement and Segmentation](http://arxiv.org/abs/2610.20501v1)**
-20. **[Quantifying privacy risks in foundation model representations of brain MRI](http://arxiv.org/abs/2610.20494v1)**
-21. **[Equal CER, Unequal Damage: Severity-Weighted Character Error Rate for OCR](http://arxiv.org/abs/2610.20461v1)**
-22. **[Infant Fingerprints: Quality Assessment & Recognition](http://arxiv.org/abs/2610.20432v1)**
-23. **[Hybrid supervised instance segmentation by learning label noise suppression](http://arxiv.org/abs/2610.20412v1)**
-24. **[Cortex: Consolidating Context into Parametric Memory](http://arxiv.org/abs/2610.20399v1)**
-25. **[Where Should the Gaussians Go? Reusable Label-Aware Allocation for Budget-Constrained Gaussian Splatting of Cinematic CT](http://arxiv.org/abs/2610.20397v1)**
-26. **[STP-GUI: Spatially-Aware Token Pruning for Efficient Web-GUI Agents](http://arxiv.org/abs/2610.20390v1)**
-27. **[Look Before You Restore: Learning to Predict Before Acting for Agentic Image Restoration](http://arxiv.org/abs/2610.20384v1)**
-28. **[ReferFlow: Beyond Final-Target Localization for Complex Referring Expressions](http://arxiv.org/abs/2610.20352v1)**
-29. **[InfiniSplat v2: Analyzing and Improving Feed-Forward 3DGS from Any Views](http://arxiv.org/abs/2610.20341v1)**
-30. **[Read, Parse, Describe: Unified Document Parsing with Visual Element Description Generation](http://arxiv.org/abs/2610.20335v1)**
-31. **[Beyond Static Cues: Unified Dynamic Detection of MLLM Backdoors via Dual-Flow Trajectory Analysis](http://arxiv.org/abs/2610.20319v1)**
-32. **[Event Cameras versus Frame Cameras for Synthetic-Aperture Imaging: A Simulation Study](http://arxiv.org/abs/2610.20309v1)**
-33. **[A Valid Watermark Is Not a Valid Identity: Spatial-Spectral Adversarial Face Evasion with Watermark Preservation](http://arxiv.org/abs/2610.20278v1)**
-34. **[Resolution Allocation with Learnable Resizing and Spectral Filter Parameterization](http://arxiv.org/abs/2610.20274v1)**
-35. **[GLoD-LVSM: Learning Geometry-Grounded Continuous-LoD Scene Representations for Large View Synthesis Models](http://arxiv.org/abs/2610.20254v1)**
-36. **[Contrastive uncertainty learning for robust multi-structure segmentation in lower-pelvic MR](http://arxiv.org/abs/2610.20251v1)**
-37. **[PAWA: Panoramic Action-conditioned World Modeling for Multiple Agents](http://arxiv.org/abs/2610.20240v1)**
-38. **[Glance Forcing: Making Bidirectional Diffusion Autoregressive at a Glance](http://arxiv.org/abs/2610.20220v1)**
-39. **[Continual pretraining Prostate MRI ViT Encoder for task alignment](http://arxiv.org/abs/2610.20217v1)**
-40. **[OneLA: Learning Many Worlds from Latent Actions](http://arxiv.org/abs/2610.20160v1)**
-41. **[Dataset-Level Regularization for Joint-Embedding Self-Supervised Learning](http://arxiv.org/abs/2610.20158v1)**
-42. **[Attention-Based Spatio-Temporal Approach for Fire and Smoke Detection](http://arxiv.org/abs/2610.20141v1)**
-43. **[StreamErase: Towards Ultra-Fast Streaming Video Erasing](http://arxiv.org/abs/2610.20137v1)**
-44. **[DreamHMR: From Video Generation to Human Motion Modeling via Structural Focusing](http://arxiv.org/abs/2610.20124v1)**
-45. **[RepForcing: Representation-Space Initialization for Autoregressive Video Distillation](http://arxiv.org/abs/2610.20111v1)**
-46. **[RTAformer: Relation-Transition-Aware Transformer for Video Scene Graph Generation](http://arxiv.org/abs/2610.20091v1)**
-47. **[When Pairwise Preferences Cycle: A Reliability-Anchored Preference Walk for Video GRPO](http://arxiv.org/abs/2610.20089v1)**
-48. **[VisualWorldBench: A Fine-Grained Multi-Task Benchmark for Evaluating Visual World Knowledge in MLLMs](http://arxiv.org/abs/2610.20083v1)**
-49. **[Feasibility of a Patient-Specific Digital Twin for Ventriculoperitoneal Shunt Trajectory Planning](http://arxiv.org/abs/2610.20074v1)**
-50. **[GDBA-Net: A Gated Dual-Branch Adaptation of SAM2 for Robust Cross-Domain Nuclei Segmentation](http://arxiv.org/abs/2610.20073v1)**
-51. **[GeoCloak: An Agentic Framework for Semantics-Preserving Geolocation Privacy via Peripheral Clue Manipulation](http://arxiv.org/abs/2610.20055v1)**
-52. **[Why 3D Reconstruction Breaks Down on Under-Ice AUV Video, and How to Predict It](http://arxiv.org/abs/2610.19993v1)**
-53. **[Instruction Mining From Images: Constructing a Synthetic Dataset for Multimodal Learning ILSP DCVLR Competition Submission](http://arxiv.org/abs/2610.19932v1)**
-54. **[SAM3RL: Memory Control via Reinforcement Learning for Visual Object Tracking](http://arxiv.org/abs/2610.19931v1)**
-55. **[Quantifying Annotation Agreement in Object Detection with Optimal Transport](http://arxiv.org/abs/2610.19912v1)**
-56. **[CARD: Closing the Teacher-Student Loop for Adversarial Robustness Distillation](http://arxiv.org/abs/2610.19911v1)**
-57. **[Multimodal Medical Image Parsing with Task-Specific Low-Rank Adapters](http://arxiv.org/abs/2610.19901v1)**
-58. **[On the Limits of Representation-Based Test-Time Adaptation for Multimodal LLMs](http://arxiv.org/abs/2610.19892v1)**
-59. **[BluePixel: Toward Native 4K Agentic Image Editing](http://arxiv.org/abs/2610.19882v1)**
-60. **[CoDy: Codec Dynamics as Complementary Priors for Unsupervised Temporal Action Localization](http://arxiv.org/abs/2610.19880v1)**
-61. **[OmniPoser: Flexible Human Motion Recovery in the Wild with Masked Flow Matching](http://arxiv.org/abs/2610.19857v1)**
-62. **[DeltaStreamer: Towards Human-Like Agentic Streaming Video Understanding](http://arxiv.org/abs/2610.19849v1)**
-63. **[VisibilitySplat: Ray-Traced Occlusion for Relighting with 3D Gaussian Splatting](http://arxiv.org/abs/2610.19847v1)**
-64. **[DarKnight: Retrieval-Guided Agentic Framework for Breaking Dark Web CAPTCHA Gates](http://arxiv.org/abs/2610.19830v1)**
-65. **[What Matters for World Modeling in Vision-Language-Action Models?](http://arxiv.org/abs/2610.19825v1)**
-66. **[PhyMetric: Diagnosing Physical Plausibility in Text-to-Video Generation via Scene-Level QA](http://arxiv.org/abs/2610.19823v1)**
-67. **[Improving Category-Aware Active Domain Adaptation via Uncertainty-Guided Region Coverage](http://arxiv.org/abs/2610.19803v1)**
-68. **[StateCraft: Augmenting Video World Models with Abstract-State Reasoning](http://arxiv.org/abs/2610.19795v1)**
-69. **[LiFi: LiDAR Generation from Multi-View Images via Geometric and Semantic Collaborative Guidance](http://arxiv.org/abs/2610.19786v1)**
-70. **[FPV-CRASH: A Dataset for Offline Crash Moment Localization in Drone First-Person-View Videos](http://arxiv.org/abs/2610.19785v1)**
-71. **[Computational compressive imaging reconstruction with a simulated-annealing-based Ising solver](http://arxiv.org/abs/2610.19778v1)**
-72. **[Q-MAGIC: Quad-only Mesh Autoregressive Generation via Singularity-Aware Circular Relative Offset Tokenization](http://arxiv.org/abs/2610.19777v1)**
-73. **[Physics-Shaped, Not Physical: Auditing Physics-Guided Underwater Image Restoration](http://arxiv.org/abs/2610.19763v1)**
-74. **[Discriminative Score Function: Turning Pretrained Models into Functional Generative Priors](http://arxiv.org/abs/2610.19743v1)**
-75. **[HyperLoop: Hyperspectral-Assisted Loop Closure Detection in 3D-SLAM for Planetary Exploration](http://arxiv.org/abs/2610.19742v1)**
-76. **[Object Pose from 2-D to 3-D Point and Line Correspondences](http://arxiv.org/abs/2610.19734v1)**
-77. **[A Diagnostic Study of World-Space Human Recovery Under High Camera Dynamics](http://arxiv.org/abs/2610.19729v1)**
-78. **[Mitigating Video Hallucinations via Attention-Guided Representation Perturbation](http://arxiv.org/abs/2610.19728v1)**
-79. **[Generative World Simulation with DAO and JING](http://arxiv.org/abs/2610.19726v1)**
-80. **[Recognizing Dialogue Ambiguity via Candidate Set Visual Grounding](http://arxiv.org/abs/2610.19723v1)**
-81. **[No Way To Steal My Face: Proactive Defense Against Identity-Preserving Personalized Generation](http://arxiv.org/abs/2610.19717v1)**
-82. **[SceneAE: Scene Generation and Reconstruction in Queryable 3D-Anchored Latent Space](http://arxiv.org/abs/2610.19708v1)**
-83. **[Enhancing Latent World Models with Associative Memory](http://arxiv.org/abs/2610.19683v1)**
-84. **[MicroSDF: Microfacet-Driven Hybrid Neural SDFs for Mixed-Reflectance Surface Reconstruction](http://arxiv.org/abs/2610.19681v1)**
-85. **[Remember, Revisit, Revise: Scaffold Memory for Long-Horizon 3D Geometry](http://arxiv.org/abs/2610.19674v1)**
-86. **[SPECTRA-VLA: Base-Fine Hyperspectral Token Transfer at Frozen Vision-Language-Action Interfaces](http://arxiv.org/abs/2610.19651v1)**
-87. **[Mapping Arctic Polynyas from Sea Ice Concentration Data Using Hierarchical Partitioning and Differentiated Region Growing: Sensitivity to Threshold and Product Choices](http://arxiv.org/abs/2610.19647v1)**
-88. **[Self-Conditioning Enables Deep Sequential Reasoning in Flow Matching](http://arxiv.org/abs/2610.19628v1)**
-89. **[Adaptive Observation Control for Active Visual Recognition](http://arxiv.org/abs/2610.19624v1)**
-90. **[MagicGarment: Benchmarking Single-Image Standalone 3D Garment Reconstruction](http://arxiv.org/abs/2610.19623v1)**
-91. **[What Breaks in Multi-Image Schema Application? Factorial Oracle Interventions Reveal an Instance-Information Bottleneck](http://arxiv.org/abs/2610.19611v1)**
-92. **[CORE: Contrast-and-Reflect for Self-Supervised Prompt Optimization in Anomaly Synthesis](http://arxiv.org/abs/2610.19610v1)**
-93. **[LED-BENCH: A Benchmark for Large-format Engineering Drawing Understanding](http://arxiv.org/abs/2610.19571v1)**
-94. **[Frame Evidence:A Benchmark for Reference Frames and Visual Evidence in Multi-Image Spatial Reasoning](http://arxiv.org/abs/2610.19564v1)**
-95. **[SaTPO: Text-to-Image Safety Alignment via Transition Preference Optimization](http://arxiv.org/abs/2610.19563v1)**
-96. **[Learning Visual Speech Representations via Cross-Modal Distillation and Joint Face-Lip Modeling](http://arxiv.org/abs/2610.19559v1)**
-97. **[TextVerifier: Seeing Beyond Recognition to Verify Chinese Text Rendering](http://arxiv.org/abs/2610.19551v1)**
-98. **[Cross-Scenario Industrial Defect Detection via Domain-Robust Training and Metric-Aligned Selection](http://arxiv.org/abs/2610.19540v1)**
-99. **[RDCompGS: Rate-Distortion Optimization for Compression of 3D Gaussian Splatting with Image Codecs](http://arxiv.org/abs/2610.19538v1)**
-100. **[Reducing the Gap Between Spatial and Space-Filling Curve Neighbors in 3D Point Cloud Segmentation](http://arxiv.org/abs/2610.19530v1)**
-101. **[HyrCap: Hybrid Rank-Calibration of Action Proposals for Temporal Event Understanding](http://arxiv.org/abs/2610.19526v1)**
-102. **[Spectral World Renderer: Unified 3D Hyperspectral Unmixing](http://arxiv.org/abs/2610.19520v1)**
-103. **[Holi-Spatial 360: Generative Reconstruction from Sparse Panoramas for Spatial Rendering and Intelligence](http://arxiv.org/abs/2610.19502v1)**
-104. **[Robota-Embed: Unified VLA Embeddings for Robot In-Context Learning and Evolution](http://arxiv.org/abs/2610.19495v1)**
-105. **[Robust Real-Time Monocular Human Pose Estimation with Insole-Based Sensor Fusion](http://arxiv.org/abs/2610.19494v1)**
-106. **[ActICL: Post-Training for Agentic Multimodal In-Context Learning](http://arxiv.org/abs/2610.19475v1)**
-107. **[DeBoneDiT: Depth-Driven Conditional Bridge Diffusion Transformers for Bone Suppression in Chest X-Ray Images](http://arxiv.org/abs/2610.19466v1)**
-108. **[Learning to Select Features with Manifold Deep Unfolding PCA](http://arxiv.org/abs/2610.19436v1)**
-109. **[VideoHarness-SRSI: Structured Recursive Self-Improvement for Video Understanding Harness](http://arxiv.org/abs/2610.19424v1)**
-110. **[From Failures to Learnable Worlds: Policy-Conditioned Environment Generation for Navigation Agents](http://arxiv.org/abs/2610.19420v1)**
-111. **[WinARDet: Compressed Window Auto-Regression for Long-Horizon Vision-Language Grounding](http://arxiv.org/abs/2610.19419v1)**
-112. **[Vision-Language Models Integrate Conflicting Evidence Like Biased Bayesian Observers](http://arxiv.org/abs/2610.19407v1)**
-113. **[Train to Stitch: Topology-Preserving Regularization for Interoperable Representations](http://arxiv.org/abs/2610.19401v1)**
-114. **[Robust Explanatory Analysis for Structured Optimization Networks (REASON) in Learning](http://arxiv.org/abs/2610.19378v1)**
-115. **[The Impact of Detector Architecture, Model Scale, and Scene Density on Multi-Pedestrian Tracking](http://arxiv.org/abs/2610.19369v1)**
-116. **[VLX-Go: Robust Embodied Tracking through Multi-Stage Learning and On-Policy Refinement](http://arxiv.org/abs/2610.19361v1)**
-117. **[Integrated Novelty Detection Systems: From Sensor Networks to Multi-Novelty Computer Vision](http://arxiv.org/abs/2610.19347v1)**
-118. **[MMKG-R1: Constructing Multimodal Knowledge Graphs via Reinforcement Learning](http://arxiv.org/abs/2610.19341v1)**
-119. **[NavAble: A Large-Scale Dataset and Synthetic Data Generation Pipeline for Blind Navigation](http://arxiv.org/abs/2610.19330v1)**
-120. **[SonoWorld: Towards Interactive Pose-Controllable Ultrasound World Models](http://arxiv.org/abs/2610.19327v1)**
+1. **[Gen4P: Video Generators are 4D Perceivers](http://arxiv.org/abs/2610.22371v1)**
+2. **[Which Tokens to Merge? Diffusion Dynamics for Efficient Image Generation](http://arxiv.org/abs/2610.22370v1)**
+3. **[SoftCache: Adaptive Step Size Caching for Diffusion Transformers](http://arxiv.org/abs/2610.22369v1)**
+4. **[T2-z: Test-Time Optimization of Environment Latents for Robotic World Models](http://arxiv.org/abs/2610.22364v1)**
+5. **[Perceive, Predict, and Plan: a Unified World Action Model for Egocentric Dexterous Manipulation](http://arxiv.org/abs/2610.22363v1)**
+6. **[Grounding Generative Verification in 3D Content](http://arxiv.org/abs/2610.22360v1)**
+7. **[DK-VLM: Geometry as Position for Spatial Reasoning in Vision-Language Models](http://arxiv.org/abs/2610.22356v1)**
+8. **[SUPRA-TEX: 3D Generation with Super-Aligned Texture](http://arxiv.org/abs/2610.22352v1)**
+9. **[Speculative Forcing for Efficient Autoregressive Video Generation](http://arxiv.org/abs/2610.22347v1)**
+10. **[GeoState: Learning View-Decoupled Geometry States for 3D World Modeling](http://arxiv.org/abs/2610.22343v1)**
+11. **[3DCodeVerse: Exploring 3D Worlds as Code](http://arxiv.org/abs/2610.22341v1)**
+12. **[ACEdit: Stable Multi-Turn Image Editing via Asymmetric Conditioning](http://arxiv.org/abs/2610.22328v1)**
+13. **[Dense4D: Pixel-Level 4D Human Correspondence](http://arxiv.org/abs/2610.22325v1)**
+14. **[AVC-Reward: Event-Centric Audio-Video Consistency Evaluation](http://arxiv.org/abs/2610.22321v1)**
+15. **[Not Just a Subject: Capturing Adaptive Scene-Specific Variance for Visual Storytelling](http://arxiv.org/abs/2610.22320v1)**
+16. **[Velox: Spatial Memory Makes World Models Efficient](http://arxiv.org/abs/2610.22311v1)**
+17. **[ARC-SORT: Adaptive, Robust, Compensated Multi-Object Tracking with Interacting Multiple Models](http://arxiv.org/abs/2610.22306v1)**
+18. **[Grounded Human-Attributed Description and Activity Recognition in Videos](http://arxiv.org/abs/2610.22295v1)**
+19. **[Routing Policy Optimization for Online Diffusion Reinforcement Learning](http://arxiv.org/abs/2610.22282v1)**
+20. **[MJev-Spatial: System One Spatial Intelligence via Native Attention Matching](http://arxiv.org/abs/2610.22276v1)**
+21. **[Unsupervised Clustering of Public Transport Vehicles Using Deep Morphological Features and Color Histograms](http://arxiv.org/abs/2610.22270v1)**
+22. **[Beyond Pairwise Repulsion: Collective Diversity via Determinant Maximization in Diffusion Sampling](http://arxiv.org/abs/2610.22267v1)**
+23. **[SCOPE: Semantic Bounded Credit Optimization for Prompt Engineering in Text-to-image Generation](http://arxiv.org/abs/2610.22264v1)**
+24. **[FPG-Seg: Annotation-free Retinal Vessel Topology Segmentation](http://arxiv.org/abs/2610.22259v1)**
+25. **[Denoising Textures is a Different Ballgame Altogether!](http://arxiv.org/abs/2610.22258v1)**
+26. **[MMSearch-OPD: Easy Made Hard, Hard Made Learnable for Long-Horizon Multimodal Search Agents](http://arxiv.org/abs/2610.22240v1)**
+27. **[OS-Helix: Unifying GUI Interaction and Code Execution in Native Computer-Using Agents](http://arxiv.org/abs/2610.22234v1)**
+28. **[WaveLLM: Wavelet-Domain LLM Entropy Modeling for Lossless Image Compression](http://arxiv.org/abs/2610.22232v1)**
+29. **[How Much Physics Can Vision Learn from Audio? Probing and Distilling Damping Structure](http://arxiv.org/abs/2610.22221v1)**
+30. **[Skill-Decoupled On-Policy Expert Distillation for Unified Vision-Language Models](http://arxiv.org/abs/2610.22217v1)**
+31. **[FutureLift: Lifting Trajectory Proposals into Bidirectional Future Graphs for Motion Forecasting](http://arxiv.org/abs/2610.22215v1)**
+32. **[TRACE: Topology-Aware Reconnection via Prediction-Adaptive Connectivity Enforcement for Thin-Structure Segmentation](http://arxiv.org/abs/2610.22210v1)**
+33. **[OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use](http://arxiv.org/abs/2610.22200v1)**
+34. **[EVA-Cap: Optimizing Audiovisual Video Captioning via Event-Centric Alignment](http://arxiv.org/abs/2610.22186v1)**
+35. **[LAMP: Layerwise Adaptive Mixing of Predictors for Training-Free Few-Shot Vision-Language Adaptation](http://arxiv.org/abs/2610.22182v1)**
+36. **[REKI: Registering Knowledge in VLAs](http://arxiv.org/abs/2610.22178v1)**
+37. **[Motion- and Gravity-Aware Feedforward 3D Reconstruction](http://arxiv.org/abs/2610.22177v1)**
+38. **[FALCON: FPGA-Accelerated Latency-Certifiable Occupancy Networks for Camera-Based Autonomous Driving](http://arxiv.org/abs/2610.22143v1)**
+39. **[SCCL-DT: Semantic-Conflict-Aware Contrastive Learning with Dual-Rule Teacher Distillation for Zero-Shot Chest X-Ray Diagnosis](http://arxiv.org/abs/2610.22094v1)**
+40. **[Beyond the Dominant Label: Recovering Coexisting Lesion Evidence with Multiple Instance Learning](http://arxiv.org/abs/2610.22091v1)**
+41. **[Pathology foundation models for training-free case retrieval in salivary gland tumors](http://arxiv.org/abs/2610.22087v1)**
+42. **[Retrofitting Recurrent Vision-Language Models from Pretrained Backbones](http://arxiv.org/abs/2610.22075v1)**
+43. **[Memory as Weights: Internalizing Long-Term History for Streaming Videos](http://arxiv.org/abs/2610.22070v1)**
+44. **[FeaTok: Feature-Loss Tokenization for Image Generation](http://arxiv.org/abs/2610.22060v1)**
+45. **[When Models Misread Ink: Auditing VLMs for Arabic Calligraphy Recognition](http://arxiv.org/abs/2610.22018v1)**
+46. **[Visual Sanad: Auditing Vision-Language Models for False Acceptance of Qur'anic Citations](http://arxiv.org/abs/2610.22009v1)**
+47. **[Data-Efficient ConvNeXt Pretraining for High-Resolution Sentinel-1 GRD SAR Representation Learning](http://arxiv.org/abs/2610.21993v1)**
+48. **[VesperMUSE: Multi-Modal Fusion Vision Transformer for Image Semantic Segmentation Under Diverse Light Conditions](http://arxiv.org/abs/2610.21990v1)**
+49. **[GRID-Planner: Graph-Structured Relational Reward Shaping for Diffusion Planning](http://arxiv.org/abs/2610.21984v1)**
+50. **[P2TPO: Structure-Aligned Page-to-Token Credit Assignment for Full-Page Document Parsing](http://arxiv.org/abs/2610.21979v1)**
+51. **[Following Delegation Traces to Study Human Oversight in Interaction with Multimodal AI](http://arxiv.org/abs/2610.21948v1)**
+52. **[Flow-CLIP: Image-Conditioned Residual Scoring for CompositionalImage-Text Matching](http://arxiv.org/abs/2610.21937v1)**
+53. **[BridgeAfford: Bridging Query-Target Gap for Generalizable 3D Affordance Grounding](http://arxiv.org/abs/2610.21918v1)**
+54. **[Seeing is Believing: Benchmarking and Mitigating the Interference of Language Priors on Visual Perception in MLLMs](http://arxiv.org/abs/2610.21902v1)**
+55. **[SurgStreamer: proactive, request-driven monitoring of surgical video streams with structured state and a reusable reasoning layer](http://arxiv.org/abs/2610.21895v1)**
+56. **[Anvil: Scaling Embodied Spatial Intelligence through Knowledge Recirculation](http://arxiv.org/abs/2610.21882v1)**
+57. **[From Sketch to Scene: Relightable Garment Reconstruction from Marked Sketches](http://arxiv.org/abs/2610.21865v1)**
+58. **[Seeing Both the Forest and the Trees: Reusing Holistic 3D Priors for Part-Decomposed Generation](http://arxiv.org/abs/2610.21850v1)**
+59. **[Temporal Periodic Image Registration with Implicit Neural Representations](http://arxiv.org/abs/2610.21845v1)**
+60. **[From Adults to Children: Benchmarking Foundation Models for Chest X-Ray Classification under Domain Shift](http://arxiv.org/abs/2610.21809v1)**
+61. **[Teaching DINOv3 About Partial 3D Geometry: A Self-Supervised Geometry-Aware Approach](http://arxiv.org/abs/2610.21802v1)**
+62. **[Single-stage joint diffusion of sky images and clear-sky index for ultra-short-term irradiance forecasting: what the frame-to-irradiance stage discards](http://arxiv.org/abs/2610.21795v1)**
+63. **[MedPAO-VL: Interpretable and Protocol-Compliant Agent for Structured Radiology Report Generation](http://arxiv.org/abs/2610.21794v1)**
+64. **[NICE Toolbox: Nonverbal Interpersonal Communication Exploration Toolbox](http://arxiv.org/abs/2610.21786v1)**
+65. **[Learning to Think and Explore in 3D World](http://arxiv.org/abs/2610.21783v1)**
+66. **[DINO-FIL: Multi-Layer Transformer Fusion for Generative Inpainting Forgery Localization](http://arxiv.org/abs/2610.21780v1)**
+67. **[FuseAdapt: Parameter-Efficient Multimodal Fusion for Semantic Segmentation with Missing Modalities](http://arxiv.org/abs/2610.21779v1)**
+68. **[Beyond Generation: Using Multimodal LLMs as Detectors of LLM-Generated Deepfake Facial Images](http://arxiv.org/abs/2610.21760v1)**
+69. **[Beyond Source Prompts: Towards Visually Grounded AI-Generated Video Quality Assessment](http://arxiv.org/abs/2610.21758v1)**
+70. **[The Dormant Spiking Neuron: A State-Driven Mechanism for Efficient Spiking Neural Networks](http://arxiv.org/abs/2610.21748v1)**
+71. **[International Multi-Centre Validation of Unsupervised Domain Adaptation for Precise Discrimination between Normal and Abnormal Retinal Development](http://arxiv.org/abs/2610.21719v1)**
+72. **[Mixture of Multi-Sequence Feature Difference for Contrast-Enhanced MRI Synthesis](http://arxiv.org/abs/2610.21703v1)**
+73. **[Bridging the Markerless Tracking Validation Gap: Intraoperative X-ray Workflow Integration](http://arxiv.org/abs/2610.21696v1)**
+74. **[Edit4D: Editable 4D Scene Generation with Textual Control](http://arxiv.org/abs/2610.21668v1)**
+75. **[FusionAudit: Pathway-Conditioned Robustness Auditing for Native Multimodal Models](http://arxiv.org/abs/2610.21667v1)**
+76. **[Digital Typhoon Dataset V3: Benchmarking for Multi-spectral Extension and Analyzing Systematic Bias in Intensity Regression](http://arxiv.org/abs/2610.21654v1)**
+77. **[SCMerge: Spatial-Consistency-Aware Token Pair Merging for Efficient Semantic Segmentation](http://arxiv.org/abs/2610.21642v1)**
+78. **[DIAL: Dynamic and Informed Adjustment of the Native Stochastic Law for Reliable Weather Ensembles](http://arxiv.org/abs/2610.21639v1)**
+79. **[Spurious Attention Heads in Vision Transformers: Mechanistic Identification of Annotation-Driven Bias in Medical Chest X-Ray Analysis](http://arxiv.org/abs/2610.21638v1)**
+80. **[Anchor3DGS: Feed-Forward 3D Gaussian Splatting with Compact Anchor-Based Representation](http://arxiv.org/abs/2610.21634v1)**
+81. **[Training-Free Target-Aware Refinement of 3D Gaussian Language Map](http://arxiv.org/abs/2610.21619v1)**
+82. **[A Decision-Aware Evaluation Protocol for Uncertainty in Medical Image Segmentation](http://arxiv.org/abs/2610.21616v1)**
+83. **[Hear, Localize, and Reason: Spatially Aware Scene Understanding for Audio-Visual LLMs](http://arxiv.org/abs/2610.21588v1)**
+84. **[MYOPIA: Understanding the Limits of Tree-Based Reasoning in Vision-Language Models](http://arxiv.org/abs/2610.21573v1)**
+85. **[Decoupled Safety Control: A Safety-Control Algorithm for Training-Free Safety Guidance](http://arxiv.org/abs/2610.21569v1)**
+86. **[Rethinking Classifier-Free Guidance for TI2I Flow Matching](http://arxiv.org/abs/2610.21550v1)**
+87. **[FilterFusion: Prior-Guided Adaptive Filter Fusion for Efficient Video Denoising](http://arxiv.org/abs/2610.21505v1)**
+88. **[GRASE: Geometry-native Real-to-sim Agentic Scene Modeling from Video](http://arxiv.org/abs/2610.21498v1)**
+89. **[AI-Driven Disaster Response and Displacement Monitoring](http://arxiv.org/abs/2610.21482v1)**
+90. **[Cross-Prompt Inference Mitigates Rare-Class Suppression in Imbalanced VLM Finetuning](http://arxiv.org/abs/2610.21470v1)**
+91. **[Can Visual Generation Expand What Unified Multimodal Models Know?](http://arxiv.org/abs/2610.21459v1)**
+92. **[CarryOn: A Dual-Loop Harness for Personalized and Reliable Robot Assistance](http://arxiv.org/abs/2610.21453v1)**
+93. **[Full-Duplex Interaction with Speech, Expressions and Gestures](http://arxiv.org/abs/2610.21452v1)**
+94. **[PET Quantification-Preserving Registration for Longitudinal Whole-Body PSMA PET/CT](http://arxiv.org/abs/2610.21451v1)**
+95. **[X-Fly: Learning to Reach and Stop in Full-Chunk Aerial Vision-Language Navigation](http://arxiv.org/abs/2610.21450v1)**
+96. **[RLDF: A Region-Level Deepfake Dataset and Benchmark for Partial-Face Manipulation Detection](http://arxiv.org/abs/2610.21438v1)**
+97. **[ManiFusion: Unlocking the High-Throughput Generation via Superposition in Manifold Space](http://arxiv.org/abs/2610.21433v1)**
+98. **[Where, How, and When: Query-Guided Grounding for Video Understanding](http://arxiv.org/abs/2610.21422v1)**
+99. **[CLAD: Keypoint Matching Using Global Line Correspondences](http://arxiv.org/abs/2610.21409v1)**
+100. **[Perception or Reasoning? Diagnosing and Tackling Reinforcement Learning Bottlenecks in VLMs](http://arxiv.org/abs/2610.21380v1)**
+101. **[SATOR: Backpropagation-Free 3D Test-Time Adaptation via Sample-Adaptive Token Routing](http://arxiv.org/abs/2610.21367v1)**
+102. **[CoDeFont: One-Shot Font Generation via Multi-Scale Factor-Specific Representation Learning](http://arxiv.org/abs/2610.21364v1)**
+103. **[L2GSSL: Label-Efficient Local-to-Global Self-Supervised Learning for Volumetric Healthcare Data](http://arxiv.org/abs/2610.21356v1)**
+104. **[When Should a Low-Light Pipeline Generate? Auditable Risk Control for Selective Generative Enhancement](http://arxiv.org/abs/2610.21335v1)**
+105. **[Semantic Latent Alignment for Flow Matching with Invertible Bi-Lipschitz Adapters](http://arxiv.org/abs/2610.21332v1)**
+106. **[DocPilot: Interactive Agent Orchestration and Training for Long Visual Document Understanding](http://arxiv.org/abs/2610.21327v1)**
+107. **[CertEx: Exact Visual Retrieval at Scale by Certified Exclusion](http://arxiv.org/abs/2610.21325v1)**
+108. **[AdaLoop: Thinking with the Vision Encoder](http://arxiv.org/abs/2610.21323v1)**
+109. **[CoViG: Coarsened Vision GNN for Image Classification](http://arxiv.org/abs/2610.21321v1)**
+110. **[ZoomCap: Evidence-Routed Visual Zooming for Recoverable Visual Information Transfer](http://arxiv.org/abs/2610.21320v1)**
+111. **[Loud and Clear: Making Visual Evidence Count in Multimodal Document RAG](http://arxiv.org/abs/2610.21318v1)**
+112. **[VLA-$Δ$: Learning Physical State Transition for Vision-Language-Action Models](http://arxiv.org/abs/2610.21306v1)**
+113. **[Dusting the Phantom: Gaussian Allocation for Fading Dynamic Content](http://arxiv.org/abs/2610.21302v1)**
+114. **[GeoPano: Towards Geometrically Accurate 3D Reconstruction from a Single Panorama](http://arxiv.org/abs/2610.21297v1)**
+115. **[ReState: Noise-Level-Aware State Correction for Training-Free Object Removal in Few-Step Diffusion Models](http://arxiv.org/abs/2610.21287v1)**
+116. **[Mallea: Building, Steering, and Memorizing Worlds with Coding Agent](http://arxiv.org/abs/2610.21283v1)**
+117. **[LICOA: Learning Instruction-Conditioned Optical Actions for Mobile Spatial Augmented Reality](http://arxiv.org/abs/2610.21282v1)**
+118. **[TRACER: A Multimodal Harness for Patient Care in Hospitals](http://arxiv.org/abs/2610.21266v1)**
+119. **[Do VLAs Really Follow Instructions? Diagnosing How-Level Instruction Following in Vision-Language-Action Models](http://arxiv.org/abs/2610.21251v1)**
+120. **[FocusOPD: Structure-Guided On-Policy Distillation for Diffusion Models](http://arxiv.org/abs/2610.21250v1)**
+121. **[A large-scale climate-aware satellite image dataset for domain adaptive land-cover semantic segmentation](http://arxiv.org/abs/2610.21238v1)**
+122. **[DLOSAC: Joint Spatial-Geometric Image Estimation via Delaunay-Guided Local Optimization RANSAC](http://arxiv.org/abs/2610.21215v1)**
+123. **[SpaceCache: Intermediate Feature Reuse for Efficient Semantic Segmentation on Point Cloud Streams](http://arxiv.org/abs/2610.21207v1)**
+124. **[UltraDiff: Transferring High-Fidelity Priors to Compressed Latent Spaces for High-Resolution Image Generation](http://arxiv.org/abs/2610.21202v1)**
+125. **[ControlFlow3D: Distilling Multi-View Knowledge into Latent Flow Matching for Point Cloud Upsampling](http://arxiv.org/abs/2610.21190v1)**
+126. **[Monotone Piecewise-Linear Harmonization of Multitemporal Multispectral Surface Reflectance With Unsupervised Deep Multiview Pseudoinvariant Features Learning](http://arxiv.org/abs/2610.21183v1)**
+127. **[VisualTrust: Video Reasoning under On-Screen Claim Framing](http://arxiv.org/abs/2610.21159v1)**
+128. **[Trajectory Prediction Method for person under WSN with Hierarchical Envelope Adversarial Domain Adaptation](http://arxiv.org/abs/2610.21132v1)**
+129. **[Sparse Attention for Video Generation Acceleration via Growing Sparsity and Reduced Search](http://arxiv.org/abs/2610.21129v1)**
+130. **[ResStreamGS: Residual-Sensitive Dual-Stream Gaussian Splatting for Mobile Volumetric Video Streaming](http://arxiv.org/abs/2610.21121v1)**
+131. **[Spectral-Spatial Interpretation](http://arxiv.org/abs/2610.21114v1)**
+132. **[Can World and Action Modeling Benefit Each Other under Unified Causal Training?](http://arxiv.org/abs/2610.21095v1)**
+133. **[RoboCloth: A Large-Scale Real Cloth Material Dataset for Neural Reflectance Reconstruction](http://arxiv.org/abs/2610.21090v1)**
+134. **[SIEVE: Overcoming Topological Obstruction in Equivariant Self-Supervised Learning](http://arxiv.org/abs/2610.21087v1)**
+135. **[RoPE-Flow: Monocular Vision-based Robot Pose Estimation via 2D Graph-Conditioned 3D Flow Matching](http://arxiv.org/abs/2610.21086v1)**
 
-cs.CV共找到 120 篇论文。
+cs.CV共找到 135 篇论文。
 
 ---
 ### 人工智能 (cs.AI)
-**最近发布日期**: 2026-10-14
+**最近发布日期**: 2026-10-15
 
-1. **[Modeling and Understanding Neural Weights of Humanoid Policies with Diffusion](http://arxiv.org/abs/2610.20606v1)**
-2. **[Hierarchical Residual Policy Learning for Real-World Mobile Manipulation with Sparse Human Guidance](http://arxiv.org/abs/2610.20607v1)**
-3. **[Co-Evolving Acting and Forecasting for Language Agents](http://arxiv.org/abs/2610.20597v1)**
-4. **[Your Transformer Is Secretly Elastic](http://arxiv.org/abs/2610.20588v1)**
-5. **[Price of Anarchy of First-Price Auctions in Agentic Markets](http://arxiv.org/abs/2610.20587v1)**
-6. **[Continuum Attention](http://arxiv.org/abs/2610.20586v1)**
-7. **[Player-1: Learning to Play from Synthetic Experience](http://arxiv.org/abs/2610.20584v1)**
-8. **[One Task, Many Interfaces: Simple Cross-Interface Consistency Training Improves LLM Agent Robustness](http://arxiv.org/abs/2610.20576v1)**
-9. **[Beyond LLM Judge: Mechanical Verification for Agentic Autoformalization](http://arxiv.org/abs/2610.20573v1)**
-10. **[Recovering Reliable Supervision via Critique-Guided On-Policy Distillation](http://arxiv.org/abs/2610.20572v1)**
-11. **[Scaling Discovery Requires Forgetting](http://arxiv.org/abs/2610.20563v1)**
-12. **[PhySGA: A Physics-Space Grounded Agentic Framework for Generalizable and Interactive 3D Composition](http://arxiv.org/abs/2610.20560v1)**
-13. **[PerSo: Investigating Facets of LLMs' Social Intelligence in Real-World Persuasion Scenarios](http://arxiv.org/abs/2610.20548v1)**
-14. **[Detection of Potato Plant Leaf Diseases using Convolutional Neural Networks](http://arxiv.org/abs/2610.20544v1)**
-15. **[PrismaCoder: Pushing the Boundaries of Open Multimodal Code Intelligence through Decomposed Rubric Synthesis](http://arxiv.org/abs/2610.20538v1)**
-16. **[ActiveEvidence: Decision-Focused Evidence Graphs with Verifiable Acquisition Gaps](http://arxiv.org/abs/2610.20532v1)**
-17. **[The Wealth of Agents: Scaling Agentic AI Across Developers](http://arxiv.org/abs/2610.20518v1)**
-18. **[VASPO: Self-Distillation with Privileged Value Estimation](http://arxiv.org/abs/2610.20516v1)**
-19. **[VascuSR: Iterative Anatomy-Aware Diffusion for CT Super-Resolution](http://arxiv.org/abs/2610.20509v1)**
-20. **[Hindsight-Privileged RLVR: Single-Rollout Token Credit Without Group Sampling](http://arxiv.org/abs/2610.20497v1)**
-21. **[Quantifying privacy risks in foundation model representations of brain MRI](http://arxiv.org/abs/2610.20494v1)**
-22. **[SafeAdapt-Poker: Counterfactual Risk Calibration for Budgeted Adaptation under Opponent Shift](http://arxiv.org/abs/2610.20473v1)**
-23. **[Selective Growing Q-Networks (SGQN): An Analysis of Adaptive Action Grids in Decoupled Q-Learning](http://arxiv.org/abs/2610.20463v1)**
-24. **[Equal CER, Unequal Damage: Severity-Weighted Character Error Rate for OCR](http://arxiv.org/abs/2610.20461v1)**
-25. **[From Training to Escalation: Forensic Analysis and Local Recreation of RL/RLHF-Induced Privilege Escalation in AI Agents (CVE-2026-65616)](http://arxiv.org/abs/2610.20437v1)**
-26. **[SwarmRSI: Recursive Self-Improvement through Evolving Scientific Agent Swarm](http://arxiv.org/abs/2610.20431v1)**
-27. **[Analyzing performance of Retrieval Augmented Generation models for Question Answering Tasks](http://arxiv.org/abs/2610.20419v1)**
-28. **[OrionMoE-v1.0: A Mixture-of-Experts Foundation Model for Tabular In-Context Learning](http://arxiv.org/abs/2610.20418v1)**
-29. **[From Unreliable to Usable: Decomposing Failure Modes and Confidence Signals in LLM Entity Extraction - Evidence from Cyber Threat Intelligence](http://arxiv.org/abs/2610.20417v1)**
-30. **[One Size Does Not Fit All: Curvature-Aware Adaptive Perturbation for SAM](http://arxiv.org/abs/2610.20415v1)**
-31. **[When Does Momentum Help in Reinforcement Learning with Verifiable Rewards?](http://arxiv.org/abs/2610.20413v1)**
-32. **[Cortex: Consolidating Context into Parametric Memory](http://arxiv.org/abs/2610.20399v1)**
-33. **[From Relevance to Validity: Zero-Shot Tool Selection via Functional and Contextual Validation](http://arxiv.org/abs/2610.20388v1)**
-34. **[Human Demonstrations as Post-Training Data for Any Robot Body: Retargeting the Object, Not the Hand](http://arxiv.org/abs/2610.20351v1)**
-35. **[Lifted State Policy Optimization: Internalizing Self-Correction through Transition Geometry](http://arxiv.org/abs/2610.20350v1)**
-36. **[Non-asymptotic Convergence of Average-reward Q-learning with Options](http://arxiv.org/abs/2610.20347v1)**
-37. **[Doc2Harness: Benchmarking LLMs on Long-Horizon Harness Engineering of Coding Agents](http://arxiv.org/abs/2610.20344v1)**
-38. **[Read, Parse, Describe: Unified Document Parsing with Visual Element Description Generation](http://arxiv.org/abs/2610.20335v1)**
-39. **[TreeFlex: Agents Navigating Their Own Search Trees](http://arxiv.org/abs/2610.20334v1)**
-40. **[Argument Graph Uncertainty: Quantifying Uncertainty from the Logical Structure of Reasoning Chains](http://arxiv.org/abs/2610.20328v1)**
-41. **[Beyond Static Cues: Unified Dynamic Detection of MLLM Backdoors via Dual-Flow Trajectory Analysis](http://arxiv.org/abs/2610.20319v1)**
-42. **[Reflect After Failure: Brain-Inspired Self-Evolving Agents for Embodied Spatial Intelligence](http://arxiv.org/abs/2610.20312v1)**
-43. **[CASI: Credit Assignment via Set Intervention for Agentic Retrieval](http://arxiv.org/abs/2610.20293v1)**
-44. **[CSWBench: Evaluating Context-Sensitive Code-Switching in Creative Writing](http://arxiv.org/abs/2610.20272v1)**
-45. **[FUSE: Fairness-aware Update Screening against Byzantine Exploitation in $q$-Fair Federated Learning](http://arxiv.org/abs/2610.20264v1)**
-46. **[Harness Policy Distillation: Aligning Agent Policies with Runtime Semantics](http://arxiv.org/abs/2610.20261v1)**
-47. **[Long-Horizon RL Needs Muon](http://arxiv.org/abs/2610.20256v1)**
-48. **[P2Patch: Exploit-Guided Vulnerability Repair](http://arxiv.org/abs/2610.20245v1)**
-49. **[Retrieval Over Training: Similarity search-based Model Selection for Time Series Anomaly Detection](http://arxiv.org/abs/2610.20243v1)**
-50. **[PAWA: Panoramic Action-conditioned World Modeling for Multiple Agents](http://arxiv.org/abs/2610.20240v1)**
-51. **[Design Space Exploration of Reinforcement Learning Configurations for Post-Legalization Placement](http://arxiv.org/abs/2610.20224v1)**
-52. **[Scaling Multilingual Safety and Reasoning Evaluation through Reasoning-Guided Translation](http://arxiv.org/abs/2610.20221v1)**
-53. **[Robust Counterfactuals for Markov Decision Processes under Statistical and Causal Uncertainties](http://arxiv.org/abs/2610.20210v1)**
-54. **[What and Where in Identifying and Quantifying Conventions in Humans and AI Agents](http://arxiv.org/abs/2610.20205v1)**
-55. **[Drivers of LLM Consensus Formation Under Competing Incentives: A Simulation Study](http://arxiv.org/abs/2610.20200v1)**
-56. **[What Makes a Social Agent's Interactions Effective? Learning from Verifiable Outcomes in Paired Worlds](http://arxiv.org/abs/2610.20195v1)**
-57. **[SWE-Stream: Scaling Executable Training Data for SWE Agents via Progressive Construction and Elastic Streaming](http://arxiv.org/abs/2610.20193v1)**
-58. **[HEM-Med: A Hierarchical Agentic Memory Framework for Safe Multi-Center Medication Recommendation](http://arxiv.org/abs/2610.20191v1)**
-59. **[Value-Guided Repulsion for Offline Reinforcement Learning](http://arxiv.org/abs/2610.20190v1)**
-60. **[Cross-Model In-Context Neurofeedback Reveals (Limited) Activation Control in LLMs](http://arxiv.org/abs/2610.20179v1)**
-61. **[MultiPartyTurnBench: Benchmarking Floor Control in Multi-Party Spoken Dialogue](http://arxiv.org/abs/2610.20172v1)**
-62. **[LLM-Based Policy Compliance Verification of Loan Applications](http://arxiv.org/abs/2610.20155v1)**
-63. **[DreamHMR: From Video Generation to Human Motion Modeling via Structural Focusing](http://arxiv.org/abs/2610.20124v1)**
-64. **[Maximising Transparency in Context Compaction Improves Retention of Facts and Commitments for Lightweight Coding Agents](http://arxiv.org/abs/2610.20116v1)**
-65. **[ACR-Net: Mitigating Semantic Dominance via Contrastive Acoustic-Semantic Decoupling](http://arxiv.org/abs/2610.20114v1)**
-66. **[From Spectral to Frobenius: When Muon Loses Its Spectral Implicit Bias](http://arxiv.org/abs/2610.20112v1)**
-67. **[Task-State Governance: A Virtual Machine for Verifiable and Recoverable GUI Agent Execution](http://arxiv.org/abs/2610.20100v1)**
-68. **[EvalBuilder: Can LLMs Build Efficient Benchmarks?](http://arxiv.org/abs/2610.20099v1)**
-69. **[AFCS: Atomic-Fact-Conditioned Synthesis for Factual Knowledge Pretraining](http://arxiv.org/abs/2610.20086v1)**
-70. **[Designing Textual Interfaces To Enhance Llm Reasoning On Audio-Visual Question Answering](http://arxiv.org/abs/2610.20085v1)**
-71. **[Rethinking Prediction Horizons: Decoupling Model Queries from State Updates in Few-Step MeanFlow](http://arxiv.org/abs/2610.20071v1)**
-72. **[Trainable at Depth, Solvable at Small Size: What the Loss Surface of a Polynomial Activation Dictates for Designing, Initializing and Training Networks](http://arxiv.org/abs/2610.20069v1)**
-73. **[Which Knowledge Should LLMs Trust? Uncovering a Generalizable Steering Direction Across Knowledge Conflicts](http://arxiv.org/abs/2610.20067v1)**
-74. **[FoveaVLA: Foveation Actions Replace the Wrist Camera in VLAs](http://arxiv.org/abs/2610.20064v1)**
-75. **[Beyond Correctness: Compute-Responsive Data Selection for Reasoning Model Post-Training](http://arxiv.org/abs/2610.20057v1)**
-76. **[GeoCloak: An Agentic Framework for Semantics-Preserving Geolocation Privacy via Peripheral Clue Manipulation](http://arxiv.org/abs/2610.20055v1)**
-77. **[CoRedSkill: Stealthy Skill Composition Attacks via AST-Guided Injection](http://arxiv.org/abs/2610.20049v1)**
-78. **[SWE-Nexus: Automated Composition of Software Engineering Tasks from Test Execution](http://arxiv.org/abs/2610.20038v1)**
-79. **[Memorizing Who, Knowing How: Benchmarking Personal and Procedural Memory for Persistent Assistants](http://arxiv.org/abs/2610.20022v1)**
-80. **[MorphAct: Robot Policies Morphing with the Worlds They Act In](http://arxiv.org/abs/2610.20019v1)**
-81. **[On the Convergence of Semi-Gradient TD: A Mean Field Perspective](http://arxiv.org/abs/2610.20014v1)**
-82. **[Provable Transformer Context Compression for In-Context Reinforcement Learning](http://arxiv.org/abs/2610.20004v1)**
-83. **[What Coding Agents Leave Unsaid: Measuring Task-State Gaps Between Execution and Reports](http://arxiv.org/abs/2610.20003v1)**
-84. **[A Strong Harness Narrows the Model Gap: A Comparative Evaluation for Legislative Document-to-XML Conversion](http://arxiv.org/abs/2610.19999v1)**
-85. **[Empirical Boundaries of Reservoir Computing for Few-Shot Sequence Pattern Tasks](http://arxiv.org/abs/2610.19997v1)**
-86. **[Safe-FCL: Continual Risk Awareness and Fine-Grained Safety Aggregation for Federated Continual Learning of LLMs](http://arxiv.org/abs/2610.19968v1)**
-87. **[Neurosymbolic Learning of Interpretable World Models](http://arxiv.org/abs/2610.19955v1)**
-88. **[AtomSearch: Evidence-Grounded Tree Search for Agent Skill Optimization](http://arxiv.org/abs/2610.19951v1)**
-89. **[When Protection Overrides Consequences: Understanding Protection Mode in Large Language Model Decision-Making](http://arxiv.org/abs/2610.19948v1)**
-90. **[Quiet Triggers, Loud Footprints: A Tri-Space Measurement Study of Backdoor Stealthiness](http://arxiv.org/abs/2610.19947v1)**
-91. **[Learning Graph Energies for Finite-Time Generation](http://arxiv.org/abs/2610.19946v1)**
-92. **[Does Machine Translation Retain Media Bias?](http://arxiv.org/abs/2610.19945v1)**
-93. **[MUCO: A Mani-Unit-Structured Manipulation Framework for Compositional Long-Horizon Robot Tasks](http://arxiv.org/abs/2610.19913v1)**
-94. **[Sparse Transformer: a Controlled Testbed for Mechanistic Interpretability](http://arxiv.org/abs/2610.19907v1)**
-95. **[Multimodal Medical Image Parsing with Task-Specific Low-Rank Adapters](http://arxiv.org/abs/2610.19901v1)**
-96. **[How GUI Agents Fail: GraceBench for Execution Stability Diagnosis](http://arxiv.org/abs/2610.19900v1)**
-97. **[Universal Sample-Based Embeddings of Higher-Order Objects](http://arxiv.org/abs/2610.19899v1)**
-98. **[DeepPV-MRF: End-to-End Partial-Volume Fraction Estimation from MR Fingerprinting Time Series](http://arxiv.org/abs/2610.19894v1)**
-99. **[Frustratingly Easy Majority Voting Using Length Conditioning](http://arxiv.org/abs/2610.19890v1)**
-100. **[Neural Wasserstein Splines: Representation-Invariant Second-Order Priors for Trajectory Inference](http://arxiv.org/abs/2610.19878v1)**
-101. **[Rationale Distribution Distillation via Flow Matching for Distributional Continuous Latent Reasoning](http://arxiv.org/abs/2610.19871v1)**
-102. **[Explorer-Zero: Improving Self-Play for Long-Horizon Tasks with Decomposable Verifiable Rewards](http://arxiv.org/abs/2610.19868v1)**
-103. **[Euler: Towards Human-Centered Multi-Agent Mathematical Discovery](http://arxiv.org/abs/2610.19864v1)**
-104. **[Lost in the Fallback: How Reliably Do Typed Decision Models Use Fallback Options?](http://arxiv.org/abs/2610.19856v1)**
-105. **[DeltaStreamer: Towards Human-Like Agentic Streaming Video Understanding](http://arxiv.org/abs/2610.19849v1)**
-106. **[Memory-Efficient Subspace Optimization with Residual Correction: From Momentum SGD to Muon](http://arxiv.org/abs/2610.19844v1)**
-107. **[LAGO: Language Agents with Reusable Growing Options](http://arxiv.org/abs/2610.19843v1)**
-108. **[Teaching Agents in their Own Style: Blackbox Teacher Distillation for Web Agents](http://arxiv.org/abs/2610.19834v1)**
-109. **[ActionOPD: Distilling Decisions, Not Tokens](http://arxiv.org/abs/2610.19820v1)**
-110. **[One Monitor Does Not Fit All: Formalism-Agnostic Runtime Verification for Agentic AI](http://arxiv.org/abs/2610.19818v1)**
-111. **[VaryST: Generalizable Spatio-Temporal Forecasting Beyond the Closed-World Setting](http://arxiv.org/abs/2610.19813v1)**
-112. **[ReproBAIT: Can coding agents build their own biological AI tools?](http://arxiv.org/abs/2610.19810v1)**
-113. **[Learning Perception to Action Rules through Reinforcement Learning for Theory-of-Mind Reasoning](http://arxiv.org/abs/2610.19796v1)**
-114. **[StateCraft: Augmenting Video World Models with Abstract-State Reasoning](http://arxiv.org/abs/2610.19795v1)**
-115. **[One Agent per Zone: Decentralised Active Inference under Partial Observability for Multi-Zone HVAC Control on Edge Hardware](http://arxiv.org/abs/2610.19790v1)**
-116. **[LiFi: LiDAR Generation from Multi-View Images via Geometric and Semantic Collaborative Guidance](http://arxiv.org/abs/2610.19786v1)**
-117. **[LabOPBench: A Multimodal Benchmark for Evidence-Grounded Laboratory Decision Making](http://arxiv.org/abs/2610.19780v1)**
-118. **[PRISMATIC : Prescription Risk Inspection System for Multi-Agent Treatment Interaction in Clinical Decision-Making](http://arxiv.org/abs/2610.19762v1)**
-119. **[Does the Linguistic Register of Thinking Matter? Wenyan as a Compact Reasoning Register for Chinese LLMs](http://arxiv.org/abs/2610.19741v1)**
-120. **[ProtModernBERT: Compute-Efficient Protein Language Modeling](http://arxiv.org/abs/2610.19738v1)**
-121. **[Exact Cut Complexity of Equal-Length Proportional Cake Cutting](http://arxiv.org/abs/2610.19733v1)**
-122. **[What Happens to the Goal? Distinct Failures of Policy Alignment in Goal Misgeneralization](http://arxiv.org/abs/2610.19731v1)**
-123. **[Mitigating Video Hallucinations via Attention-Guided Representation Perturbation](http://arxiv.org/abs/2610.19728v1)**
-124. **[Recognizing Dialogue Ambiguity via Candidate Set Visual Grounding](http://arxiv.org/abs/2610.19723v1)**
-125. **[ONCship: A Large-Scale Underwater Acoustic Corpus for Ship Recognition](http://arxiv.org/abs/2610.19722v1)**
-126. **[Articulation Upper Bounds for Language Models](http://arxiv.org/abs/2610.19721v1)**
-127. **[Learning Individual Scientific Taste with Privileged Hindsight Distillation](http://arxiv.org/abs/2610.19719v1)**
-128. **[Uncertainty-Driven Self-Play for Robust Multi-Agent Driving Policies](http://arxiv.org/abs/2610.19714v1)**
-129. **[New Model, Old Habits: Behavior Transfer under Model Swapping in Multi-Session LLM Agents](http://arxiv.org/abs/2610.19712v1)**
-130. **[SceneAE: Scene Generation and Reconstruction in Queryable 3D-Anchored Latent Space](http://arxiv.org/abs/2610.19708v1)**
-131. **[Runtime Monitoring of Supermartingale Certificates](http://arxiv.org/abs/2610.19701v1)**
-132. **[RuleTrek: Benchmarking Agentic Rule Reasoning in Complex Scenarios](http://arxiv.org/abs/2610.19698v1)**
-133. **[C3: Rethinking Process Supervision via Confidence-Guided Credit Correction in Multi-Turn Reinforcement Learning](http://arxiv.org/abs/2610.19695v1)**
-134. **[ReFormBench: Benchmarking the Stability of Response-Conditioned Format Correction in Large Language Models](http://arxiv.org/abs/2610.19693v1)**
-135. **[PPAD-Completeness of Contiguous Envy-Free Cake Cutting with Additive Valuations](http://arxiv.org/abs/2610.19690v1)**
-136. **[Function-Space Temporal Self-Distillation for Policy Optimization](http://arxiv.org/abs/2610.19687v1)**
-137. **[Interlock: From Local Correctness to Task Completion in Long-Horizon Agents](http://arxiv.org/abs/2610.19686v1)**
-138. **[MCAIR: Monitoring and Correcting Agent Unfaithfulness via Internal Representations](http://arxiv.org/abs/2610.19679v1)**
-139. **[Learning When to Trust Medical Knowledge: Regression-Safe Routing for Clinical Reasoning](http://arxiv.org/abs/2610.19663v1)**
-140. **[Measuring and Reducing Unusable Replies of LLM Agents](http://arxiv.org/abs/2610.19659v1)**
-141. **[HACHIMI-II: From Role-Play to Learner Behavior Modeling for Faithful Student Simulation](http://arxiv.org/abs/2610.19654v1)**
-142. **[AWARE-RG: Abstraction Aware Explanation of Resiliency Graphs for Cyber Physical Systems](http://arxiv.org/abs/2610.19650v1)**
-143. **[Model What Matters: Decision-Guided Selective World Modeling for Language Agents](http://arxiv.org/abs/2610.19642v1)**
-144. **[Sparse Autoencoders Are a Shared Coordinate System for Symbolic Matching](http://arxiv.org/abs/2610.19636v1)**
-145. **[Eye, Robot: Learning Expressive Gaze Dynamics via a VLM-Guided Transformer-VAE](http://arxiv.org/abs/2610.19635v1)**
-146. **[DAGFormer: Global Topology Prediction for Transformer Cross-Layer Connections](http://arxiv.org/abs/2610.19625v1)**
-147. **[Are AI Decision Models Biased? A Case Study of Jev](http://arxiv.org/abs/2610.19619v1)**
-148. **[Instruction-Conditioned Motion Control for Robotic Arms: Language-to-Code Decomposition and Reinforcement Learning](http://arxiv.org/abs/2610.19617v1)**
-149. **[Divergent Paths: Learning an Outcome-Predictive Representation of LLM Agent Trajectories](http://arxiv.org/abs/2610.19614v1)**
-150. **[Beyond Static Positional Encoding: Bayesian Time-aware Attention for Non-Stationary Long-term Time Series Forecasting](http://arxiv.org/abs/2610.19603v1)**
-151. **[JevCoder: When Does Decision Delegation Pay Off in Code Repair?](http://arxiv.org/abs/2610.19596v1)**
-152. **[L3M: A Verifiable Harness and Runtime for Self-Extending and Self-Improving Agents](http://arxiv.org/abs/2610.19591v1)**
-153. **[JockeyBench: Evaluating LLM Agents on Horse-Racing Decision-Making](http://arxiv.org/abs/2610.19589v1)**
-154. **[Who's Behind the Text? Robust Model Authorship Attribution](http://arxiv.org/abs/2610.19583v1)**
-155. **[XferAgent: Cross-Agent Experience Transfer for Self-Improving LLM Agents](http://arxiv.org/abs/2610.19581v1)**
-156. **[Learning Across Temporal Graph Representation Silos](http://arxiv.org/abs/2610.19576v1)**
-157. **[Divergence-Routed On-Policy Distillation for Language Models](http://arxiv.org/abs/2610.19572v1)**
-158. **[Frame Evidence:A Benchmark for Reference Frames and Visual Evidence in Multi-Image Spatial Reasoning](http://arxiv.org/abs/2610.19564v1)**
-159. **[REWIND: Uncertainty-Guided Trajectory Repair for Test-Time Reasoning](http://arxiv.org/abs/2610.19561v1)**
-160. **[$τ$-Emotion-Bench: Exposing the Interaction Fragility of LLM Agents through Real-World User Emotions](http://arxiv.org/abs/2610.19560v1)**
-161. **[TEX-MEX: Similarity-Guided Temporal Contrastive Learning for Time Series](http://arxiv.org/abs/2610.19557v1)**
-162. **[Evidence-Anchored Overdose Death Prediction from Death Investigation Reports](http://arxiv.org/abs/2610.19556v1)**
-163. **[LabCompiler: A Framework for Verifiable Human-Machine Laboratory Execution from Imperfect Protocols](http://arxiv.org/abs/2610.19550v1)**
-164. **[Typed Decision Models on Tabular Data](http://arxiv.org/abs/2610.19536v1)**
-165. **[Retrieve What Helps, Only When It Helps: Agentic Reinforcement Learning for Selective Retrieval-Augmented Machine Translation](http://arxiv.org/abs/2610.19528v1)**
-166. **[Revisiting Triplet Contrastive Learning for 3D Shape Understanding](http://arxiv.org/abs/2610.19519v1)**
-167. **[VLRLA: Deployment-Time Adaptation of Vision-Language-Action Models through In-Context Reinforcement Learning](http://arxiv.org/abs/2610.19517v1)**
-168. **[Structure Before Intelligence: Gating What Agentic Scientific Workflows Release](http://arxiv.org/abs/2610.19507v1)**
-169. **[Structure-Preserving Document-Level Data Augmentation via Discourse Parsing](http://arxiv.org/abs/2610.19497v1)**
-170. **[Robust Real-Time Monocular Human Pose Estimation with Insole-Based Sensor Fusion](http://arxiv.org/abs/2610.19494v1)**
-171. **[IMU-Bench: Benchmarking Wrist IMU Representations Across Kinematic, Semantic and Clinical Tasks](http://arxiv.org/abs/2610.19481v1)**
-172. **[Beyond Retrieval: Evidence Access and Event Aggregation in Agent Memory](http://arxiv.org/abs/2610.19474v1)**
-173. **[MemCode: Discrete Semantic Representations for Long-Term Agent Memory](http://arxiv.org/abs/2610.19472v1)**
-174. **[PFedMA: Who Should Join Next as Federated Multi-Agent Orchestration Evolves?](http://arxiv.org/abs/2610.19458v1)**
-175. **[MIPS: Mitigating Mode Collapse in Reinforcement Learning for Large Outcome Spaces](http://arxiv.org/abs/2610.19457v1)**
-176. **[AdCoEvo: A Co-Evolving Multi-Agent Advertising Delivery System](http://arxiv.org/abs/2610.19454v1)**
-177. **[Are You Reading the Right Thing? Rethinking Internal Signals for Prompt-Injection Detection](http://arxiv.org/abs/2610.19452v1)**
-178. **[xLightGCN: Explainable Graph Neural Network Based Recommendation Systems with Most Influential Peers](http://arxiv.org/abs/2610.19446v1)**
-179. **[Integrating Simulation and Chain-of-thought Reasoning in Multimodal-Language Models For Physical Reasoning](http://arxiv.org/abs/2610.19441v1)**
-180. **[EvoProbe: Evaluation-Driven Benchmark Evolution for LLM Agents](http://arxiv.org/abs/2610.19433v1)**
-181. **[Recognition Is Not Grounding: Benchmarking Multilingual Financial Evidence Extraction](http://arxiv.org/abs/2610.19432v1)**
-182. **[How Do LLMs Understand Legal Philosophy? Diagnosing Legal-Philosophical Reasoning in LLMs](http://arxiv.org/abs/2610.19427v1)**
-183. **[Evaluating Agentic Capabilities Before Post-Training: An End-to-End Approach](http://arxiv.org/abs/2610.19425v1)**
-184. **[VideoHarness-SRSI: Structured Recursive Self-Improvement for Video Understanding Harness](http://arxiv.org/abs/2610.19424v1)**
-185. **[Beyond the Trial-and-Error Loop: Hybrid Projection and Automated Tuning for Distributed Training](http://arxiv.org/abs/2610.19423v1)**
-186. **[AgentSafeEvo: Adversarial Co-Evolution for LLM Agent Safety](http://arxiv.org/abs/2610.19422v1)**
-187. **[From Failures to Learnable Worlds: Policy-Conditioned Environment Generation for Navigation Agents](http://arxiv.org/abs/2610.19420v1)**
-188. **[Recursive Formation and First-Class Reuse of Compositional Capabilities](http://arxiv.org/abs/2610.19414v1)**
-189. **[Vision-Language Models Integrate Conflicting Evidence Like Biased Bayesian Observers](http://arxiv.org/abs/2610.19407v1)**
-190. **[Scaling LLM Inference via Parallelism: Throughput-Latency Trade-off](http://arxiv.org/abs/2610.19405v1)**
-191. **[KoAGE: Do Large Language Models Know, Learn, and Coin Korean Neologisms?](http://arxiv.org/abs/2610.19399v1)**
-192. **[SERO: Learning from Executable Oracle Continuations for Long-Horizon Agentic Reinforcement Learning](http://arxiv.org/abs/2610.19397v1)**
-193. **[EpiGuard: An Autonomous Infectious-Disease Early Warning Agent Platform](http://arxiv.org/abs/2610.19396v1)**
-194. **[ELARSpeech: A 30K-Hour Dataset Across 675 Underrepresented Languages for Long-Tail Multilingual Speech Technologies](http://arxiv.org/abs/2610.19388v1)**
-195. **[STRATA: Self-Maintaining Structured Experience Graphs for Self-Evolving Language Agents](http://arxiv.org/abs/2610.19386v1)**
-196. **[ixi-sLM: On-Device sLM for AI Call Agent Service](http://arxiv.org/abs/2610.19382v1)**
-197. **[EvoWeave: Composing Reusable Agent Experience through Operation Level Graphs](http://arxiv.org/abs/2610.19381v1)**
-198. **[DeLoop: Repeated Actions as Self-Supervision for Long-Horizon Agents](http://arxiv.org/abs/2610.19376v1)**
-199. **[Evaluating Compressed Memory: Dependence, Utility, and Content Benefit](http://arxiv.org/abs/2610.19373v1)**
-200. **[Policy-Verified Self-Training: Learning Agent Compliance from Verifiable Policy Rewards](http://arxiv.org/abs/2610.19372v1)**
-201. **[Beyond Corrected Actions: Training LLM Agents on Textual Critiques](http://arxiv.org/abs/2610.19367v1)**
-202. **[Seeing, Maintaining, and Learning: The Evolution of Multimodal Agent Memory](http://arxiv.org/abs/2610.19366v1)**
-203. **[DANGERLENS: Probing Dangerous Representations Hidden by Safety Alignment](http://arxiv.org/abs/2610.19365v1)**
-204. **[Tail Competition Explains Scaling in Best-of-N Sampling for Verifiable Problems](http://arxiv.org/abs/2610.19362v1)**
-205. **[Steering Vectors for Competing Ethical Frameworks Are Interchangeable: A Competing-Target Test for Activation Steering](http://arxiv.org/abs/2610.19359v1)**
-206. **[Asymptotic Behavior of Transformers](http://arxiv.org/abs/2610.19358v1)**
-207. **[When Is Smaller Greener? Right-Sizing Language Models for Agentic AI](http://arxiv.org/abs/2610.19345v1)**
-208. **[Why Do Agent Teams Fail Across Boundaries? A Failure Taxonomy for Agent-to-Agent Systems with Private States](http://arxiv.org/abs/2610.19342v1)**
-209. **[Can We Believe AI Peer Review?](http://arxiv.org/abs/2610.19339v1)**
-210. **[LLM-jp-4 Technical Report](http://arxiv.org/abs/2610.19331v1)**
-211. **[Generalization Analysis of Biased Stochastic Gradient Methods for Minimax Problems](http://arxiv.org/abs/2610.19322v1)**
+1. **[LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation](http://arxiv.org/abs/2610.22372v1)**
+2. **[Discovering state-of-the-art quantum circuits with large language models](http://arxiv.org/abs/2610.22367v1)**
+3. **[T2-z: Test-Time Optimization of Environment Latents for Robotic World Models](http://arxiv.org/abs/2610.22364v1)**
+4. **[CoDA: Co-Evolution of Data Engines and Action Policies](http://arxiv.org/abs/2610.22362v1)**
+5. **[Rethinking Routing Exploration in Modern Mixture-of-Experts](http://arxiv.org/abs/2610.22353v1)**
+6. **[FDE-Gym: The Last Mile of AI Delivery](http://arxiv.org/abs/2610.22350v1)**
+7. **[MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering](http://arxiv.org/abs/2610.22344v1)**
+8. **[GeoState: Learning View-Decoupled Geometry States for 3D World Modeling](http://arxiv.org/abs/2610.22343v1)**
+9. **[3DCodeVerse: Exploring 3D Worlds as Code](http://arxiv.org/abs/2610.22341v1)**
+10. **[Dexterity from Supervised Play](http://arxiv.org/abs/2610.22340v1)**
+11. **[Evaluation Awareness Beyond English: Do LLMs Act Differently When Tested in Indic Languages?](http://arxiv.org/abs/2610.22333v1)**
+12. **[KnowGPO: Knowledge-Grouped Policy Optimization for Search Agents](http://arxiv.org/abs/2610.22331v1)**
+13. **[Designing Transformers for Continuous Diffusion Language Models](http://arxiv.org/abs/2610.22330v1)**
+14. **[ACEdit: Stable Multi-Turn Image Editing via Asymmetric Conditioning](http://arxiv.org/abs/2610.22328v1)**
+15. **[Twice Upon a Time: Complementary Representations for Time-Series Reasoning](http://arxiv.org/abs/2610.22327v1)**
+16. **[Learning Self-Orchestration in Decentralized Agent Swarms](http://arxiv.org/abs/2610.22322v1)**
+17. **[AVC-Reward: Event-Centric Audio-Video Consistency Evaluation](http://arxiv.org/abs/2610.22321v1)**
+18. **[A team of Gemini 4 Argon agents beats Minecraft](http://arxiv.org/abs/2610.22319v1)**
+19. **[Learning to Steer LLM Agents and Multi-Agent Systems](http://arxiv.org/abs/2610.22316v1)**
+20. **[Knowledge That Is Linear Before Fine-Tuning Generalizes After It](http://arxiv.org/abs/2610.22300v1)**
+21. **[AI Consilium: a Benchmark of LLM Clinical Multidisciplinary Second Opinions](http://arxiv.org/abs/2610.22298v1)**
+22. **[Private Retrieval Augmented Generation via Random Projection](http://arxiv.org/abs/2610.22297v1)**
+23. **[Towards Continual Learning: Mitigating Forgetting With Subspace Tuning](http://arxiv.org/abs/2610.22293v1)**
+24. **[EliteReplay: Preserving Diverse Solutions in RL Post-Training via Quality-Diversity Search](http://arxiv.org/abs/2610.22290v1)**
+25. **[Improving Environment-Agnostic Coding Agents: The Role of Scaffolding](http://arxiv.org/abs/2610.22289v1)**
+26. **[Asking Smarter Questions: Targeted Active Preference Learning for Underspecified Rewards](http://arxiv.org/abs/2610.22285v1)**
+27. **[LEASH: Uncertainty-Aware Weak-to-Strong Escalation and Oversight for Computer-Use Agents](http://arxiv.org/abs/2610.22280v1)**
+28. **[Librarian Agents: Training LLMs to Curate Long-Context Workspaces that Anticipate Future Queries](http://arxiv.org/abs/2610.22273v1)**
+29. **[X-RIC: An Agentic RAN-Intelligent Controller Benchmark for Enhancing Reinforcement Learning](http://arxiv.org/abs/2610.22269v1)**
+30. **[Disagreement-Guided Weak-to-Strong Routing](http://arxiv.org/abs/2610.22245v1)**
+31. **[Language Is a Security Surface for Agent Guards](http://arxiv.org/abs/2610.22244v1)**
+32. **[Shortcut Sensitivity in Agent-Safety Evaluations](http://arxiv.org/abs/2610.22243v1)**
+33. **[Training-Free On-Policy Distillation](http://arxiv.org/abs/2610.22236v1)**
+34. **[OS-Helix: Unifying GUI Interaction and Code Execution in Native Computer-Using Agents](http://arxiv.org/abs/2610.22234v1)**
+35. **[Skill-Decoupled On-Policy Expert Distillation for Unified Vision-Language Models](http://arxiv.org/abs/2610.22217v1)**
+36. **[GNN-Guided Local Refinement for Efficient Layout Decomposition with DSA-MP](http://arxiv.org/abs/2610.22214v1)**
+37. **[TRACE: Topology-Aware Reconnection via Prediction-Adaptive Connectivity Enforcement for Thin-Structure Segmentation](http://arxiv.org/abs/2610.22210v1)**
+38. **[Beyond Downstream QA: Rethinking How We Evaluate Agent Memory](http://arxiv.org/abs/2610.22209v1)**
+39. **[Decentralized LLM Workflows via Sequential Auctions](http://arxiv.org/abs/2610.22201v1)**
+40. **[HTN-Orchestrate: A Hierarchical Task Network Framework for Multi-Agent Orchestration](http://arxiv.org/abs/2610.22195v1)**
+41. **[AutoSFT: An Agentic System for Automated Data Research in Supervised Fine-Tuning](http://arxiv.org/abs/2610.22194v1)**
+42. **[Terminal-RSI: Recursive Self-Improving Terminal Agents via Recursive Self-Rewrite and Policy-Refine](http://arxiv.org/abs/2610.22192v1)**
+43. **[Change the Number, Change the Answer: Assessing Rating Scale Sensitivity in LLM-Based Text Scoring](http://arxiv.org/abs/2610.22187v1)**
+44. **[Whole-Body Dexterity](http://arxiv.org/abs/2610.22184v1)**
+45. **[Motion- and Gravity-Aware Feedforward 3D Reconstruction](http://arxiv.org/abs/2610.22177v1)**
+46. **[Mosaic: Multi-Session Agentic Reinforcement Learning](http://arxiv.org/abs/2610.22174v1)**
+47. **[Multi-sourced AI Tutor for Non-Native English Speaker Students](http://arxiv.org/abs/2610.22163v1)**
+48. **[EMO: A Closed-Loop Test-Time Computation Framework via Alternating Context Optimization and Logits Steering](http://arxiv.org/abs/2610.22160v1)**
+49. **[Realtime-Bench: Can Frontier Models Solve Real-time Interactive Problems?](http://arxiv.org/abs/2610.22155v1)**
+50. **[Specification Gaming and a Constrained Reinforcement Learning Mitigation in a Cleaning Gridworld](http://arxiv.org/abs/2610.22152v1)**
+51. **[RAG-RST: Retrieved Exemplars as In-Context Discourse Schema for RST Parsing](http://arxiv.org/abs/2610.22150v1)**
+52. **[Are You Sure Your LLM Is Sure? Repairing and Auditing Confidence](http://arxiv.org/abs/2610.22139v1)**
+53. **[Believed but Not Said: Measuring Hidden Belief Collapse in Multi-Agent LLM Discussions](http://arxiv.org/abs/2610.22138v1)**
+54. **[CART: Compatible Routing for Multimodal Continual Instruction Tuning](http://arxiv.org/abs/2610.22137v1)**
+55. **[DropKV: Decoupling Residual-Output Perturbation for Near-Optimal KV-Cache Eviction](http://arxiv.org/abs/2610.22130v1)**
+56. **[Explaining the Roles of Experts in Mixture-of-Experts LLMs for Personalization](http://arxiv.org/abs/2610.22127v1)**
+57. **[Causal Integrated Gradients: Scalable Feature Attribution Along Causal Paths](http://arxiv.org/abs/2610.22126v1)**
+58. **[PROBE: Learning to Audit Policy Compliance in Tool-Using LLM Agents](http://arxiv.org/abs/2610.22124v1)**
+59. **[TIPS: A Tiny Inference-time Policy for Scaling in Diffusion Language Models](http://arxiv.org/abs/2610.22099v1)**
+60. **[Multi-SFT: Permissively-Licensed Multilingual Instruction-Following](http://arxiv.org/abs/2610.22086v1)**
+61. **[Learning from Unverified Peers via Shared Residual Distillation](http://arxiv.org/abs/2610.22080v1)**
+62. **[Memory as Weights: Internalizing Long-Term History for Streaming Videos](http://arxiv.org/abs/2610.22070v1)**
+63. **[When Reasoning Is Not Enough: Proactive Inquiry for Cross-Modal Safety in Multimodal Large Language Models](http://arxiv.org/abs/2610.22068v1)**
+64. **[Prism-1: Position- and Rival-Independent Scoring for System One Models](http://arxiv.org/abs/2610.22066v1)**
+65. **[FAOPs: Normal Forms and an Algebra for AI Agent Workflows](http://arxiv.org/abs/2610.22061v1)**
+66. **[Progress Reward Model for Reinforcement Learning via Large Language Models](http://arxiv.org/abs/2610.22056v1)**
+67. **[Decoding Naturalistic Speech from fMRI with Temporal Modeling and Multimodal Alignment](http://arxiv.org/abs/2610.22049v1)**
+68. **[Momentum, Commentary Tone, and Earnings Surprise in LLM Financial Forecasts](http://arxiv.org/abs/2610.22043v1)**
+69. **[GraphACM: Graph-based Action Consistency Measurement for Uncertainty Quantification in LLM Agents](http://arxiv.org/abs/2610.22031v1)**
+70. **[Selection Is Not Learning: Choosing Model Futures](http://arxiv.org/abs/2610.22029v1)**
+71. **[DemoStream: Batched Task-and-Motion-Plan Optimization for Automated Learning from Demonstration](http://arxiv.org/abs/2610.22020v1)**
+72. **[Priming Base Models for Agentic Post-Training: An Open Midtraining Recipe](http://arxiv.org/abs/2610.22019v1)**
+73. **[CARA: Causally Guided Retrieval Agent for Question Answering](http://arxiv.org/abs/2610.22017v1)**
+74. **[GraphBEAT: Graph-based Bucketized Event Aggregation Over Time for Early Risk Stratification of Gastrointestinal Cancers](http://arxiv.org/abs/2610.22014v1)**
+75. **[OntoAct: Hypothesis-Based Neuro-Symbolic Agents through Ontological Abstraction](http://arxiv.org/abs/2610.21983v1)**
+76. **[Time to Fake It: Continual Machine Learning Intensifies Unfairness in Deepfake Detection](http://arxiv.org/abs/2610.21974v1)**
+77. **[Why Shallow Neural Networks Learn Sinusoidal Components First: An Orthogonal Polynomial Dynamics Framework](http://arxiv.org/abs/2610.21964v1)**
+78. **[Following Delegation Traces to Study Human Oversight in Interaction with Multimodal AI](http://arxiv.org/abs/2610.21948v1)**
+79. **[Agentic-Priors: Using Large Language Models to Address the Cold Start Problem in Preference Elicitation](http://arxiv.org/abs/2610.21938v1)**
+80. **[BridgeAfford: Bridging Query-Target Gap for Generalizable 3D Affordance Grounding](http://arxiv.org/abs/2610.21918v1)**
+81. **[CodeHealth Predicts the Token Cost of Agentic Code Review: A Pre-Registered Study of 465 Agent-Authored Pull Requests](http://arxiv.org/abs/2610.21914v1)**
+82. **[Learning Rewards in Strategic Games](http://arxiv.org/abs/2610.21912v1)**
+83. **[CoWorld Reasoner: Agentic Multimodal Reasoning with the Evolving Video World Model-Driven Harness](http://arxiv.org/abs/2610.21910v1)**
+84. **[In-Context Learning Before Specialisation: Theory of Learning in a Solvable Topic Model](http://arxiv.org/abs/2610.21901v1)**
+85. **[Anvil: Scaling Embodied Spatial Intelligence through Knowledge Recirculation](http://arxiv.org/abs/2610.21882v1)**
+86. **[Provably Efficient Risk-Sensitive Offline Reinforcement Learning via Optimized Certainty Equivalents](http://arxiv.org/abs/2610.21870v1)**
+87. **[RoleQ: Role-Aligned Scales for Converting Language Models to Ternary](http://arxiv.org/abs/2610.21808v1)**
+88. **[CIM-Embed: Learning Instruction-Conditioned Multimodal Embeddings for Clustering](http://arxiv.org/abs/2610.21805v1)**
+89. **[Co2In: a Bi-level Memory Incremental Learning Framework with Knowledge Encoding, Consolidation, and Integration](http://arxiv.org/abs/2610.21804v1)**
+90. **[Cross-Embodiment Causal Transfer from Human Videos to Robot Manipulation](http://arxiv.org/abs/2610.21798v1)**
+91. **[RSIFlow: Adaptive Self-Improvement Workflows with an Evolving Meta-Agent](http://arxiv.org/abs/2610.21791v1)**
+92. **[In the Guise of Correction: How Framing and Cultural Adaptation Erode LLM Safety on Real-World Criminal Cases](http://arxiv.org/abs/2610.21789v1)**
+93. **[DINO-FIL: Multi-Layer Transformer Fusion for Generative Inpainting Forgery Localization](http://arxiv.org/abs/2610.21780v1)**
+94. **[CF-AVSS: A Coarse-to-Fine Audio-Visual Speech Separation Framework with Target-Speaker Refinement and Post-Fusion for Real-World AVSE Challenge](http://arxiv.org/abs/2610.21773v1)**
+95. **[From Research Goals to Scientific Closure: Evaluating Agents Through Evidence-Supported Physics Research](http://arxiv.org/abs/2610.21767v1)**
+96. **[DeciCAD: Harness-Grounded Learning of Action Policies for CAD Agents](http://arxiv.org/abs/2610.21755v1)**
+97. **[Harmful Partial Interventions and Benign Leakage in Concept-based Models](http://arxiv.org/abs/2610.21750v1)**
+98. **[The Delegation Dilemma: Economies of Scale, Accountability, and Polycentric Governance](http://arxiv.org/abs/2610.21746v1)**
+99. **[Reliable Knowledge Acquisition for Continual Learning Agents](http://arxiv.org/abs/2610.21739v1)**
+100. **[In-Context Preference-Conditioned Pareto Set Learning from Limited Offline Data](http://arxiv.org/abs/2610.21736v1)**
+101. **[Retrieved but Not Read: Understanding Why Search-Augmented LLMs Fail to Use Available Evidence](http://arxiv.org/abs/2610.21731v1)**
+102. **[FIRM: Fisher-Informed Retention Merging for Federated LLM Unlearning](http://arxiv.org/abs/2610.21720v1)**
+103. **[Encoded but Exposed: Language Embeddings can Reveal More Than They Should in Recommender Systems](http://arxiv.org/abs/2610.21713v1)**
+104. **[Human Interventions as Labels: Localizing, Steering, and (Sometimes) Editing the Computations Behind LLM Agent Failures](http://arxiv.org/abs/2610.21708v1)**
+105. **[Router Drift Control: Mitigating Off-Policy Degradation in Mixture-of-Experts Reinforcement Learning](http://arxiv.org/abs/2610.21682v1)**
+106. **[Data World: Scaling Data Environments from Scratch](http://arxiv.org/abs/2610.21656v1)**
+107. **[The Self-Improvement Problem](http://arxiv.org/abs/2610.21646v1)**
+108. **[Efficient Pairwise Difference Learning: A Comparative Study of Encoding Strategies and Training Pair Selection](http://arxiv.org/abs/2610.21644v1)**
+109. **[AgentPerturb: Evaluating LLM Agent Robustness under Controlled Interaction Perturbations](http://arxiv.org/abs/2610.21624v1)**
+110. **[Qwen-Audio-Jev: A Unified Interface for Audio Decisions](http://arxiv.org/abs/2610.21614v1)**
+111. **[Learning Intrinsic Dynamics in Latent World Models](http://arxiv.org/abs/2610.21612v1)**
+112. **[Evaluating Inquiry Learning in LLM-Based Agents: Hypothesizing, Reasoning, and Exploration](http://arxiv.org/abs/2610.21604v1)**
+113. **[Decoding What iOS Location Services Send to Apple: An LLM Is an Unreliable Analyst but a Useful Toolmaker](http://arxiv.org/abs/2610.21597v1)**
+114. **[LoopAhead: Speculating Ahead for Faster Decoding in Looped Language Models](http://arxiv.org/abs/2610.21594v1)**
+115. **[LOADBench: A Large Open Analog Dataset and Benchmark for Machine Learning in IC Design](http://arxiv.org/abs/2610.21591v1)**
+116. **[AVALON: Zero-Shot Indoor Navigation with Human-Seeded Topological Memory](http://arxiv.org/abs/2610.21586v1)**
+117. **[ClaimScope: Label-Blind Witness Verification for Mathematical Claim Auditing](http://arxiv.org/abs/2610.21581v1)**
+118. **[Learning to Search for Executable Patternmaking from Certified Programs](http://arxiv.org/abs/2610.21579v1)**
+119. **[Rethinking the Role of Tool Graph Memory in Multi-Turn Tool Use](http://arxiv.org/abs/2610.21571v1)**
+120. **[Independent Data-Integrity Verification for LLM-Driven Functional Coverage Closure in Hardware Design](http://arxiv.org/abs/2610.21570v1)**
+121. **[BiShield-TEE: On the (In-)Security of Unilateral Weight Obfuscation in On-Device TEE-Shielded LLM Partition](http://arxiv.org/abs/2610.21565v1)**
+122. **[DialFork: Going Beyond Factuality to Evaluate Procedural Hallucination in Conversational Agents](http://arxiv.org/abs/2610.21561v1)**
+123. **[When Does Muon Actually Win? A Paired Data-, Time-, and Tuning-Budget Benchmark](http://arxiv.org/abs/2610.21555v1)**
+124. **[Uncertainty Quantification in Pairwise Difference Learning for Classification](http://arxiv.org/abs/2610.21554v1)**
+125. **[When Is Muon Optimal? Radial Fragility and Minimax Geometry](http://arxiv.org/abs/2610.21549v1)**
+126. **[Reinforcement Learning-driven Diffusion Models: Language, Vision, and Beyond](http://arxiv.org/abs/2610.21539v1)**
+127. **[Agent Status Protocol (ASP): A Lightweight Specification for State Reporting in Multi-Agent Systems](http://arxiv.org/abs/2610.21538v1)**
+128. **[Functional Subnetwork Localization for Efficient Continual Learning in Large Language Models](http://arxiv.org/abs/2610.21537v1)**
+129. **[CriticaLLM: Using LLMs as Autonomous Game Master for Tabletop Role-Playing Games](http://arxiv.org/abs/2610.21525v1)**
+130. **[Hierarchical Interpretable Multitask Audio Representation Learning: An Analysis of Event-Scene Relationships through the Information Bottleneck](http://arxiv.org/abs/2610.21520v1)**
+131. **[SCRIBE: Scalable Contextual Representations of Interpretable Brain-Grounded Semantics](http://arxiv.org/abs/2610.21518v1)**
+132. **[Poison Valleys: Diagnosing Path-Dependent Failure in LLM Code Repair](http://arxiv.org/abs/2610.21514v1)**
+133. **[QREF: Improving DeepSearch Agents by Aligning Search with Reasoning via Query Refinement and Evidence Filtering](http://arxiv.org/abs/2610.21512v1)**
+134. **[Decomposing Brain-LLM Alignment with Interpretable Semantic Representations](http://arxiv.org/abs/2610.21508v1)**
+135. **[ISW-Agent: Integrating LLM-Driven Dialogue with n8n Workflow for Internal Solitary Wave Remote Sensing Image Processing](http://arxiv.org/abs/2610.21502v1)**
+136. **[MetaExp: Learning to Self-Improve through Experience via Verifiable Cross-Task Environment Scaling](http://arxiv.org/abs/2610.21492v1)**
+137. **[FlashAttention with Statistics: Low-Overhead Attention Features for Compact Hallucination Detectors](http://arxiv.org/abs/2610.21483v1)**
+138. **[AI-Driven Disaster Response and Displacement Monitoring](http://arxiv.org/abs/2610.21482v1)**
+139. **[Tool-Augmented Large Language Models for Reliable Medical Calculation from Patient Notes](http://arxiv.org/abs/2610.21477v1)**
+140. **[Can LLMs Tell Stories Out of Order? A Corpus and Benchmark for Nonlinear Narrative Generation](http://arxiv.org/abs/2610.21468v1)**
+141. **[Ontology Refinement with Embeddings and LLMs: A Case Study on CASTON](http://arxiv.org/abs/2610.21466v1)**
+142. **[Trajectory-Level Speculation with Semantic Verification for Tool-Using Agents](http://arxiv.org/abs/2610.21463v1)**
+143. **[Can Visual Generation Expand What Unified Multimodal Models Know?](http://arxiv.org/abs/2610.21459v1)**
+144. **[Full-Duplex Interaction with Speech, Expressions and Gestures](http://arxiv.org/abs/2610.21452v1)**
+145. **[X-Fly: Learning to Reach and Stop in Full-Chunk Aerial Vision-Language Navigation](http://arxiv.org/abs/2610.21450v1)**
+146. **[Incentivizing Tool-Use Reinforcement Learning for Post-Arrival Emergency Care Prediction](http://arxiv.org/abs/2610.21449v1)**
+147. **[V-SHARE: Provable Convergence Guarantees for Advantage-based Algorithms](http://arxiv.org/abs/2610.21448v1)**
+148. **[Learning from Interaction Experience via Localized Context Distillation](http://arxiv.org/abs/2610.21427v1)**
+149. **[Do Agents Need a New Kind of Paper? SPRA: Structured Paper Representation for Agents](http://arxiv.org/abs/2610.21424v1)**
+150. **[Where, How, and When: Query-Guided Grounding for Video Understanding](http://arxiv.org/abs/2610.21422v1)**
+151. **[JevAgentHarness: Benchmarking, Deploying and Training Decision Models That Share Control with LLMs](http://arxiv.org/abs/2610.21412v1)**
+152. **[Jev-LiteMAS: Separating Decisions from Generation in Multi-Agent Workflows](http://arxiv.org/abs/2610.21411v1)**
+153. **[MemCut: Every Secret Leaves a Trail in the Long-Term Memory of LLM Agents](http://arxiv.org/abs/2610.21405v1)**
+154. **[Multi-Reward Hacking: From Aggregation-Induced Drift to Trust-Anchored Defense](http://arxiv.org/abs/2610.21404v1)**
+155. **[Watts If? A Benchmark for Counterfactual Reasoning About the AI Data Center Buildout](http://arxiv.org/abs/2610.21397v1)**
+156. **[When do quantum views help? Complementary classical-quantum representations in multi-view fusion](http://arxiv.org/abs/2610.21395v1)**
+157. **[Matoi: Selective Revalidation of Consequence Evidence for Agent Authorization](http://arxiv.org/abs/2610.21394v1)**
+158. **[Self-Guided LLM Reasoning for Error Diagnosis in Vehicle Routing Problems](http://arxiv.org/abs/2610.21393v1)**
+159. **[Learning to Reason with Selective Internal Feedback](http://arxiv.org/abs/2610.21392v1)**
+160. **[PriorityFEC: Deadline-Aware Streaming FEC for KV-Cache Handoff in Edge Multi-Agent Systems](http://arxiv.org/abs/2610.21390v1)**
+161. **[Memorilla: Latent Semantic Memory for LLMs](http://arxiv.org/abs/2610.21375v1)**
+162. **[ESG-Kor: A Korean Dataset for ESG-related Information Extraction and Practical Use Cases](http://arxiv.org/abs/2610.21368v1)**
+163. **[LTM: Latent Transition Based In-Context Memory for Vision-Language-Action Models](http://arxiv.org/abs/2610.21362v1)**
+164. **[Hierarchical Graph Convolutional Network Approach for Detecting Low-Quality Documents](http://arxiv.org/abs/2610.21350v1)**
+165. **[FedSkillGit: Federated Skill Evolution via Version Control](http://arxiv.org/abs/2610.21348v1)**
+166. **[ARGUS: An Agenda-Driven Framework for Reliable User Simulation](http://arxiv.org/abs/2610.21346v1)**
+167. **[Quantum Versus Classical Machine Learning for Neuropsychiatric Disorders: A Feature-Matched Multi-Cohort Evaluation](http://arxiv.org/abs/2610.21344v1)**
+168. **[Does On-Policy Distillation Need to Complete Every Rollout?](http://arxiv.org/abs/2610.21337v1)**
+169. **[DocPilot: Interactive Agent Orchestration and Training for Long Visual Document Understanding](http://arxiv.org/abs/2610.21327v1)**
+170. **[Constrained Multi-Agent Reinforcement Learning in Imagination](http://arxiv.org/abs/2610.21319v1)**
+171. **[Loud and Clear: Making Visual Evidence Count in Multimodal Document RAG](http://arxiv.org/abs/2610.21318v1)**
+172. **[Money-Mule Detection as a Relational Learning Problem: A Study on the RBIH NFPC Dataset](http://arxiv.org/abs/2610.21314v1)**
+173. **[Bias Control and Injection for Multi-Agent Aggregation](http://arxiv.org/abs/2610.21290v1)**
+174. **[The Density of Thought: Predicting and Steering Reasoning in Large Language Models](http://arxiv.org/abs/2610.21286v1)**
+175. **[Mallea: Building, Steering, and Memorizing Worlds with Coding Agent](http://arxiv.org/abs/2610.21283v1)**
+176. **[Diviner: Agentic RCA with Human-Governed Adaptation for Large-Scale Infrastructure](http://arxiv.org/abs/2610.21281v1)**
+177. **[Auditing Escalation Reliability in Healthcare LLM Agents: A Perturbation-Controlled Benchmark of Workflow-State Failures](http://arxiv.org/abs/2610.21270v1)**
+178. **[TRACER: Trajectory-Aware Tool Retrieval for LLM Agents](http://arxiv.org/abs/2610.21267v1)**
+179. **[TRACER: A Multimodal Harness for Patient Care in Hospitals](http://arxiv.org/abs/2610.21266v1)**
+180. **[Behavioral Compositionality of Sparse Autoencoder Representations](http://arxiv.org/abs/2610.21261v1)**
+181. **[Fractional Power-of-Two Quantization for Efficient and Effective Multiplier-Free LLM Inference](http://arxiv.org/abs/2610.21257v1)**
+182. **[What do AI chatbots do after users decline therapeutic redirection for suicide thoughts?](http://arxiv.org/abs/2610.21253v1)**
+183. **[System1-Arena: Which Decisions Can Be Left to System 1?](http://arxiv.org/abs/2610.21244v1)**
+184. **[A Responsibility-Centered Coordination Mechanism for Decentralized Multi-Agent Systems](http://arxiv.org/abs/2610.21243v1)**
+185. **[Representation Redistribution in Sparse Autoencoders](http://arxiv.org/abs/2610.21240v1)**
+186. **[RecSoup: Efficient Model Merging Approach for Controllable Multi-Objective Recommendation](http://arxiv.org/abs/2610.21220v1)**
+187. **[AutoOnboarder: Autonomously Onboarding LLM Agents](http://arxiv.org/abs/2610.21218v1)**
+188. **[Rubric Judgments Lack Uncertainty: Conformal Weighting for LLM Evaluation](http://arxiv.org/abs/2610.21214v1)**
+189. **[Entertain, then Cancel: How Thinking Makes Reasoning Models Read Some and Or Literally](http://arxiv.org/abs/2610.21204v1)**
+190. **[Who May Release an Agent's Promise? Standing over Commitments in Multi-Party Chat](http://arxiv.org/abs/2610.21203v1)**
+191. **[Condition-Contrastive Extrapolation for On-Policy Distillation of Language Models](http://arxiv.org/abs/2610.21195v1)**
+192. **[FedSumUp: User-Auditable Privacy-Aware Representation Sharing for Resource-Constrained Federated Intelligence](http://arxiv.org/abs/2610.21194v1)**
+193. **[Mine, Sample, Render: Test-Time Diversity Alignment Of Generative Models](http://arxiv.org/abs/2610.21185v1)**
+194. **[Does Latent Chain-of-Thought Actually Reason? A Single, Unifying Taxonomy for Latent Reasoning](http://arxiv.org/abs/2610.21182v1)**
+195. **[Judging the Judges: Confidence and Disagreement in Rubrics as Rewards](http://arxiv.org/abs/2610.21179v1)**
+196. **[AgentEval: Evidence-Bounded Assessment of Stateful Agents](http://arxiv.org/abs/2610.21177v1)**
+197. **[Language Models Share a Readout Bottleneck in Working Memory](http://arxiv.org/abs/2610.21176v1)**
+198. **[MemScope: Evolving Agent Memory Architectures through Localized Code Repair](http://arxiv.org/abs/2610.21170v1)**
+199. **[GRADS: Graph-Regulated Agentic Data Synthesis with Controllable Difficulty](http://arxiv.org/abs/2610.21167v1)**
+200. **[CARE-SD: Explainable Reasoning Architecture for Local SLM Self-Disclosure Analysis in Textual Data](http://arxiv.org/abs/2610.21151v1)**
+201. **[All-in-One Memory: Process-Rewarded Reinforcement Learning for Memory Agents](http://arxiv.org/abs/2610.21147v1)**
+202. **[CoSTA: Compressed Speech Token Adaptation for Efficient Spoken Dialogue Models](http://arxiv.org/abs/2610.21143v1)**
+203. **[When is a better LLM worth paying for? Stochastic Optimization with Switching Mixed-Fidelity Oracles](http://arxiv.org/abs/2610.21139v1)**
+204. **[CleanRM: Reward Modeling from Noisy Feedback with a Few Clean Feedback for RLHF](http://arxiv.org/abs/2610.21138v1)**
+205. **[OnBodyAI - Why the Next AI Needs a Body](http://arxiv.org/abs/2610.21137v1)**
+206. **[Stronger Judges Do Not See More: Deployment-Integrity Blindness in LLM Evaluation](http://arxiv.org/abs/2610.21135v1)**
+207. **[When Judges Agree and Are Wrong: Consistency-Accuracy Dissociation as a Blind Spot for Label-Free Evaluation](http://arxiv.org/abs/2610.21128v1)**
+208. **[DST-Net: Decomposed Spatio-Temporal Network for Time Series Forecasting](http://arxiv.org/abs/2610.21123v1)**
+209. **[SSR: Structural Signal Retriever for Scalable Agent Discovery in LLM-Orchestrated Multi-Agent Systems](http://arxiv.org/abs/2610.21113v1)**
+210. **[Kolab: Benchmarking Human-Agent Collaboration in Long-Horizon Workflows](http://arxiv.org/abs/2610.21109v1)**
+211. **[Planning Commitment of LLM under Partial Observability](http://arxiv.org/abs/2610.21108v1)**
+212. **[ToolBottleneckBench: Measuring Tool-Agent Performance under Controlled Pressures and Fixed Harness Budgets](http://arxiv.org/abs/2610.21098v1)**
+213. **[MemComposer: Learning to Assemble Memories for LLM Agents via Reinforcement Learning](http://arxiv.org/abs/2610.21091v1)**
+214. **[Probe-and-Resume: When and How to Evaluate Agent Execution](http://arxiv.org/abs/2610.21088v1)**
+215. **[SIEVE: Overcoming Topological Obstruction in Equivariant Self-Supervised Learning](http://arxiv.org/abs/2610.21087v1)**
+216. **[A Jury, Not an Electorate: Label-Free Reliability Estimation for Ensembles of Language Models](http://arxiv.org/abs/2610.21085v1)**
+217. **[Sci$Π$vot: Benchmarking Principal-Investigator Judgment at Pivotal Moments of Scientific AutoResearch Agents](http://arxiv.org/abs/2610.21082v1)**
+218. **[OmicsBench: a long-horizon multi-turn benchmark of AI agents on research-study-scale bioinformatics](http://arxiv.org/abs/2610.21074v1)**
+219. **[Approve What, Exactly? Effect Binding and Trusted Rendering for Agent Step-Up Authorization](http://arxiv.org/abs/2610.21063v1)**
+220. **[Bellman-Consistent Trajectory RL for LLM Arithmetic Reasoning](http://arxiv.org/abs/2610.21060v1)**
+221. **[Athanor: An Agent-Native System for Autonomous Post-Training Research](http://arxiv.org/abs/2610.21055v1)**
+222. **[PremiseCheck: Efficient Fact-Checking of Human and AI Peer Reviews](http://arxiv.org/abs/2610.21046v1)**
+223. **[Learning When to Withdraw: Curriculum Coverage and Rule-Specific Failures in Fine-Tuned Language Agents](http://arxiv.org/abs/2610.21045v1)**
+224. **[ReviewPilot: A Multi-Agent System for Screening and Data Extraction in Systematic Reviews](http://arxiv.org/abs/2610.21042v1)**
+225. **[Recursive Reward Improvement via Adversarial Meta-Prompt Evolution](http://arxiv.org/abs/2610.21040v1)**
+226. **[SCARCE: Emergent Institutions in Long-Horizon Multi-Agent Coding Systems](http://arxiv.org/abs/2610.21029v1)**
 
-cs.AI共找到 211 篇论文。
+cs.AI共找到 226 篇论文。
 
 ---
 ### 机器学习 (cs.LG)
-**最近发布日期**: 2026-10-14
+**最近发布日期**: 2026-10-15
 
-1. **[Modeling and Understanding Neural Weights of Humanoid Policies with Diffusion](http://arxiv.org/abs/2610.20606v1)**
-2. **[Hierarchical Residual Policy Learning for Real-World Mobile Manipulation with Sparse Human Guidance](http://arxiv.org/abs/2610.20607v1)**
-3. **[Co-Evolving Acting and Forecasting for Language Agents](http://arxiv.org/abs/2610.20597v1)**
-4. **[Your Transformer Is Secretly Elastic](http://arxiv.org/abs/2610.20588v1)**
-5. **[Price of Anarchy of First-Price Auctions in Agentic Markets](http://arxiv.org/abs/2610.20587v1)**
-6. **[Continuum Attention](http://arxiv.org/abs/2610.20586v1)**
-7. **[Learnable Hodge-Laplacian Driven Mixture of Experts for Steady-PDE Surrogates on Coarse Unstructured Meshes](http://arxiv.org/abs/2610.20585v1)**
-8. **[Latent Compaction with Test-Time Training](http://arxiv.org/abs/2610.20582v1)**
-9. **[One Task, Many Interfaces: Simple Cross-Interface Consistency Training Improves LLM Agent Robustness](http://arxiv.org/abs/2610.20576v1)**
-10. **[Recovering Reliable Supervision via Critique-Guided On-Policy Distillation](http://arxiv.org/abs/2610.20572v1)**
-11. **[Detection of Potato Plant Leaf Diseases using Convolutional Neural Networks](http://arxiv.org/abs/2610.20544v1)**
-12. **[PrismaCoder: Pushing the Boundaries of Open Multimodal Code Intelligence through Decomposed Rubric Synthesis](http://arxiv.org/abs/2610.20538v1)**
-13. **[Revisiting Simple Baselines for Relational Deep Learning](http://arxiv.org/abs/2610.20534v1)**
-14. **[Generative Representation Learning for Scalable Latent Tokenization](http://arxiv.org/abs/2610.20533v1)**
-15. **[ActiveEvidence: Decision-Focused Evidence Graphs with Verifiable Acquisition Gaps](http://arxiv.org/abs/2610.20532v1)**
-16. **[The Physics Is the Network: Fast, Training-Free Neural Emulation](http://arxiv.org/abs/2610.20525v1)**
-17. **[VASPO: Self-Distillation with Privileged Value Estimation](http://arxiv.org/abs/2610.20516v1)**
-18. **[Bayesian Learning to Select Fair Classifiers](http://arxiv.org/abs/2610.20514v1)**
-19. **[A Two-Level Clinical Novelty Prioritization Framework for Disease Trajectories Discovered from Longitudinal Electronic Health Records](http://arxiv.org/abs/2610.20512v1)**
-20. **[VascuSR: Iterative Anatomy-Aware Diffusion for CT Super-Resolution](http://arxiv.org/abs/2610.20509v1)**
-21. **[Graph-Enhanced Disease Trajectory Discovery and Temporal Endpoint Forecasting from Longitudinal Electronic Health Records](http://arxiv.org/abs/2610.20502v1)**
-22. **[Hindsight-Privileged RLVR: Single-Rollout Token Credit Without Group Sampling](http://arxiv.org/abs/2610.20497v1)**
-23. **[Average-Reward Policy Identification from a Single Continuing Trajectory](http://arxiv.org/abs/2610.20486v1)**
-24. **[Decoupled Marginal Sharpening for Training-Free Inference-Time Scaling](http://arxiv.org/abs/2610.20483v1)**
-25. **[Lost in Translation: Why Lower Bias Scores Don't Mean Fairer Models](http://arxiv.org/abs/2610.20479v1)**
-26. **[SafeAdapt-Poker: Counterfactual Risk Calibration for Budgeted Adaptation under Opponent Shift](http://arxiv.org/abs/2610.20473v1)**
-27. **[Selective Growing Q-Networks (SGQN): An Analysis of Adaptive Action Grids in Decoupled Q-Learning](http://arxiv.org/abs/2610.20463v1)**
-28. **[Learning by Examples: Power Grid Steady State Analysis with a Tabular Foundation Model](http://arxiv.org/abs/2610.20462v1)**
-29. **[The COUNT: Counting N-grams Unlocks Scaling on Host Memory and Training-Free Adaptation](http://arxiv.org/abs/2610.20456v1)**
-30. **[What Does Disagreement Mean? A Semantic Identifiability Frontier for Pairwise Preference Learning](http://arxiv.org/abs/2610.20450v1)**
-31. **[The Accuracy Well: Nonmonotone Accuracy Dynamics at Vanishing Initialization](http://arxiv.org/abs/2610.20439v1)**
-32. **[Continual Learning for Reliable In-Sequence Molecular Communication](http://arxiv.org/abs/2610.20426v1)**
-33. **[OrionMoE-v1.0: A Mixture-of-Experts Foundation Model for Tabular In-Context Learning](http://arxiv.org/abs/2610.20418v1)**
-34. **[Tracking a Small Set of Experts in Online Convex Optimization](http://arxiv.org/abs/2610.20416v1)**
-35. **[One Size Does Not Fit All: Curvature-Aware Adaptive Perturbation for SAM](http://arxiv.org/abs/2610.20415v1)**
-36. **[When Does Momentum Help in Reinforcement Learning with Verifiable Rewards?](http://arxiv.org/abs/2610.20413v1)**
-37. **[Hyperspherical Contrastive Representations Unlock Planning and Exploration](http://arxiv.org/abs/2610.20409v1)**
-38. **[Posterior Frequencies and the Cost of Not Fitting: A Correction to a Memorization Lower Bound](http://arxiv.org/abs/2610.20402v1)**
-39. **[Training Language Models to Fail Gracefully](http://arxiv.org/abs/2610.20401v1)**
-40. **[HRTF Upsampling and Personalization via Neural Operators](http://arxiv.org/abs/2610.20400v1)**
-41. **[Cortex: Consolidating Context into Parametric Memory](http://arxiv.org/abs/2610.20399v1)**
-42. **[From Human Corrections to Learned Segmentations: A Critical Mathematical Review of Information, Learning, and Human Effort](http://arxiv.org/abs/2610.20396v1)**
-43. **[FOLD: Position-Free Far Memory with Local Order for Long-Context Speculative Decoding](http://arxiv.org/abs/2610.20392v1)**
-44. **[Hypothesis Selection via Weighted Medians](http://arxiv.org/abs/2610.20375v1)**
-45. **[ReAl: Refine neural operators via aligning dynamical flow](http://arxiv.org/abs/2610.20369v1)**
-46. **[Fractional is Better: Learnable Derivative Orders in Neural Operator Learning](http://arxiv.org/abs/2610.20363v1)**
-47. **[Beyond Expert Rankings: Contrast Calibration for Mixed-Precision MoE Quantization](http://arxiv.org/abs/2610.20353v1)**
-48. **[Lifted State Policy Optimization: Internalizing Self-Correction through Transition Geometry](http://arxiv.org/abs/2610.20350v1)**
-49. **[NeuroDETR: Multiscale Discrete Spatiotemporal Tokenization for Asynchronous EEG Event Detection](http://arxiv.org/abs/2610.20349v1)**
-50. **[Non-asymptotic Convergence of Average-reward Q-learning with Options](http://arxiv.org/abs/2610.20347v1)**
-51. **[When Does Task-Aware Imputation Matter? An Analysis of Robustness Under Train-Test Mismatch](http://arxiv.org/abs/2610.20342v1)**
-52. **[Training Dynamics of Transformers on Unbounded Inputs: Attention Learning Can Lag Output Layer Learning](http://arxiv.org/abs/2610.20337v1)**
-53. **[Are We Overthinking One-Step Generation?](http://arxiv.org/abs/2610.20331v1)**
-54. **[Comparative Evaluation of Deep-Learning based DoA Estimators for Real-Time ISAC Beamforming](http://arxiv.org/abs/2610.20326v1)**
-55. **[Efficient Test-Time Adaptation For Robot Policies](http://arxiv.org/abs/2610.20318v1)**
-56. **[Extreme-Scale Super-Resolution of Homogeneous Turbulence from a Single Realization](http://arxiv.org/abs/2610.20305v1)**
-57. **[SpectrumQuant: Spectrum Alignment for LLM Quantization](http://arxiv.org/abs/2610.20303v1)**
-58. **[MMLA-RSI: Recursive Self-Improvement through RTT and RTMA](http://arxiv.org/abs/2610.20294v1)**
-59. **[CASI: Credit Assignment via Set Intervention for Agentic Retrieval](http://arxiv.org/abs/2610.20293v1)**
-60. **[Predicting Unseen Scientific Interactions: Conditional Flow Models Hallucinate Non-Additive Effects](http://arxiv.org/abs/2610.20288v1)**
-61. **[From Plato to Aristotle: Toward a General Theory of Representation Hypotheses](http://arxiv.org/abs/2610.20286v1)**
-62. **[TANGO: RNA Topology and Geometry Co-Design](http://arxiv.org/abs/2610.20277v1)**
-63. **[Resolution Allocation with Learnable Resizing and Spectral Filter Parameterization](http://arxiv.org/abs/2610.20274v1)**
-64. **[FlowSep-RF: Rectified Flow Matching for Single-Channel Radio-Frequency Signal Separation](http://arxiv.org/abs/2610.20269v1)**
-65. **[FUSE: Fairness-aware Update Screening against Byzantine Exploitation in $q$-Fair Federated Learning](http://arxiv.org/abs/2610.20264v1)**
-66. **[Harness Policy Distillation: Aligning Agent Policies with Runtime Semantics](http://arxiv.org/abs/2610.20261v1)**
-67. **[Long-Horizon RL Needs Muon](http://arxiv.org/abs/2610.20256v1)**
-68. **[Adversarial Reinforcement Learning for Robust Planetary Landing](http://arxiv.org/abs/2610.20252v1)**
-69. **[Contrastive uncertainty learning for robust multi-structure segmentation in lower-pelvic MR](http://arxiv.org/abs/2610.20251v1)**
-70. **[Scaling Multilingual Mixture-of-Experts: How Language Coverage Changes Capacity and Compute Allocation](http://arxiv.org/abs/2610.20247v1)**
-71. **[Retrieval Over Training: Similarity search-based Model Selection for Time Series Anomaly Detection](http://arxiv.org/abs/2610.20243v1)**
-72. **[MAEM: Mitigating Recency Bias via a Replay-Free, Capacity-Controlled Dynamic Mixture of Experts for Class-Incremental Graph Learning](http://arxiv.org/abs/2610.20238v1)**
-73. **[The minimal width of neural networks and immersions of real projective space](http://arxiv.org/abs/2610.20229v1)**
-74. **[Mixed Poisson diffusion models and application to posterior sampling](http://arxiv.org/abs/2610.20218v1)**
-75. **[Continual pretraining Prostate MRI ViT Encoder for task alignment](http://arxiv.org/abs/2610.20217v1)**
-76. **[HGRP: Heterogeneous Graph Neural Network for Routability Prediction](http://arxiv.org/abs/2610.20209v1)**
-77. **[Investigating Behavior Cloning from Few Demonstrations for Autonomous Driving based on Bird's-Eye View in Simulated Cities](http://arxiv.org/abs/2610.20203v1)**
-78. **[Dimension-Optimal Dynamic Regret in Exp-Concave Online Learning](http://arxiv.org/abs/2610.20187v1)**
-79. **[Cross-Model In-Context Neurofeedback Reveals (Limited) Activation Control in LLMs](http://arxiv.org/abs/2610.20179v1)**
-80. **[RM-OPD: On-Policy Distillation for Generative Reward Models](http://arxiv.org/abs/2610.20174v1)**
-81. **[Optimizing Sparse Boolean Rule Networks using Mixed Integer Linear Programming](http://arxiv.org/abs/2610.20170v1)**
-82. **[Gap Detection: Mitigating Homogenization through Demand and Defensibility](http://arxiv.org/abs/2610.20162v1)**
-83. **[In-Context Batch Black-box Optimization via Flow Matching](http://arxiv.org/abs/2610.20138v1)**
-84. **[Seeing at the Edge: Energy Characterization of Vision-Language Model Inference on Edge Platforms](http://arxiv.org/abs/2610.20136v1)**
-85. **[A Bregman Proximal Viewpoint on Neural Operators](http://arxiv.org/abs/2610.20120v1)**
-86. **[KANLab: TensorFlow Playground for Kolmogorov-Arnold Networks](http://arxiv.org/abs/2610.20117v1)**
-87. **[From Spectral to Frobenius: When Muon Loses Its Spectral Implicit Bias](http://arxiv.org/abs/2610.20112v1)**
-88. **[Exhaustive Canonical Skeletons Generation: A Formal Dataset for Decomposable Symbolic Regression](http://arxiv.org/abs/2610.20108v1)**
-89. **[What Do Foundation Models for Market Microstructure Learn? A Controlled Study with Synthetic Limit Order Books](http://arxiv.org/abs/2610.20104v1)**
-90. **[A Large-Dimensional Analysis of Least-Squares Federated Learning via Generalized Total Variation Minimization](http://arxiv.org/abs/2610.20075v1)**
-91. **[Rethinking Prediction Horizons: Decoupling Model Queries from State Updates in Few-Step MeanFlow](http://arxiv.org/abs/2610.20071v1)**
-92. **[Trainable at Depth, Solvable at Small Size: What the Loss Surface of a Polynomial Activation Dictates for Designing, Initializing and Training Networks](http://arxiv.org/abs/2610.20069v1)**
-93. **[GBTSVR: Twin Support Vector Regression via Granular Ball Computing](http://arxiv.org/abs/2610.20053v1)**
-94. **[Sequential Learning-Based Physics-Informed Neural Network Modeling for Parameter Estimation on a Power Converter](http://arxiv.org/abs/2610.20041v1)**
-95. **[Weighted Adjoint Matching: Finetuning Flow Matching Models with Time-Dependent Control Cost](http://arxiv.org/abs/2610.20035v1)**
-96. **[On the Convergence of Semi-Gradient TD: A Mean Field Perspective](http://arxiv.org/abs/2610.20014v1)**
-97. **[ChemArgus: Automated Scientific Diagnostics for Lab-Grade Multimodal Chemistry Reasoning: A Frontier Benchmark](http://arxiv.org/abs/2610.20012v1)**
-98. **[Outperforming 1000 Euclidean Layers With Hyperbolic Goal-Conditioned RL](http://arxiv.org/abs/2610.20009v1)**
-99. **[Minimax estimation of the pseudo-spectral gap of continuous Markov chains, with applications to empirical concentration bounds](http://arxiv.org/abs/2610.20007v1)**
-100. **[Provable Transformer Context Compression for In-Context Reinforcement Learning](http://arxiv.org/abs/2610.20004v1)**
-101. **[Empirical Boundaries of Reservoir Computing for Few-Shot Sequence Pattern Tasks](http://arxiv.org/abs/2610.19997v1)**
-102. **[LatentLoop: Scaling Looped MoE Models with Asymmetric Compute Allocation](http://arxiv.org/abs/2610.19975v1)**
-103. **[Safe-FCL: Continual Risk Awareness and Fine-Grained Safety Aggregation for Federated Continual Learning of LLMs](http://arxiv.org/abs/2610.19968v1)**
-104. **[Choosing the Number of Attention Heads from Intrinsic Dimension: A Small-Scale Study](http://arxiv.org/abs/2610.19966v1)**
-105. **[AtomSearch: Evidence-Grounded Tree Search for Agent Skill Optimization](http://arxiv.org/abs/2610.19951v1)**
-106. **[Learning Graph Energies for Finite-Time Generation](http://arxiv.org/abs/2610.19946v1)**
-107. **[MorphingNet: Symbolic Regression Where the Network Is the Formula](http://arxiv.org/abs/2610.19942v1)**
-108. **[SAM3RL: Memory Control via Reinforcement Learning for Visual Object Tracking](http://arxiv.org/abs/2610.19931v1)**
-109. **[Convergence Rates of Gaussian Process Thompson Sampling for Efficient Global Optimization](http://arxiv.org/abs/2610.19925v1)**
-110. **[MolHop: Scaffold-Hopping Molecular Design with Agentic Reinforcement Learning](http://arxiv.org/abs/2610.19920v1)**
-111. **[Beyond DFT electronic band structures via dual-space orbital learning](http://arxiv.org/abs/2610.19919v1)**
-112. **[CARD: Closing the Teacher-Student Loop for Adversarial Robustness Distillation](http://arxiv.org/abs/2610.19911v1)**
-113. **[When Non-Adversarial Noise Hurts Learning: Benchmarking Skill Self-Evolution in Agents](http://arxiv.org/abs/2610.19910v1)**
-114. **[Multimodal Medical Image Parsing with Task-Specific Low-Rank Adapters](http://arxiv.org/abs/2610.19901v1)**
-115. **[Universal Sample-Based Embeddings of Higher-Order Objects](http://arxiv.org/abs/2610.19899v1)**
-116. **[Few-Shot Adaptation for Anomalous Sound Detection at Low False-Positive Rate](http://arxiv.org/abs/2610.19893v1)**
-117. **[On the Limits of Representation-Based Test-Time Adaptation for Multimodal LLMs](http://arxiv.org/abs/2610.19892v1)**
-118. **[Occupancy Modeling via Drifting: One-Step Generation Enables Direct Policy Extraction](http://arxiv.org/abs/2610.19883v1)**
-119. **[Neural Wasserstein Splines: Representation-Invariant Second-Order Priors for Trajectory Inference](http://arxiv.org/abs/2610.19878v1)**
-120. **[SPARS: A Stability-Plasticity-Aware Region Selection Framework for Continual Learning](http://arxiv.org/abs/2610.19876v1)**
-121. **[Explorer-Zero: Improving Self-Play for Long-Horizon Tasks with Decomposable Verifiable Rewards](http://arxiv.org/abs/2610.19868v1)**
-122. **[On the Optimisation Landscape of Overparameterised Weighted MMD](http://arxiv.org/abs/2610.19861v1)**
-123. **[Text-Informed Training Data Filtering for Enhanced Virtual Flow Meter Performance](http://arxiv.org/abs/2610.19860v1)**
-124. **[Energy Consumption Analysis of Discrete Diffusion and Autoregressive Language Models](http://arxiv.org/abs/2610.19855v1)**
-125. **[Memory-Efficient Subspace Optimization with Residual Correction: From Momentum SGD to Muon](http://arxiv.org/abs/2610.19844v1)**
-126. **[Rent-Seeking Language Models: Reward Models Set the Prices, Frequent Audits Curb the Rent](http://arxiv.org/abs/2610.19832v1)**
-127. **[CTIA-ODE: Continuous-Time Inter-Variable Attention for Long-Term Time Series Forecasting](http://arxiv.org/abs/2610.19831v1)**
-128. **[MAPLE: A Multi-Axis Parametric Knowledge Extraction Lens for LLM Evaluation](http://arxiv.org/abs/2610.19827v1)**
-129. **[JointServe: Serving Multi-Model Agents on Memory-Constrained GPUs](http://arxiv.org/abs/2610.19822v1)**
-130. **[When Does Depth Help? Understanding Layerwise Inference in Tabular Foundation Models](http://arxiv.org/abs/2610.19814v1)**
-131. **[VaryST: Generalizable Spatio-Temporal Forecasting Beyond the Closed-World Setting](http://arxiv.org/abs/2610.19813v1)**
-132. **[Calibration and Risk-Budgeted Decisions with System One Models](http://arxiv.org/abs/2610.19811v1)**
-133. **[ReproBAIT: Can coding agents build their own biological AI tools?](http://arxiv.org/abs/2610.19810v1)**
-134. **[Efficient contextual partial monitoring with general function approximation](http://arxiv.org/abs/2610.19804v1)**
-135. **[Asymptotically Exact Negative Guidance of Diffusion Models via Positive-Unlabeled Learning](http://arxiv.org/abs/2610.19802v1)**
-136. **[StateCraft: Augmenting Video World Models with Abstract-State Reasoning](http://arxiv.org/abs/2610.19795v1)**
-137. **[More Methods, Better Agents? A Reality Check on Self-Distillation in Agentic Reinforcement Learning](http://arxiv.org/abs/2610.19789v1)**
-138. **[Reinforcement Learning via Advantage Guidance](http://arxiv.org/abs/2610.19783v1)**
-139. **[Learning Who Benefits Most: Multi-Treatment Causal Ranking for Population Health Stratification](http://arxiv.org/abs/2610.19782v1)**
-140. **[SNACK: A Sequential Notation Framework for Probabilistic Graph Generation](http://arxiv.org/abs/2610.19781v1)**
-141. **[From Global to Tail Convergence: Dynamics of $α$-Stable Score-Based Generative Models](http://arxiv.org/abs/2610.19773v1)**
-142. **[When Does the Dependency Graph Help Code-to-Architecture Mapping?](http://arxiv.org/abs/2610.19769v1)**
-143. **[Learning to Compute Is Not Learning to Retain or Reuse in Looped Transformers](http://arxiv.org/abs/2610.19768v1)**
-144. **[Analyzing and Mitigating Poisoning Attacks on Flow-Based Intrusion Detection](http://arxiv.org/abs/2610.19766v1)**
-145. **[CAST: History-Adaptive Spectral Clipping for LLM Pretraining](http://arxiv.org/abs/2610.19761v1)**
-146. **[Discriminative Score Function: Turning Pretrained Models into Functional Generative Priors](http://arxiv.org/abs/2610.19743v1)**
-147. **[ProtModernBERT: Compute-Efficient Protein Language Modeling](http://arxiv.org/abs/2610.19738v1)**
-148. **[What Happens to the Goal? Distinct Failures of Policy Alignment in Goal Misgeneralization](http://arxiv.org/abs/2610.19731v1)**
-149. **[TIMERSI: Towards Self-Improved Agentic Deployment for Time-Series Foundation Models](http://arxiv.org/abs/2610.19725v1)**
-150. **[Articulation Upper Bounds for Language Models](http://arxiv.org/abs/2610.19721v1)**
-151. **[Learning Individual Scientific Taste with Privileged Hindsight Distillation](http://arxiv.org/abs/2610.19719v1)**
-152. **[New Model, Old Habits: Behavior Transfer under Model Swapping in Multi-Session LLM Agents](http://arxiv.org/abs/2610.19712v1)**
-153. **[ReGRA: Residual-Gradient Adaptation for Complementary Low-Rank Fine-Tuning](http://arxiv.org/abs/2610.19700v1)**
-154. **[Annealed Lévy Diffusion via Gaussian Surrogate Reverse Dynamics](http://arxiv.org/abs/2610.19692v1)**
-155. **[Function-Space Temporal Self-Distillation for Policy Optimization](http://arxiv.org/abs/2610.19687v1)**
-156. **[Beyond Distribution Matching: Selective Margin Preservation for Supervised Fine-Tuning](http://arxiv.org/abs/2610.19685v1)**
-157. **[Enhancing Latent World Models with Associative Memory](http://arxiv.org/abs/2610.19683v1)**
-158. **[MCAIR: Monitoring and Correcting Agent Unfaithfulness via Internal Representations](http://arxiv.org/abs/2610.19679v1)**
-159. **[HACHIMI-II: From Role-Play to Learner Behavior Modeling for Faithful Student Simulation](http://arxiv.org/abs/2610.19654v1)**
-160. **[On Global Joint Lower Bounds in Zeroth-Order Nonconvex Optimization](http://arxiv.org/abs/2610.19652v1)**
-161. **[Model What Matters: Decision-Guided Selective World Modeling for Language Agents](http://arxiv.org/abs/2610.19642v1)**
-162. **[Synthetic reaction data from transformation rules for graph-to-sequence pretraining in biodegradation pathway prediction](http://arxiv.org/abs/2610.19640v1)**
-163. **[Sparse Autoencoders Are a Shared Coordinate System for Symbolic Matching](http://arxiv.org/abs/2610.19636v1)**
-164. **[Risk-Controlled DFT Selection for Machine-Learned Interatomic Potentials](http://arxiv.org/abs/2610.19630v1)**
-165. **[Self-Conditioning Enables Deep Sequential Reasoning in Flow Matching](http://arxiv.org/abs/2610.19628v1)**
-166. **[DAGFormer: Global Topology Prediction for Transformer Cross-Layer Connections](http://arxiv.org/abs/2610.19625v1)**
-167. **[Divergent Paths: Learning an Outcome-Predictive Representation of LLM Agent Trajectories](http://arxiv.org/abs/2610.19614v1)**
-168. **[A Graph-Based Analysis of Comparability, Scale, and Attribution in Private Transformer Inference](http://arxiv.org/abs/2610.19607v1)**
-169. **[PN-Mix: Pair-Norm Guided Mixed-Precision Key Cache Quantization for Efficient Long-Output LLM Inference](http://arxiv.org/abs/2610.19605v1)**
-170. **[Beyond Static Positional Encoding: Bayesian Time-aware Attention for Non-Stationary Long-term Time Series Forecasting](http://arxiv.org/abs/2610.19603v1)**
-171. **[InstructPro2: Natural Language and Biological Grounding Guided De Novo Protein Design](http://arxiv.org/abs/2610.19592v1)**
-172. **[L3M: A Verifiable Harness and Runtime for Self-Extending and Self-Improving Agents](http://arxiv.org/abs/2610.19591v1)**
-173. **[Projected Wasserstein-Fisher-Rao Flows for Hawkes Background-Intensity Estimation](http://arxiv.org/abs/2610.19588v1)**
-174. **[Who's Behind the Text? Robust Model Authorship Attribution](http://arxiv.org/abs/2610.19583v1)**
-175. **[Bridging the Topological Divide: Dual-Branch Graph Distillation with Semantic Priors for Robust Cold-Start Recommendation](http://arxiv.org/abs/2610.19578v1)**
-176. **[Learning Across Temporal Graph Representation Silos](http://arxiv.org/abs/2610.19576v1)**
-177. **[On Inherent Privacy of Posterior Sampling: A Unified Rényi-Divergence Framework](http://arxiv.org/abs/2610.19573v1)**
-178. **[Geometric Kernel Diversity: An Axiomatic Diversity Measure in Euclidean Space](http://arxiv.org/abs/2610.19570v1)**
-179. **[INTACT: Inducing Latent Reasoning on a Frozen Backbone](http://arxiv.org/abs/2610.19568v1)**
-180. **[TEX-MEX: Similarity-Guided Temporal Contrastive Learning for Time Series](http://arxiv.org/abs/2610.19557v1)**
-181. **[Evidence-Anchored Overdose Death Prediction from Death Investigation Reports](http://arxiv.org/abs/2610.19556v1)**
-182. **[Test-Time Forecasting: Recurrent Depth Enables In-Context Dynamics Prediction](http://arxiv.org/abs/2610.19552v1)**
-183. **[Noisy-Label Calibration with Multiple Unreliable Labels](http://arxiv.org/abs/2610.19543v1)**
-184. **[Two-stage Residual Learning for Modelling Strength-Informed Optimisation of Thermal Systems](http://arxiv.org/abs/2610.19539v1)**
-185. **[Typed Decision Models on Tabular Data](http://arxiv.org/abs/2610.19536v1)**
-186. **[A Unified Response Framework for Questions and Tutoring Dialogues](http://arxiv.org/abs/2610.19532v1)**
-187. **[Diagnosing and Correcting Reward Hacking in Verifiable Instruction Following](http://arxiv.org/abs/2610.19525v1)**
-188. **[HankelKANet: Lightweight Path Loss Estimation via Physics-Inspired Hankel Convolution](http://arxiv.org/abs/2610.19524v1)**
-189. **[High-Probability Regret Bounds for Feel-Good Thompson Sampling](http://arxiv.org/abs/2610.19513v1)**
-190. **[CktHGVAE: A Symmetric Design/State Heterogeneous Graph Variational Autoencoder for Transistor-level Analog/Mixed-signal Circuit Design and Analysis](http://arxiv.org/abs/2610.19508v1)**
-191. **[SKG: A Law-Induced Engine from Inference to Induction](http://arxiv.org/abs/2610.19505v1)**
-192. **[What You Sign Is Not What You Run: The Verifiability Gap in Quantized LLM Supply Chains](http://arxiv.org/abs/2610.19498v1)**
-193. **[Digital Self-Interference Cancellation for In-Band Full-Duplex Systems Based on Transformer Neural Operators](http://arxiv.org/abs/2610.19490v1)**
-194. **[State-Matched Sequence Conformal Prediction](http://arxiv.org/abs/2610.19484v1)**
-195. **[MIPS: Mitigating Mode Collapse in Reinforcement Learning for Large Outcome Spaces](http://arxiv.org/abs/2610.19457v1)**
-196. **[Large-Step Last-Iterate Convergence of Random-Reshuffling Stochastic Gradient Descent](http://arxiv.org/abs/2610.19444v1)**
-197. **[Progress-Aware Distillation for Mitigating Stagnation in Small Language Model Agents](http://arxiv.org/abs/2610.19439v1)**
-198. **[Learning to Select Features with Manifold Deep Unfolding PCA](http://arxiv.org/abs/2610.19436v1)**
-199. **[Comprehensive Comparisons of Reinforcement Learning Algorithms in Autonomous Driving](http://arxiv.org/abs/2610.19429v1)**
-200. **[W-JEPA: Wavelet Joint-Embedding Predictive Architecture for Wearable Activity Recognition](http://arxiv.org/abs/2610.19411v1)**
-201. **[Scaling LLM Inference via Parallelism: Throughput-Latency Trade-off](http://arxiv.org/abs/2610.19405v1)**
-202. **[ActMOF: Mapping Reticular Synthesis through Active Learning](http://arxiv.org/abs/2610.19404v1)**
-203. **[Train to Stitch: Topology-Preserving Regularization for Interoperable Representations](http://arxiv.org/abs/2610.19401v1)**
-204. **[Selective Next-Location Prediction with MetaModelSelect: A Lightweight Post-Hoc Confidence Metamodel](http://arxiv.org/abs/2610.19394v1)**
-205. **[Fully sequential Gaussian process regression for preference learning](http://arxiv.org/abs/2610.19391v1)**
-206. **[RA$^2$: Retain-Anchored Attraction Preserves Forget-Adjacent Utility in LLM Unlearning](http://arxiv.org/abs/2610.19385v1)**
-207. **[Robust Explanatory Analysis for Structured Optimization Networks (REASON) in Learning](http://arxiv.org/abs/2610.19378v1)**
-208. **[One-Step Prediction Fidelity Is a Poor Proxy for Planning Performance in JEPA World Models](http://arxiv.org/abs/2610.19375v1)**
-209. **[Policy-Verified Self-Training: Learning Agent Compliance from Verifiable Policy Rewards](http://arxiv.org/abs/2610.19372v1)**
-210. **[The Impact of Detector Architecture, Model Scale, and Scene Density on Multi-Pedestrian Tracking](http://arxiv.org/abs/2610.19369v1)**
-211. **[Dynamic Graph World Modelling: Learning Future Dynamics from Temporal Context](http://arxiv.org/abs/2610.19364v1)**
-212. **[Tail Competition Explains Scaling in Best-of-N Sampling for Verifiable Problems](http://arxiv.org/abs/2610.19362v1)**
-213. **[Steering Vectors for Competing Ethical Frameworks Are Interchangeable: A Competing-Target Test for Activation Steering](http://arxiv.org/abs/2610.19359v1)**
-214. **[Asymptotic Behavior of Transformers](http://arxiv.org/abs/2610.19358v1)**
-215. **[BFHD: Bidirectional Feature Harmonization Decomposition for Heterogeneous Clinical Assessments](http://arxiv.org/abs/2610.19352v1)**
-216. **[Where to Start, How to Move: Analyzing Curricula under GRPO for Long-Horizon LLM Agents](http://arxiv.org/abs/2610.19349v1)**
-217. **[Integrated Novelty Detection Systems: From Sensor Networks to Multi-Novelty Computer Vision](http://arxiv.org/abs/2610.19347v1)**
-218. **[Target-Token Asymmetry Can Masquerade As Depth Specialization](http://arxiv.org/abs/2610.19344v1)**
-219. **[Counterfactual Gate-Support Decomposition: Separating Selection from Redistribution in Training-Data Filtering](http://arxiv.org/abs/2610.19343v1)**
-220. **[Why don't Graph Transformers attend to the same token?](http://arxiv.org/abs/2610.19324v1)**
-221. **[TopicMerge: A Divide and Conquer Approach to Topic Modeling](http://arxiv.org/abs/2610.19323v1)**
+1. **[LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation](http://arxiv.org/abs/2610.22372v1)**
+2. **[PathFM: Fast Generative Forecasting of Multivariate Trajectories](http://arxiv.org/abs/2610.22358v1)**
+3. **[Rethinking Routing Exploration in Modern Mixture-of-Experts](http://arxiv.org/abs/2610.22353v1)**
+4. **[MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering](http://arxiv.org/abs/2610.22344v1)**
+5. **[GeoState: Learning View-Decoupled Geometry States for 3D World Modeling](http://arxiv.org/abs/2610.22343v1)**
+6. **[Lean Graph Search for Formal Theorem Proving](http://arxiv.org/abs/2610.22339v1)**
+7. **[Robust Reinforcement Learning for Dynamic Treatment Regimes under Model and Measurement Uncertainty](http://arxiv.org/abs/2610.22336v1)**
+8. **[Twice Upon a Time: Complementary Representations for Time-Series Reasoning](http://arxiv.org/abs/2610.22327v1)**
+9. **[Learning to Steer LLM Agents and Multi-Agent Systems](http://arxiv.org/abs/2610.22316v1)**
+10. **[Knowledge That Is Linear Before Fine-Tuning Generalizes After It](http://arxiv.org/abs/2610.22300v1)**
+11. **[Backward Compatibility in Zero-Bit Neural Audio Watermarking](http://arxiv.org/abs/2610.22296v1)**
+12. **[Towards Continual Learning: Mitigating Forgetting With Subspace Tuning](http://arxiv.org/abs/2610.22293v1)**
+13. **[CAT-alyzing Honesty: Continuous Adversarial Training for Transferable LLM Honesty](http://arxiv.org/abs/2610.22292v1)**
+14. **[Learning Rational Strategies for Temporal Objectives in Multi-Agent Systems](http://arxiv.org/abs/2610.22287v1)**
+15. **[Asking Smarter Questions: Targeted Active Preference Learning for Underspecified Rewards](http://arxiv.org/abs/2610.22285v1)**
+16. **[Librarian Agents: Training LLMs to Curate Long-Context Workspaces that Anticipate Future Queries](http://arxiv.org/abs/2610.22273v1)**
+17. **[Baselines and Score Centering in Policy Gradient Estimation](http://arxiv.org/abs/2610.22263v1)**
+18. **[Topology-Inspired Fine-Tuning for Wind-Field Super-Resolution](http://arxiv.org/abs/2610.22262v1)**
+19. **[BitSparse: Compact Activation Storage for ReLU Feed-Forward Networks](http://arxiv.org/abs/2610.22256v1)**
+20. **[Explore Once, Evaluate Many: Multiple Policy Evaluation for Stochastic Linear Bandits](http://arxiv.org/abs/2610.22252v1)**
+21. **[Language Is a Security Surface for Agent Guards](http://arxiv.org/abs/2610.22244v1)**
+22. **[Shortcut Sensitivity in Agent-Safety Evaluations](http://arxiv.org/abs/2610.22243v1)**
+23. **[SurvICL: a Foundation Model for in-context Survival Analysis](http://arxiv.org/abs/2610.22242v1)**
+24. **[Query-Efficient Rejection Sampling for Parallel Masked Diffusion](http://arxiv.org/abs/2610.22238v1)**
+25. **[Training-Free On-Policy Distillation](http://arxiv.org/abs/2610.22236v1)**
+26. **[OS-Helix: Unifying GUI Interaction and Code Execution in Native Computer-Using Agents](http://arxiv.org/abs/2610.22234v1)**
+27. **[Architecting for Hardware Diversity: Meta's End-to-End Co-Design for High-Performance AI Training on AMD GPUs](http://arxiv.org/abs/2610.22230v1)**
+28. **[How Much Physics Can Vision Learn from Audio? Probing and Distilling Damping Structure](http://arxiv.org/abs/2610.22221v1)**
+29. **[FutureLift: Lifting Trajectory Proposals into Bidirectional Future Graphs for Motion Forecasting](http://arxiv.org/abs/2610.22215v1)**
+30. **[Generalization Guarantees of Randomized Block Coordinate Descent for Nonconvex Learning](http://arxiv.org/abs/2610.22213v1)**
+31. **[Beyond Downstream QA: Rethinking How We Evaluate Agent Memory](http://arxiv.org/abs/2610.22209v1)**
+32. **[Attention over noisy examples: generalization and memorization in the exponential Hopfield network](http://arxiv.org/abs/2610.22191v1)**
+33. **[Whole-Body Dexterity](http://arxiv.org/abs/2610.22184v1)**
+34. **[LCT: Losslessly Compressed Tensors with GPU friendly execution for Training](http://arxiv.org/abs/2610.22179v1)**
+35. **[REKI: Registering Knowledge in VLAs](http://arxiv.org/abs/2610.22178v1)**
+36. **[Mosaic: Multi-Session Agentic Reinforcement Learning](http://arxiv.org/abs/2610.22174v1)**
+37. **[Lexical Reference Frames: Interpreting LM Residual Streams in Native Semantics](http://arxiv.org/abs/2610.22169v1)**
+38. **[The importance of tensor handling and implementation of physics-informed DeepONets](http://arxiv.org/abs/2610.22157v1)**
+39. **[Specification Gaming and a Constrained Reinforcement Learning Mitigation in a Cleaning Gridworld](http://arxiv.org/abs/2610.22152v1)**
+40. **[Causal Integrated Gradients: Scalable Feature Attribution Along Causal Paths](http://arxiv.org/abs/2610.22126v1)**
+41. **[Beyond Fixed Acquisition Functions: Temporal Difference Active Learning for Perturbation Discovery](http://arxiv.org/abs/2610.22122v1)**
+42. **[Scene Reconstruction Using Ubiquitous Wireless Signals via Diffusion Posterior Inference Over physics-Grounded Representations](http://arxiv.org/abs/2610.22120v1)**
+43. **[Patch where the text is new: a compression view of where byte-level models should spend compute](http://arxiv.org/abs/2610.22100v1)**
+44. **[TIPS: A Tiny Inference-time Policy for Scaling in Diffusion Language Models](http://arxiv.org/abs/2610.22099v1)**
+45. **[Beyond the Dominant Label: Recovering Coexisting Lesion Evidence with Multiple Instance Learning](http://arxiv.org/abs/2610.22091v1)**
+46. **[Learning Changes the World and Then What Was Learned has Changed: Training and Deploying Neural Networks in the Control Loop](http://arxiv.org/abs/2610.22084v1)**
+47. **[Can AI Forecast the Extremes? Evaluating Probabilistic Weather Models on Tropical Cyclones](http://arxiv.org/abs/2610.22077v1)**
+48. **[The Right Byte First: How UTF-16 Helps Multilingual Boundary Prediction](http://arxiv.org/abs/2610.22071v1)**
+49. **[Memory as Weights: Internalizing Long-Term History for Streaming Videos](http://arxiv.org/abs/2610.22070v1)**
+50. **[ABNAT: Attention-Based Noise-Aware Training for Robust Transformers on Analog Compute-in-Memory Systems](http://arxiv.org/abs/2610.22065v1)**
+51. **[Rethinking Successive Rejects Algorithms](http://arxiv.org/abs/2610.22051v1)**
+52. **[Missed Detections and False Alarms in a CNN Technosignature Detector on Breakthrough Listen Data](http://arxiv.org/abs/2610.22050v1)**
+53. **[Decoding Naturalistic Speech from fMRI with Temporal Modeling and Multimodal Alignment](http://arxiv.org/abs/2610.22049v1)**
+54. **[Effectiveness of Hidden-State Probes for Localizing Reasoning Failures](http://arxiv.org/abs/2610.22046v1)**
+55. **[Momentum, Commentary Tone, and Earnings Surprise in LLM Financial Forecasts](http://arxiv.org/abs/2610.22043v1)**
+56. **[ETH: Data-Balanced Heterogeneous Pipeline Parallelism for Training Large Models](http://arxiv.org/abs/2610.22035v1)**
+57. **[Designing Experiments for External Decision Makers](http://arxiv.org/abs/2610.22032v1)**
+58. **[Selection Is Not Learning: Choosing Model Futures](http://arxiv.org/abs/2610.22029v1)**
+59. **[Augment the Cache, Replace the Activation: A 2x2 Study of Internal-State Sharing](http://arxiv.org/abs/2610.22026v1)**
+60. **[Not All Unlabeled Data Are Equal: Unlabeled Data Selection for Semi-Supervised QSAR Modeling with Large Chemical Repositories](http://arxiv.org/abs/2610.22025v1)**
+61. **[DemoStream: Batched Task-and-Motion-Plan Optimization for Automated Learning from Demonstration](http://arxiv.org/abs/2610.22020v1)**
+62. **[Priming Base Models for Agentic Post-Training: An Open Midtraining Recipe](http://arxiv.org/abs/2610.22019v1)**
+63. **[Close Enough is Nowhere Near: Fidelity-Consumability Decoupling in KV Caches](http://arxiv.org/abs/2610.22016v1)**
+64. **[GraphBEAT: Graph-based Bucketized Event Aggregation Over Time for Early Risk Stratification of Gastrointestinal Cancers](http://arxiv.org/abs/2610.22014v1)**
+65. **[Stateful Testing for Deep Learning Compilers](http://arxiv.org/abs/2610.22003v1)**
+66. **[Interfaces and Modules: A Scalable Representation for Weight-Space Learning across Architectures](http://arxiv.org/abs/2610.21995v1)**
+67. **[OntoAct: Hypothesis-Based Neuro-Symbolic Agents through Ontological Abstraction](http://arxiv.org/abs/2610.21983v1)**
+68. **[Deep Learning of Topological Equivalence Classes](http://arxiv.org/abs/2610.21981v1)**
+69. **[P2TPO: Structure-Aligned Page-to-Token Credit Assignment for Full-Page Document Parsing](http://arxiv.org/abs/2610.21979v1)**
+70. **[Learn Only Where You Can't Compute: Structured Corrections to Gaussian Process Posteriors](http://arxiv.org/abs/2610.21977v1)**
+71. **[Time to Fake It: Continual Machine Learning Intensifies Unfairness in Deepfake Detection](http://arxiv.org/abs/2610.21974v1)**
+72. **[Uncertainty-Aware Federated Learning for Joint Communication and Computation in XR Systems](http://arxiv.org/abs/2610.21969v1)**
+73. **[Why Shallow Neural Networks Learn Sinusoidal Components First: An Orthogonal Polynomial Dynamics Framework](http://arxiv.org/abs/2610.21964v1)**
+74. **[ChronoSheaf: Joint Spatio-Temporal Spectral Filtering on Cellular Sheaves](http://arxiv.org/abs/2610.21958v1)**
+75. **[SelectPFN: Amortized Bayesian Variable Selection for Sparse Nonlinear Regression with Prior-Data Fitted Networks](http://arxiv.org/abs/2610.21950v1)**
+76. **[The Lagrangian Structure of Cost-Penalized Active Feature Acquisition](http://arxiv.org/abs/2610.21919v1)**
+77. **[Learning Rewards in Strategic Games](http://arxiv.org/abs/2610.21912v1)**
+78. **[The Tilted Sampling Problem: Optimism, Posterior Sampling, and Logarithmic Regret](http://arxiv.org/abs/2610.21908v1)**
+79. **[In-Context Learning Before Specialisation: Theory of Learning in a Solvable Topic Model](http://arxiv.org/abs/2610.21901v1)**
+80. **[Self-Calibrated Subspace Robust PCA for Parameter-Free Removal of Mixed Noise and Line Stripes in Hyperspectral Images](http://arxiv.org/abs/2610.21896v1)**
+81. **[Graph Dirichlet Energy for Fitting-Free Bivariate Causal Inference](http://arxiv.org/abs/2610.21892v1)**
+82. **[Learning Lean Feedback for Efficient Proof-Candidate Evaluation on GPUs](http://arxiv.org/abs/2610.21881v1)**
+83. **[Provably Efficient Risk-Sensitive Offline Reinforcement Learning via Optimized Certainty Equivalents](http://arxiv.org/abs/2610.21870v1)**
+84. **[Lethe: Link Inference Attacks For Evaluation of Edge Unlearning Methods](http://arxiv.org/abs/2610.21869v1)**
+85. **[Temporal Periodic Image Registration with Implicit Neural Representations](http://arxiv.org/abs/2610.21845v1)**
+86. **[Physics-Aware Distillation of a Grid Foundation Model for Real-Time Edge Inference](http://arxiv.org/abs/2610.21833v1)**
+87. **[Local Epochs as Optimal Stopping: Theory and Evidence in Federated Learning](http://arxiv.org/abs/2610.21832v1)**
+88. **[Compiling Multi-Threshold Operators for Quantized Non-Monotonic and Fine-Granular Activations in Custom-Tailored DNN Accelerators](http://arxiv.org/abs/2610.21825v1)**
+89. **[A Closed Form Depth-Width Law for Neural Collapse in Deep Linear Networks](http://arxiv.org/abs/2610.21820v1)**
+90. **[Measuring the local shape of learning-rate transfer curves](http://arxiv.org/abs/2610.21814v1)**
+91. **[N-Gram Memories at Two Bits: Quantizing Lookup Tables in Large Language Models](http://arxiv.org/abs/2610.21810v1)**
+92. **[CIM-Embed: Learning Instruction-Conditioned Multimodal Embeddings for Clustering](http://arxiv.org/abs/2610.21805v1)**
+93. **[Single-stage joint diffusion of sky images and clear-sky index for ultra-short-term irradiance forecasting: what the frame-to-irradiance stage discards](http://arxiv.org/abs/2610.21795v1)**
+94. **[Same Spectrum, Harder First-Order Training: Phase-Locking in Single- versus Multi-Qubit Re-Uploading Circuits](http://arxiv.org/abs/2610.21778v1)**
+95. **[Q($γ_H$): Entropy-Guided Horizon Mixing in Multi-Discount Q-Learning](http://arxiv.org/abs/2610.21764v1)**
+96. **[DeciCAD: Harness-Grounded Learning of Action Policies for CAD Agents](http://arxiv.org/abs/2610.21755v1)**
+97. **[Harmful Partial Interventions and Benign Leakage in Concept-based Models](http://arxiv.org/abs/2610.21750v1)**
+98. **[The Delegation Dilemma: Economies of Scale, Accountability, and Polycentric Governance](http://arxiv.org/abs/2610.21746v1)**
+99. **[Pairwise AUC Optimization Needs Corrective Power: A Unified View](http://arxiv.org/abs/2610.21743v1)**
+100. **[Sparse Federated Echo State Networks for Time-Series Classification via Smooth-L1 Regularization](http://arxiv.org/abs/2610.21742v1)**
+101. **[Reliable Knowledge Acquisition for Continual Learning Agents](http://arxiv.org/abs/2610.21739v1)**
+102. **[FIRM: Fisher-Informed Retention Merging for Federated LLM Unlearning](http://arxiv.org/abs/2610.21720v1)**
+103. **[International Multi-Centre Validation of Unsupervised Domain Adaptation for Precise Discrimination between Normal and Abnormal Retinal Development](http://arxiv.org/abs/2610.21719v1)**
+104. **[Robust Covariance Estimation for Entry-wise Contaminated and Partially Observed Data via Expectation Maximization Algorithm](http://arxiv.org/abs/2610.21709v1)**
+105. **[Human Interventions as Labels: Localizing, Steering, and (Sometimes) Editing the Computations Behind LLM Agent Failures](http://arxiv.org/abs/2610.21708v1)**
+106. **[ShiftQAT: Quantization-Aware Training for the Numerical Contract of a Fixed-Function Edge CNN Accelerator](http://arxiv.org/abs/2610.21695v1)**
+107. **[MARS: A Momentum-Aware Adaptive Rating System for Personalized Assessment](http://arxiv.org/abs/2610.21685v1)**
+108. **[Router Drift Control: Mitigating Off-Policy Degradation in Mixture-of-Experts Reinforcement Learning](http://arxiv.org/abs/2610.21682v1)**
+109. **[Classical methods for modern applications: synthetic tabular data generation using lightweight discrete response continuous latent variable model](http://arxiv.org/abs/2610.21674v1)**
+110. **[Diffusion Language Models as Open Quantum Systems](http://arxiv.org/abs/2610.21672v1)**
+111. **[Approaching Backpropagation Accuracy with Weight Perturbation on MNIST](http://arxiv.org/abs/2610.21665v1)**
+112. **[When Does "Post-Call" Begin? An Availability Contract for Earnings-Call NLP Benchmarks](http://arxiv.org/abs/2610.21659v1)**
+113. **[Conditional Mean Flows: Few-Step Densities for Simulation-Based Inference](http://arxiv.org/abs/2610.21657v1)**
+114. **[The Self-Improvement Problem](http://arxiv.org/abs/2610.21646v1)**
+115. **[Efficient Pairwise Difference Learning: A Comparative Study of Encoding Strategies and Training Pair Selection](http://arxiv.org/abs/2610.21644v1)**
+116. **[ReFlow: Replay-Driven Decoupling for Efficient RL Post-Training](http://arxiv.org/abs/2610.21640v1)**
+117. **[ContextLift: Breaking the Spurious Correlation Behind Conditional Emergent Misalignment](http://arxiv.org/abs/2610.21633v1)**
+118. **[Local Temporal Contrasts on Human Motion Data Induce a Latent Geometry](http://arxiv.org/abs/2610.21630v1)**
+119. **[Market Incentives for AI Safety Investment](http://arxiv.org/abs/2610.21607v1)**
+120. **[Waypoint-OPD: Transferring RL-Induced Policy Shifts via Gated On-Policy Distillation](http://arxiv.org/abs/2610.21601v1)**
+121. **[LoopAhead: Speculating Ahead for Faster Decoding in Looped Language Models](http://arxiv.org/abs/2610.21594v1)**
+122. **[Transfer Learning in Bandits from Unknown Adaptive Policies: Problem-Dependent Lower and Upper Bounds](http://arxiv.org/abs/2610.21582v1)**
+123. **[ClaimScope: Label-Blind Witness Verification for Mathematical Claim Auditing](http://arxiv.org/abs/2610.21581v1)**
+124. **[Learning to Search for Executable Patternmaking from Certified Programs](http://arxiv.org/abs/2610.21579v1)**
+125. **[From Perception to Prediction and Intervention: Benchmarking Proactive Video Assistants in Real-Life Scenarios](http://arxiv.org/abs/2610.21568v1)**
+126. **[Sharp and Stable Label-Free Calibration Certificates from Logical Coherence](http://arxiv.org/abs/2610.21567v1)**
+127. **[A Quantum Machine Learning Approach to Content-Based Media Recommendation](http://arxiv.org/abs/2610.21562v1)**
+128. **[DialFork: Going Beyond Factuality to Evaluate Procedural Hallucination in Conversational Agents](http://arxiv.org/abs/2610.21561v1)**
+129. **[Reducing the Cost of Qudit State Preparation by Learning a Sparse Structure for SNAP Gates](http://arxiv.org/abs/2610.21557v1)**
+130. **[When Does Muon Actually Win? A Paired Data-, Time-, and Tuning-Budget Benchmark](http://arxiv.org/abs/2610.21555v1)**
+131. **[Uncertainty Quantification in Pairwise Difference Learning for Classification](http://arxiv.org/abs/2610.21554v1)**
+132. **[Rethinking Classifier-Free Guidance for TI2I Flow Matching](http://arxiv.org/abs/2610.21550v1)**
+133. **[When Is Muon Optimal? Radial Fragility and Minimax Geometry](http://arxiv.org/abs/2610.21549v1)**
+134. **[Finite-Time Guarantees for Constrained Reinforcement Learning under Partial Observability](http://arxiv.org/abs/2610.21548v1)**
+135. **[Federated Art Chase: Privacy Leakage and Data Poisoning in Federated Fine-Tuning](http://arxiv.org/abs/2610.21547v1)**
+136. **[Activation-Adjacent Layer Normalization: Effects on Approximation Power](http://arxiv.org/abs/2610.21527v1)**
+137. **[When the KV Cache Is Slower Than the GPU: Scaling Remote KV Tiers for Context-Parallel Prefill](http://arxiv.org/abs/2610.21500v1)**
+138. **[Phase Kernel Lifts Capacity of Dense Associative Memory](http://arxiv.org/abs/2610.21493v1)**
+139. **[Kolmogorov-Arnold Networks: Curse of Dimensionality and Structural Bias](http://arxiv.org/abs/2610.21480v1)**
+140. **[DuET: Note-Frame Dual Encoding for Piano Performance-to-Score Transcription](http://arxiv.org/abs/2610.21467v1)**
+141. **[Trajectory-Level Speculation with Semantic Verification for Tool-Using Agents](http://arxiv.org/abs/2610.21463v1)**
+142. **[V-SHARE: Provable Convergence Guarantees for Advantage-based Algorithms](http://arxiv.org/abs/2610.21448v1)**
+143. **[Each Reward to Its Relevant Tokens: Reward-Specific Token-Level Credit Assignment for Multi-Reward RL](http://arxiv.org/abs/2610.21439v1)**
+144. **[HyCo: Hybrid Drafting for Cost-Efficient Mobile-Cloud Speculative Decoding](http://arxiv.org/abs/2610.21436v1)**
+145. **[Policy-Aligned Predictive Verification for Adaptive VLA Action-Chunk Execution](http://arxiv.org/abs/2610.21434v1)**
+146. **[ManiFusion: Unlocking the High-Throughput Generation via Superposition in Manifold Space](http://arxiv.org/abs/2610.21433v1)**
+147. **[What Does History Add? Calendar Controls and Information-Timing Audits for University Trajectory Forecasting](http://arxiv.org/abs/2610.21419v1)**
+148. **[Learning to Forecast on Multiple Spatiotemporal Hierarchies](http://arxiv.org/abs/2610.21414v1)**
+149. **[Multi-Reward Hacking: From Aggregation-Induced Drift to Trust-Anchored Defense](http://arxiv.org/abs/2610.21404v1)**
+150. **[Beyond Invariance: Factor-wise Selective Treatment of Shifts for Multimodal Learning](http://arxiv.org/abs/2610.21403v1)**
+151. **[Fault Detection and Bit-Error Rate Diagnostics in Optical Wireless Links Using Edge-AI](http://arxiv.org/abs/2610.21402v1)**
+152. **[Self-Guided LLM Reasoning for Error Diagnosis in Vehicle Routing Problems](http://arxiv.org/abs/2610.21393v1)**
+153. **[Calibration Language Shapes Block-Influence Pruning in Multilingual Language Models](http://arxiv.org/abs/2610.21383v1)**
+154. **[RDL-Bench: A Benchmark for Task-Aware Question Answering over Relational Databases](http://arxiv.org/abs/2610.21382v1)**
+155. **[Does Compression Imply Generalization? A Minimum Description Length Perspective](http://arxiv.org/abs/2610.21376v1)**
+156. **[Memorilla: Latent Semantic Memory for LLMs](http://arxiv.org/abs/2610.21375v1)**
+157. **[Same Target, Different Origins: Aligning Latent Rollout for Consistent PDE Emulation](http://arxiv.org/abs/2610.21370v1)**
+158. **[Two Sample Sizes in Test-Time LLM Ensembling: Buffered ERM and Minimax Theory](http://arxiv.org/abs/2610.21363v1)**
+159. **[L2GSSL: Label-Efficient Local-to-Global Self-Supervised Learning for Volumetric Healthcare Data](http://arxiv.org/abs/2610.21356v1)**
+160. **[Honesty is the Best Policy ... or is it? Demand Management for Probabilistic Service Options](http://arxiv.org/abs/2610.21351v1)**
+161. **[Online Quantile Omniprediction for Proper Losses](http://arxiv.org/abs/2610.21342v1)**
+162. **[Dimension-Free PAC-Bayes Generalization for Deep Neural Networks via Dirichlet Processes](http://arxiv.org/abs/2610.21340v1)**
+163. **[Does On-Policy Distillation Need to Complete Every Rollout?](http://arxiv.org/abs/2610.21337v1)**
+164. **[Ranking and Partitioning of Attention Heads for Sparse and Continual Reinforcement Learning Fine-tuning](http://arxiv.org/abs/2610.21336v1)**
+165. **[When Should a Low-Light Pipeline Generate? Auditable Risk Control for Selective Generative Enhancement](http://arxiv.org/abs/2610.21335v1)**
+166. **[Semantic Latent Alignment for Flow Matching with Invertible Bi-Lipschitz Adapters](http://arxiv.org/abs/2610.21332v1)**
+167. **[Spectrum Is Not Enough: A Random-Matrix Account of Data-Free Preconditioning for Differentially Private Learning](http://arxiv.org/abs/2610.21312v1)**
+168. **[PocketTSLM: Deploying an On-Device Soft-Prompt Time-Series Language Model for Privacy-Preserving Smartphone Reasoning](http://arxiv.org/abs/2610.21308v1)**
+169. **[Personalized Projected Ascent for Federated Stackelberg Optimization](http://arxiv.org/abs/2610.21295v1)**
+170. **[Can Capability Enhancement be Localized?](http://arxiv.org/abs/2610.21294v1)**
+171. **[TimeCap: A Scalable Open-Source Pipeline for Captioning Wearable Health Time-Series Data](http://arxiv.org/abs/2610.21274v1)**
+172. **[Regret Lower Bound for Online Learning of Quantum States with Logarithmic Loss, with Applications to Quantum State Tomography and Confidence Sequences for Matrix Means](http://arxiv.org/abs/2610.21273v1)**
+173. **[Rethinking Learning from Label Proportions via Moment Matching](http://arxiv.org/abs/2610.21262v1)**
+174. **[Behavioral Compositionality of Sparse Autoencoder Representations](http://arxiv.org/abs/2610.21261v1)**
+175. **[Fractional Power-of-Two Quantization for Efficient and Effective Multiplier-Free LLM Inference](http://arxiv.org/abs/2610.21257v1)**
+176. **[Isolating a Language Model's Judgment with a Label-Free Subspace](http://arxiv.org/abs/2610.21256v1)**
+177. **[System1-Arena: Which Decisions Can Be Left to System 1?](http://arxiv.org/abs/2610.21244v1)**
+178. **[Representation Redistribution in Sparse Autoencoders](http://arxiv.org/abs/2610.21240v1)**
+179. **[Compatibility Matters: A Framework for Token-Level Teacher Selection in On-Policy Distillation](http://arxiv.org/abs/2610.21234v1)**
+180. **[Not All Change Is Damage: Update-Matched Unlearning for Large Language Models](http://arxiv.org/abs/2610.21230v1)**
+181. **[What Should We Remove? Evaluating the Reliability and Costs of RLVR Data Decontamination](http://arxiv.org/abs/2610.21229v1)**
+182. **[Learning and Forecasting Multiscale Spatiotemporal Epidemic Dynamics with Lagrangian-Eulerian Graph Neural ODEs](http://arxiv.org/abs/2610.21223v1)**
+183. **[Clean Data Can Still Carry Backdoors: Support-Persistent Backdoors for Model Reuse](http://arxiv.org/abs/2610.21208v1)**
+184. **[Hard Way, The Only Way: Provable Merits of Training on Hardest Examples](http://arxiv.org/abs/2610.21201v1)**
+185. **[Poisoning the corpora of protein design systems during pre-training and retrieval](http://arxiv.org/abs/2610.21200v1)**
+186. **[Resisting Harmful Instructions through Training-Free Weight Editing](http://arxiv.org/abs/2610.21189v1)**
+187. **[Sensor Diagnosis for Fuel and Emissions Monitoring in Heavy-Duty Diesel Vehicles](http://arxiv.org/abs/2610.21188v1)**
+188. **[Mine, Sample, Render: Test-Time Diversity Alignment Of Generative Models](http://arxiv.org/abs/2610.21185v1)**
+189. **[Judging the Judges: Confidence and Disagreement in Rubrics as Rewards](http://arxiv.org/abs/2610.21179v1)**
+190. **[Language Models Share a Readout Bottleneck in Working Memory](http://arxiv.org/abs/2610.21176v1)**
+191. **[Coordination-Free Workload Regularization for Variable-Cost Distributed Training](http://arxiv.org/abs/2610.21162v1)**
+192. **[When is a better LLM worth paying for? Stochastic Optimization with Switching Mixed-Fidelity Oracles](http://arxiv.org/abs/2610.21139v1)**
+193. **[Pathwise Shrinkage and Probabilistic Calibration of the Multiplicative Half-Cauchy Process](http://arxiv.org/abs/2610.21136v1)**
+194. **[Predicting Live Birth After Fresh Embryo Transfer in IVF/ICSI: Differential ICM/Trophectoderm Morphology Encoding and a Hybrid Attention--Logistic Regression Ensemble](http://arxiv.org/abs/2610.21134v1)**
+195. **[Noise-Space Reward Alignment for Few-Step Generative Models](http://arxiv.org/abs/2610.21125v1)**
+196. **[DST-Net: Decomposed Spatio-Temporal Network for Time Series Forecasting](http://arxiv.org/abs/2610.21123v1)**
+197. **[Spectral-Spatial Interpretation](http://arxiv.org/abs/2610.21114v1)**
+198. **[Kolab: Benchmarking Human-Agent Collaboration in Long-Horizon Workflows](http://arxiv.org/abs/2610.21109v1)**
+199. **[ToolBottleneckBench: Measuring Tool-Agent Performance under Controlled Pressures and Fixed Harness Budgets](http://arxiv.org/abs/2610.21098v1)**
+200. **[Probe-and-Resume: When and How to Evaluate Agent Execution](http://arxiv.org/abs/2610.21088v1)**
+201. **[SIEVE: Overcoming Topological Obstruction in Equivariant Self-Supervised Learning](http://arxiv.org/abs/2610.21087v1)**
+202. **[StochLOB: Heavy-Tailed Score Matching for Robust Limit Order Book Trend Prediction](http://arxiv.org/abs/2610.21081v1)**
+203. **[Adaptive Randomized Neural Networks for PDEs: Structure-Aware Feature Redistribution and Residual-Driven Block Enrichment](http://arxiv.org/abs/2610.21077v1)**
+204. **[Score Mismatch and Set-Constrained Sampling in Zero-Shot Conditional Discrete Diffusion](http://arxiv.org/abs/2610.21061v1)**
+205. **[Bellman-Consistent Trajectory RL for LLM Arithmetic Reasoning](http://arxiv.org/abs/2610.21060v1)**
+206. **[Athanor: An Agent-Native System for Autonomous Post-Training Research](http://arxiv.org/abs/2610.21055v1)**
+207. **[SALTO: Solver-Anchored Lifted Transfer Operators for Nonlinear Event Inference](http://arxiv.org/abs/2610.21049v1)**
+208. **[SHIP: Structured and Hierarchical Insight with Privacy](http://arxiv.org/abs/2610.21048v1)**
+209. **[PremiseCheck: Efficient Fact-Checking of Human and AI Peer Reviews](http://arxiv.org/abs/2610.21046v1)**
+210. **[INCONVENIENT: A Benchmark to Assess LLM Generalization Capabilities from Convenience Samples](http://arxiv.org/abs/2610.21038v1)**
+211. **[Efficient Agnostic Learning of Univariate Densities Under Local Differential Privacy](http://arxiv.org/abs/2610.21033v1)**
 
-cs.LG共找到 221 篇论文。
+cs.LG共找到 211 篇论文。
 
 ---
 ### 计算语言学 (NLP) (cs.CL)
-**最近发布日期**: 2026-10-14
+**最近发布日期**: 2026-10-15
 
-1. **[Latent Compaction with Test-Time Training](http://arxiv.org/abs/2610.20582v1)**
-2. **[One Task, Many Interfaces: Simple Cross-Interface Consistency Training Improves LLM Agent Robustness](http://arxiv.org/abs/2610.20576v1)**
-3. **[Manacá-1B-Instruct-2: Reproducible Safety Alignment for a Native Brazilian-Portuguese LLM. Negative DPO Results, a Controlled Composition Scan, and a Silent Failure Mode of the LLM Judge](http://arxiv.org/abs/2610.20570v1)**
-4. **[Scaling Discovery Requires Forgetting](http://arxiv.org/abs/2610.20563v1)**
-5. **[PerSo: Investigating Facets of LLMs' Social Intelligence in Real-World Persuasion Scenarios](http://arxiv.org/abs/2610.20548v1)**
-6. **[PrismaCoder: Pushing the Boundaries of Open Multimodal Code Intelligence through Decomposed Rubric Synthesis](http://arxiv.org/abs/2610.20538v1)**
-7. **[VASPO: Self-Distillation with Privileged Value Estimation](http://arxiv.org/abs/2610.20516v1)**
-8. **[ReaDy: Recurrent States as Dynamic Context for Speculative Drafting in Hybrid Linear Attention Large Language Models](http://arxiv.org/abs/2610.20503v1)**
-9. **[Lost in Translation: Why Lower Bias Scores Don't Mean Fairer Models](http://arxiv.org/abs/2610.20479v1)**
-10. **[AdaRSI: On-Demand Recursive Self-Improvement for Embodied Agents](http://arxiv.org/abs/2610.20474v1)**
-11. **[ChronoCulture: Evaluating Cultural Awareness Across Time in Large Language Models](http://arxiv.org/abs/2610.20472v1)**
-12. **[Equal CER, Unequal Damage: Severity-Weighted Character Error Rate for OCR](http://arxiv.org/abs/2610.20461v1)**
-13. **[MolLean: A Process-Verifiable Language for Chemical Reasoning](http://arxiv.org/abs/2610.20459v1)**
-14. **[Same Claim, Different Interpretations: How LLM Agents Resolve Ambiguity in Scientific Claims](http://arxiv.org/abs/2610.20457v1)**
-15. **[The COUNT: Counting N-grams Unlocks Scaling on Host Memory and Training-Free Adaptation](http://arxiv.org/abs/2610.20456v1)**
-16. **[SwarmRSI: Recursive Self-Improvement through Evolving Scientific Agent Swarm](http://arxiv.org/abs/2610.20431v1)**
-17. **[Analyzing performance of Retrieval Augmented Generation models for Question Answering Tasks](http://arxiv.org/abs/2610.20419v1)**
-18. **[From Unreliable to Usable: Decomposing Failure Modes and Confidence Signals in LLM Entity Extraction - Evidence from Cyber Threat Intelligence](http://arxiv.org/abs/2610.20417v1)**
-19. **[Cortex: Consolidating Context into Parametric Memory](http://arxiv.org/abs/2610.20399v1)**
-20. **[FOLD: Position-Free Far Memory with Local Order for Long-Context Speculative Decoding](http://arxiv.org/abs/2610.20392v1)**
-21. **[From Triage to Impact: A Multi-Hop Reasoning Benchmark for Explainable Persian Hate Speech](http://arxiv.org/abs/2610.20370v1)**
-22. **[Cascaded Retrieval with Cross-Modal Query Refinement for Efficient Visual Document Search](http://arxiv.org/abs/2610.20367v1)**
-23. **[Lexical Persistence Without Semantic Entrenchment in AI Agent Communities](http://arxiv.org/abs/2610.20365v1)**
-24. **[Do AI Agents Gossip? Evaluative Talk in Human and AI-Agent Online Communities](http://arxiv.org/abs/2610.20360v1)**
-25. **[TreeFlex: Agents Navigating Their Own Search Trees](http://arxiv.org/abs/2610.20334v1)**
-26. **[Anuvani-Diarization: Zero Shot Speaker Diarization and Annotation Conventions Across 22 Languages](http://arxiv.org/abs/2610.20327v1)**
-27. **[MMLA-RSI: Recursive Self-Improvement through RTT and RTMA](http://arxiv.org/abs/2610.20294v1)**
-28. **[Taking the PULSE of Medical Reasoning: Step-Level Retrieval Timing for Knowledge-Grounded Inference](http://arxiv.org/abs/2610.20292v1)**
-29. **[Neural POS Tagging for the Low-Resource Saraiki](http://arxiv.org/abs/2610.20279v1)**
-30. **[CSWBench: Evaluating Context-Sensitive Code-Switching in Creative Writing](http://arxiv.org/abs/2610.20272v1)**
-31. **[Anuvani-LID: Robust and Calibrated Spoken Language Identification for Indian Languages](http://arxiv.org/abs/2610.20263v1)**
-32. **[Repairing Speech Access After Text Updates with Frozen Affine Fields](http://arxiv.org/abs/2610.20253v1)**
-33. **[Scaling Multilingual Mixture-of-Experts: How Language Coverage Changes Capacity and Compute Allocation](http://arxiv.org/abs/2610.20247v1)**
-34. **[Scaling Multilingual Safety and Reasoning Evaluation through Reasoning-Guided Translation](http://arxiv.org/abs/2610.20221v1)**
-35. **[What Makes a Social Agent's Interactions Effective? Learning from Verifiable Outcomes in Paired Worlds](http://arxiv.org/abs/2610.20195v1)**
-36. **[When Occupation-derived Skills Don't Help: On the Limits of Skill-Augmented Career Path Prediction](http://arxiv.org/abs/2610.20186v1)**
-37. **[Cross-Model In-Context Neurofeedback Reveals (Limited) Activation Control in LLMs](http://arxiv.org/abs/2610.20179v1)**
-38. **[TreeSpark: Learning to Draft the Trees You Verify for Speculative Decoding](http://arxiv.org/abs/2610.20175v1)**
-39. **[RM-OPD: On-Policy Distillation for Generative Reward Models](http://arxiv.org/abs/2610.20174v1)**
-40. **[MultiPartyTurnBench: Benchmarking Floor Control in Multi-Party Spoken Dialogue](http://arxiv.org/abs/2610.20172v1)**
-41. **[Gap Detection: Mitigating Homogenization through Demand and Defensibility](http://arxiv.org/abs/2610.20162v1)**
-42. **[LLM-Based Policy Compliance Verification of Loan Applications](http://arxiv.org/abs/2610.20155v1)**
-43. **[Sparse Autoencoders for Mechanistic Interpretability in NLP: A Critical Survey of Recoverability, Interpretability, and Utility](http://arxiv.org/abs/2610.20139v1)**
-44. **[Why Generate a Click? Plug-in Decision Heads for Web Agents](http://arxiv.org/abs/2610.20107v1)**
-45. **[Language Exposure Matters: Distribution and Order in Multilingual BabyLM Pre-training](http://arxiv.org/abs/2610.20102v1)**
-46. **[AFCS: Atomic-Fact-Conditioned Synthesis for Factual Knowledge Pretraining](http://arxiv.org/abs/2610.20086v1)**
-47. **[Designing Textual Interfaces To Enhance Llm Reasoning On Audio-Visual Question Answering](http://arxiv.org/abs/2610.20085v1)**
-48. **[Which Knowledge Should LLMs Trust? Uncovering a Generalizable Steering Direction Across Knowledge Conflicts](http://arxiv.org/abs/2610.20067v1)**
-49. **[What Is a Clarification? Estimating Model-Dependent Input Ambiguity](http://arxiv.org/abs/2610.20052v1)**
-50. **[FACES: Fine-grained Gated Semantic Alignment for Multimodal Emotional Support Conversation](http://arxiv.org/abs/2610.20051v1)**
-51. **[LintEval: Benchmarking LLMs on Linter-Guided File Refactoring](http://arxiv.org/abs/2610.20027v1)**
-52. **[A Strong Harness Narrows the Model Gap: A Comparative Evaluation for Legislative Document-to-XML Conversion](http://arxiv.org/abs/2610.19999v1)**
-53. **[Gray-Box Hallucination Detection in LLMs with Token Identities](http://arxiv.org/abs/2610.19996v1)**
-54. **[SoK: Grading Open-Text Legal Answers, from Law School Exams to Trustworthy Rubric Judges](http://arxiv.org/abs/2610.19992v1)**
-55. **[Choosing the Number of Attention Heads from Intrinsic Dimension: A Small-Scale Study](http://arxiv.org/abs/2610.19966v1)**
-56. **[AtomSearch: Evidence-Grounded Tree Search for Agent Skill Optimization](http://arxiv.org/abs/2610.19951v1)**
-57. **[Does Machine Translation Retain Media Bias?](http://arxiv.org/abs/2610.19945v1)**
-58. **[To Reason but Not to Stop: Understanding and Recovering Pruned Large Reasoning Models](http://arxiv.org/abs/2610.19934v1)**
-59. **[MemDuet: Learning Dual-Process Memory for Long-Context Reasoning](http://arxiv.org/abs/2610.19928v1)**
-60. **[MolHop: Scaffold-Hopping Molecular Design with Agentic Reinforcement Learning](http://arxiv.org/abs/2610.19920v1)**
-61. **[Not All Criteria Matter: Importance-Aware Criteria Weighting for Rubric-Based LLM Evaluation](http://arxiv.org/abs/2610.19915v1)**
-62. **[Beyond Benchmark Accuracy: A Diagnostic Test for LLM Chemical Prediction](http://arxiv.org/abs/2610.19906v1)**
-63. **[Frustratingly Easy Majority Voting Using Length Conditioning](http://arxiv.org/abs/2610.19890v1)**
-64. **[RCCM: Diagnosing Gains and Harms in Reasoning-Prompt Transfer](http://arxiv.org/abs/2610.19872v1)**
-65. **[Rationale Distribution Distillation via Flow Matching for Distributional Continuous Latent Reasoning](http://arxiv.org/abs/2610.19871v1)**
-66. **[SEA-HELM Audio: Evaluating Multilingual ASR-LLM Pipeline Performance Across SEA-HELM Subsets](http://arxiv.org/abs/2610.19869v1)**
-67. **[OpenTWBench (Open Taiwan Benchmark): Taiwan-Domain Knowledge Evaluation for Large Language Models, and How the Measurement Apparatus Shapes the Score](http://arxiv.org/abs/2610.19848v1)**
-68. **[EGCForest: Structured Agent Memory Organization for Enterprise Group Chats](http://arxiv.org/abs/2610.19836v1)**
-69. **[MAPLE: A Multi-Axis Parametric Knowledge Extraction Lens for LLM Evaluation](http://arxiv.org/abs/2610.19827v1)**
-70. **[Model vs. User: Whose Values Prevail? Inference-Time Value Alignment in Multi-Turn Conversations](http://arxiv.org/abs/2610.19817v1)**
-71. **[Delta Tokenizer: Reference-Identical Tokenization of Session Deltas and Segment-Parallelism for Long Prompts on Multicore CPUs](http://arxiv.org/abs/2610.19801v1)**
-72. **[Evolve Together, Fall into Place: How Social Scaffolding Shapes Self-Evolving Multi-Agent Systems](http://arxiv.org/abs/2610.19799v1)**
-73. **[Learning Perception to Action Rules through Reinforcement Learning for Theory-of-Mind Reasoning](http://arxiv.org/abs/2610.19796v1)**
-74. **[JetSpec++: Foresight Parallel Drafting with Self Refinements](http://arxiv.org/abs/2610.19792v1)**
-75. **[More Methods, Better Agents? A Reality Check on Self-Distillation in Agentic Reinforcement Learning](http://arxiv.org/abs/2610.19789v1)**
-76. **[Likelihood Is Not Authorship: Can We Reliably Measure Human Contribution in AI-Assisted Writing?](http://arxiv.org/abs/2610.19767v1)**
-77. **[PRISMATIC : Prescription Risk Inspection System for Multi-Agent Treatment Interaction in Clinical Decision-Making](http://arxiv.org/abs/2610.19762v1)**
-78. **[Qwen-MT-Lumen at WMT2026: Instruction-Specialized Translation via Quality-Aware Training and On-Policy Distillation](http://arxiv.org/abs/2610.19758v1)**
-79. **[Beyond Reachability: A Relation-Semantic Reasoning Framework for Biomedical Multi-hop QA](http://arxiv.org/abs/2610.19754v1)**
-80. **[Does the Linguistic Register of Thinking Matter? Wenyan as a Compact Reasoning Register for Chinese LLMs](http://arxiv.org/abs/2610.19741v1)**
-81. **[MakSafe: A Spatiotemporal Semantic Framework for Formal Specification and Compliance Checking of Road Vehicle Safety Rules](http://arxiv.org/abs/2610.19735v1)**
-82. **[Mitigating Video Hallucinations via Attention-Guided Representation Perturbation](http://arxiv.org/abs/2610.19728v1)**
-83. **[Recognizing Dialogue Ambiguity via Candidate Set Visual Grounding](http://arxiv.org/abs/2610.19723v1)**
-84. **[Articulation Upper Bounds for Language Models](http://arxiv.org/abs/2610.19721v1)**
-85. **[Beyond State Capacity: Why Retrieval Breaks in Mamba](http://arxiv.org/abs/2610.19709v1)**
-86. **[RouteWeaver: Weaving Mode Selection and Execution into Unified LLM Routing](http://arxiv.org/abs/2610.19705v1)**
-87. **[BANGLAPLAN: A Benchmark for Constraint-Based Planning and Decision-Making in Bangla](http://arxiv.org/abs/2610.19704v1)**
-88. **[Share the Symbol, Not the Vector: Training-Free Fact Communication Across Language Models](http://arxiv.org/abs/2610.19696v1)**
-89. **[Function-Space Temporal Self-Distillation for Policy Optimization](http://arxiv.org/abs/2610.19687v1)**
-90. **[Interlock: From Local Correctness to Task Completion in Long-Horizon Agents](http://arxiv.org/abs/2610.19686v1)**
-91. **[Beyond Distribution Matching: Selective Margin Preservation for Supervised Fine-Tuning](http://arxiv.org/abs/2610.19685v1)**
-92. **[Measuring and Reducing Unusable Replies of LLM Agents](http://arxiv.org/abs/2610.19659v1)**
-93. **[HACHIMI-II: From Role-Play to Learner Behavior Modeling for Faithful Student Simulation](http://arxiv.org/abs/2610.19654v1)**
-94. **[Selective Reasoning for Typed Decision Models: When to Start, Read, and Stop](http://arxiv.org/abs/2610.19644v1)**
-95. **[Model What Matters: Decision-Guided Selective World Modeling for Language Agents](http://arxiv.org/abs/2610.19642v1)**
-96. **[J-tau: A Fully Localized Japanese Benchmark for Tool-Agent-User Interaction](http://arxiv.org/abs/2610.19638v1)**
-97. **[Sparse Autoencoders Are a Shared Coordinate System for Symbolic Matching](http://arxiv.org/abs/2610.19636v1)**
-98. **[DAGFormer: Global Topology Prediction for Transformer Cross-Layer Connections](http://arxiv.org/abs/2610.19625v1)**
-99. **[Divergent Paths: Learning an Outcome-Predictive Representation of LLM Agent Trajectories](http://arxiv.org/abs/2610.19614v1)**
-100. **[Are We Really Measuring Forgetting? Pitfalls in Evaluating Machine Unlearning for Multimodal LLMs](http://arxiv.org/abs/2610.19613v1)**
-101. **[Twenty Days Later: A Pre-Registered Test of History-Based Forecasts of Brand Mentions in Gemini Answers](http://arxiv.org/abs/2610.19608v1)**
-102. **[PN-Mix: Pair-Norm Guided Mixed-Precision Key Cache Quantization for Efficient Long-Output LLM Inference](http://arxiv.org/abs/2610.19605v1)**
-103. **[PA1-OPD: One-Step Prefix-Augmented On-Policy Distillation for Language Model Pretraining](http://arxiv.org/abs/2610.19601v1)**
-104. **[Moral Combat: Exploiting Moral Foundations Theory to Jailbreak LLMs](http://arxiv.org/abs/2610.19587v1)**
-105. **[Who's Behind the Text? Robust Model Authorship Attribution](http://arxiv.org/abs/2610.19583v1)**
-106. **[INTACT: Inducing Latent Reasoning on a Frozen Backbone](http://arxiv.org/abs/2610.19568v1)**
-107. **[REWIND: Uncertainty-Guided Trajectory Repair for Test-Time Reasoning](http://arxiv.org/abs/2610.19561v1)**
-108. **[$τ$-Emotion-Bench: Exposing the Interaction Fragility of LLM Agents through Real-World User Emotions](http://arxiv.org/abs/2610.19560v1)**
-109. **[Evidence-Anchored Overdose Death Prediction from Death Investigation Reports](http://arxiv.org/abs/2610.19556v1)**
-110. **[GraphRAG-LTM: A Layered Threat Modeling Framework for Attacks on Graph Retrieval-Augmented Generation](http://arxiv.org/abs/2610.19549v1)**
-111. **[Typed Decision Models on Tabular Data](http://arxiv.org/abs/2610.19536v1)**
-112. **[A Unified Response Framework for Questions and Tutoring Dialogues](http://arxiv.org/abs/2610.19532v1)**
-113. **[Retrieve What Helps, Only When It Helps: Agentic Reinforcement Learning for Selective Retrieval-Augmented Machine Translation](http://arxiv.org/abs/2610.19528v1)**
-114. **[Diagnosing and Correcting Reward Hacking in Verifiable Instruction Following](http://arxiv.org/abs/2610.19525v1)**
-115. **[One Block Ahead: Promoting Sampler State in Diffusion Language Models](http://arxiv.org/abs/2610.19510v1)**
-116. **[Structure-Preserving Document-Level Data Augmentation via Discourse Parsing](http://arxiv.org/abs/2610.19497v1)**
-117. **[Towards Efficient Simultaneous Inverse Text Normalization with Pretrained Text-to-Text Language Model and Read-Tag-Write Policy](http://arxiv.org/abs/2610.19492v1)**
-118. **[AgriJev: Efficient Agricultural Candidate Scoring with Multi-Scale Adapted Models](http://arxiv.org/abs/2610.19478v1)**
-119. **[What Does LALM Post-training Learn? Rethinking Audio Understanding and Reasoning Capabilities](http://arxiv.org/abs/2610.19476v1)**
-120. **[ActICL: Post-Training for Agentic Multimodal In-Context Learning](http://arxiv.org/abs/2610.19475v1)**
-121. **[More Than Seeing: Vision as Scalable Anchors in Native Multimodal Pre-Training](http://arxiv.org/abs/2610.19443v1)**
-122. **[How Do LLMs Understand Legal Philosophy? Diagnosing Legal-Philosophical Reasoning in LLMs](http://arxiv.org/abs/2610.19427v1)**
-123. **[ForkGRPO: Efficient Exploration and Fine-Grained Credit Assignment for Diffusion Language Models](http://arxiv.org/abs/2610.19408v1)**
-124. **[Vision-Language Models Integrate Conflicting Evidence Like Biased Bayesian Observers](http://arxiv.org/abs/2610.19407v1)**
-125. **[KoAGE: Do Large Language Models Know, Learn, and Coin Korean Neologisms?](http://arxiv.org/abs/2610.19399v1)**
-126. **[ELARSpeech: A 30K-Hour Dataset Across 675 Underrepresented Languages for Long-Tail Multilingual Speech Technologies](http://arxiv.org/abs/2610.19388v1)**
-127. **[The Sum of All Summaries: PROPALIGN for Graded Proposition Salience Evaluation](http://arxiv.org/abs/2610.19387v1)**
-128. **[Learning What to Keep: Transfer-Aware Personal Skill Learning from User Feedback](http://arxiv.org/abs/2610.19380v1)**
-129. **[Evaluating Compressed Memory: Dependence, Utility, and Content Benefit](http://arxiv.org/abs/2610.19373v1)**
-130. **[Beyond Corrected Actions: Training LLM Agents on Textual Critiques](http://arxiv.org/abs/2610.19367v1)**
-131. **[Seeing, Maintaining, and Learning: The Evolution of Multimodal Agent Memory](http://arxiv.org/abs/2610.19366v1)**
-132. **[Tail Competition Explains Scaling in Best-of-N Sampling for Verifiable Problems](http://arxiv.org/abs/2610.19362v1)**
-133. **[VLX-Go: Robust Embodied Tracking through Multi-Stage Learning and On-Policy Refinement](http://arxiv.org/abs/2610.19361v1)**
-134. **[Steering Vectors for Competing Ethical Frameworks Are Interchangeable: A Competing-Target Test for Activation Steering](http://arxiv.org/abs/2610.19359v1)**
-135. **[Where to Start, How to Move: Analyzing Curricula under GRPO for Long-Horizon LLM Agents](http://arxiv.org/abs/2610.19349v1)**
-136. **[Target-Token Asymmetry Can Masquerade As Depth Specialization](http://arxiv.org/abs/2610.19344v1)**
-137. **[Counterfactual Gate-Support Decomposition: Separating Selection from Redistribution in Training-Data Filtering](http://arxiv.org/abs/2610.19343v1)**
-138. **[LLM-jp-4 Technical Report](http://arxiv.org/abs/2610.19331v1)**
-139. **[TopicMerge: A Divide and Conquer Approach to Topic Modeling](http://arxiv.org/abs/2610.19323v1)**
+1. **[OmniVerifier-C1: Decomposed Graded Verifier for Rule-Governed Generative World Modeling](http://arxiv.org/abs/2610.22355v1)**
+2. **[FDE-Gym: The Last Mile of AI Delivery](http://arxiv.org/abs/2610.22350v1)**
+3. **[MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering](http://arxiv.org/abs/2610.22344v1)**
+4. **[Evaluation Awareness Beyond English: Do LLMs Act Differently When Tested in Indic Languages?](http://arxiv.org/abs/2610.22333v1)**
+5. **[Twice Upon a Time: Complementary Representations for Time-Series Reasoning](http://arxiv.org/abs/2610.22327v1)**
+6. **[Training Reasoning Models to Generate Diverse Scientific Ideas](http://arxiv.org/abs/2610.22324v1)**
+7. **[Learning Self-Orchestration in Decentralized Agent Swarms](http://arxiv.org/abs/2610.22322v1)**
+8. **[MindEval2: Clinically Grounded Patients and Rubrics for Evaluating Language Models in Mental Health Support](http://arxiv.org/abs/2610.22314v1)**
+9. **[Grid-Bench: Can LLMs Predict How Discrete Worlds Change?](http://arxiv.org/abs/2610.22312v1)**
+10. **[Knowledge That Is Linear Before Fine-Tuning Generalizes After It](http://arxiv.org/abs/2610.22300v1)**
+11. **[AI Consilium: a Benchmark of LLM Clinical Multidisciplinary Second Opinions](http://arxiv.org/abs/2610.22298v1)**
+12. **[Multi-Target Few-Shot Prompting with Diffusion Language Models](http://arxiv.org/abs/2610.22294v1)**
+13. **[CAT-alyzing Honesty: Continuous Adversarial Training for Transferable LLM Honesty](http://arxiv.org/abs/2610.22292v1)**
+14. **[Librarian Agents: Training LLMs to Curate Long-Context Workspaces that Anticipate Future Queries](http://arxiv.org/abs/2610.22273v1)**
+15. **[Not X, but When: Diagnosing a Mandarin LLM Writing Tic through Contextual Appropriateness](http://arxiv.org/abs/2610.22249v1)**
+16. **[Language Is a Security Surface for Agent Guards](http://arxiv.org/abs/2610.22244v1)**
+17. **[Training-Free On-Policy Distillation](http://arxiv.org/abs/2610.22236v1)**
+18. **[Beyond Downstream QA: Rethinking How We Evaluate Agent Memory](http://arxiv.org/abs/2610.22209v1)**
+19. **[Hy-Memory-30B-A3B: Attributed Reinforcement Learning for Long-Term Memory Writing](http://arxiv.org/abs/2610.22196v1)**
+20. **[HTN-Orchestrate: A Hierarchical Task Network Framework for Multi-Agent Orchestration](http://arxiv.org/abs/2610.22195v1)**
+21. **[AutoSFT: An Agentic System for Automated Data Research in Supervised Fine-Tuning](http://arxiv.org/abs/2610.22194v1)**
+22. **[Change the Number, Change the Answer: Assessing Rating Scale Sensitivity in LLM-Based Text Scoring](http://arxiv.org/abs/2610.22187v1)**
+23. **[EVA-Cap: Optimizing Audiovisual Video Captioning via Event-Centric Alignment](http://arxiv.org/abs/2610.22186v1)**
+24. **[Mosaic: Multi-Session Agentic Reinforcement Learning](http://arxiv.org/abs/2610.22174v1)**
+25. **[Lexical Reference Frames: Interpreting LM Residual Streams in Native Semantics](http://arxiv.org/abs/2610.22169v1)**
+26. **[CLUE: Uncovering Social Context for Pragmatic Understanding](http://arxiv.org/abs/2610.22167v1)**
+27. **[EMO: A Closed-Loop Test-Time Computation Framework via Alternating Context Optimization and Logits Steering](http://arxiv.org/abs/2610.22160v1)**
+28. **[PremiseSQL: Evaluating Premise Critique and Abstention in Text-to-SQL Systems](http://arxiv.org/abs/2610.22158v1)**
+29. **[Believed but Not Said: Measuring Hidden Belief Collapse in Multi-Agent LLM Discussions](http://arxiv.org/abs/2610.22138v1)**
+30. **[Intern-Decision: Efficient Multimodal Decision Making with Autoregressive Masked Language Modeling](http://arxiv.org/abs/2610.22131v1)**
+31. **[Explaining the Roles of Experts in Mixture-of-Experts LLMs for Personalization](http://arxiv.org/abs/2610.22127v1)**
+32. **[Unfragmenting Nawatl NMT: Single-Variant Specialization for Masewalkopa](http://arxiv.org/abs/2610.22110v1)**
+33. **[Patch where the text is new: a compression view of where byte-level models should spend compute](http://arxiv.org/abs/2610.22100v1)**
+34. **[Multi-SFT: Permissively-Licensed Multilingual Instruction-Following](http://arxiv.org/abs/2610.22086v1)**
+35. **[The Right Byte First: How UTF-16 Helps Multilingual Boundary Prediction](http://arxiv.org/abs/2610.22071v1)**
+36. **[Beyond Context Length: Characterising the Difficulty of Long-Context Reasoning](http://arxiv.org/abs/2610.22067v1)**
+37. **[Documenting Trofinetide Treatment Phenotypes in Rett Syndrome with a Dual-LLM Consensus Pipeline](http://arxiv.org/abs/2610.22062v1)**
+38. **[Name-Bias in Large Language Models](http://arxiv.org/abs/2610.22053v1)**
+39. **[Effectiveness of Hidden-State Probes for Localizing Reasoning Failures](http://arxiv.org/abs/2610.22046v1)**
+40. **[Momentum, Commentary Tone, and Earnings Surprise in LLM Financial Forecasts](http://arxiv.org/abs/2610.22043v1)**
+41. **[WEAVE: Weaving Real-World Code Evolution into Dependency-Structured Tasks for Benchmarking and Training Code Agents](http://arxiv.org/abs/2610.22039v1)**
+42. **[Selection Is Not Learning: Choosing Model Futures](http://arxiv.org/abs/2610.22029v1)**
+43. **[Priming Base Models for Agentic Post-Training: An Open Midtraining Recipe](http://arxiv.org/abs/2610.22019v1)**
+44. **[P2TPO: Structure-Aligned Page-to-Token Credit Assignment for Full-Page Document Parsing](http://arxiv.org/abs/2610.21979v1)**
+45. **[Learning Speech Attribute Representations via Multi-Teacher Distillation](http://arxiv.org/abs/2610.21941v1)**
+46. **[TEM: Temporal State Tracking Memory for Large Language Model Agents](http://arxiv.org/abs/2610.21900v1)**
+47. **[Dynamic ordering in sequence generation in Transformers: experiments on low-resource Tagging scenarios](http://arxiv.org/abs/2610.21862v1)**
+48. **[N-Gram Memories at Two Bits: Quantizing Lookup Tables in Large Language Models](http://arxiv.org/abs/2610.21810v1)**
+49. **[RoleQ: Role-Aligned Scales for Converting Language Models to Ternary](http://arxiv.org/abs/2610.21808v1)**
+50. **[Content associations with answer selection and engagement in supply chain community question answering](http://arxiv.org/abs/2610.21807v1)**
+51. **[Behavioral Forgetting Is Not Privacy in Machine Unlearning](http://arxiv.org/abs/2610.21799v1)**
+52. **[In the Guise of Correction: How Framing and Cultural Adaptation Erode LLM Safety on Real-World Criminal Cases](http://arxiv.org/abs/2610.21789v1)**
+53. **[Bias Mitigation in Audio-Enabled LLMs through Adversarial Training and Distillation Methods](http://arxiv.org/abs/2610.21763v1)**
+54. **[DeciCAD: Harness-Grounded Learning of Action Policies for CAD Agents](http://arxiv.org/abs/2610.21755v1)**
+55. **[Reliable Knowledge Acquisition for Continual Learning Agents](http://arxiv.org/abs/2610.21739v1)**
+56. **[SceneWeave: Audience-Guided Scene Exploration for Dramatic Adaptation](http://arxiv.org/abs/2610.21737v1)**
+57. **[Retrieved but Not Read: Understanding Why Search-Augmented LLMs Fail to Use Available Evidence](http://arxiv.org/abs/2610.21731v1)**
+58. **[FIRM: Fisher-Informed Retention Merging for Federated LLM Unlearning](http://arxiv.org/abs/2610.21720v1)**
+59. **[Human Interventions as Labels: Localizing, Steering, and (Sometimes) Editing the Computations Behind LLM Agent Failures](http://arxiv.org/abs/2610.21708v1)**
+60. **[Abstracts or full text? Evaluating input scope and computational efficiency in biomedical lay summarization](http://arxiv.org/abs/2610.21690v1)**
+61. **[Data Strategies for Large Language Models: A Unified Perspective on the Training Lifecycle](http://arxiv.org/abs/2610.21681v1)**
+62. **[No Single Tokenizer Feature Reliably Predicts Downstream Language Model Performance](http://arxiv.org/abs/2610.21679v1)**
+63. **[Diffusion Language Models as Open Quantum Systems](http://arxiv.org/abs/2610.21672v1)**
+64. **[Enhancing Multimodal RLVR with Pairwise Token Contrast and Adaptive Trajectory Confidence](http://arxiv.org/abs/2610.21671v1)**
+65. **[When Does "Post-Call" Begin? An Availability Contract for Earnings-Call NLP Benchmarks](http://arxiv.org/abs/2610.21659v1)**
+66. **[The Self-Improvement Problem](http://arxiv.org/abs/2610.21646v1)**
+67. **[Spurious Attention Heads in Vision Transformers: Mechanistic Identification of Annotation-Driven Bias in Medical Chest X-Ray Analysis](http://arxiv.org/abs/2610.21638v1)**
+68. **[ContextLift: Breaking the Spurious Correlation Behind Conditional Emergent Misalignment](http://arxiv.org/abs/2610.21633v1)**
+69. **[Waypoint-OPD: Transferring RL-Induced Policy Shifts via Gated On-Policy Distillation](http://arxiv.org/abs/2610.21601v1)**
+70. **[Rethinking the Role of Tool Graph Memory in Multi-Turn Tool Use](http://arxiv.org/abs/2610.21571v1)**
+71. **[DialFork: Going Beyond Factuality to Evaluate Procedural Hallucination in Conversational Agents](http://arxiv.org/abs/2610.21561v1)**
+72. **[Writability and the Pathway: A Controlled Study of Knowledge Injection into Addressed Memory](http://arxiv.org/abs/2610.21553v1)**
+73. **[SCRIBE: Scalable Contextual Representations of Interpretable Brain-Grounded Semantics](http://arxiv.org/abs/2610.21518v1)**
+74. **[Decomposing Brain-LLM Alignment with Interpretable Semantic Representations](http://arxiv.org/abs/2610.21508v1)**
+75. **[OPRD: On-Policy Reminder Distillation for Long-Horizon Coding Agents](http://arxiv.org/abs/2610.21496v1)**
+76. **[Can LLMs Tell Stories Out of Order? A Corpus and Benchmark for Nonlinear Narrative Generation](http://arxiv.org/abs/2610.21468v1)**
+77. **[Trajectory-Level Speculation with Semantic Verification for Tool-Using Agents](http://arxiv.org/abs/2610.21463v1)**
+78. **[Translation Circuit Discovery and Targeted Optimization for Low-Resource Multilingual Translation](http://arxiv.org/abs/2610.21456v1)**
+79. **[SITAR: A Situational Distortion Metric for Automatic Speech Recognition Evaluation](http://arxiv.org/abs/2610.21440v1)**
+80. **[HyCo: Hybrid Drafting for Cost-Efficient Mobile-Cloud Speculative Decoding](http://arxiv.org/abs/2610.21436v1)**
+81. **[Do Agents Need a New Kind of Paper? SPRA: Structured Paper Representation for Agents](http://arxiv.org/abs/2610.21424v1)**
+82. **[Identifying Effective Strategies in Prompt Evolution for Stress and Emotion Prediction](http://arxiv.org/abs/2610.21407v1)**
+83. **[Beyond Invariance: Factor-wise Selective Treatment of Shifts for Multimodal Learning](http://arxiv.org/abs/2610.21403v1)**
+84. **[Calibration Language Shapes Block-Influence Pruning in Multilingual Language Models](http://arxiv.org/abs/2610.21383v1)**
+85. **[DPA-MoE: A Runtime Precision Control Framework for MoE Inference](http://arxiv.org/abs/2610.21378v1)**
+86. **[ESG-Kor: A Korean Dataset for ESG-related Information Extraction and Practical Use Cases](http://arxiv.org/abs/2610.21368v1)**
+87. **[RenoLayout: Unified Floorplan Renovation and Furniture Layout for Constraint-Aware Residential Design](http://arxiv.org/abs/2610.21366v1)**
+88. **[Emotion Is Not External Knowledge: Internal Attention Signals for Affective State Reasoning](http://arxiv.org/abs/2610.21347v1)**
+89. **[OpCredit: Operation-Aware Policy Learning for Agentic Knowledge Graph Question Answering](http://arxiv.org/abs/2610.21345v1)**
+90. **[Ranking and Partitioning of Attention Heads for Sparse and Continual Reinforcement Learning Fine-tuning](http://arxiv.org/abs/2610.21336v1)**
+91. **[QuasiLeak-Bench: Evaluating LLM-Based Privacy Detectors on Policy-Conditioned Quasi-Evidence Group Recovery](http://arxiv.org/abs/2610.21333v1)**
+92. **[VoteGEO-Bench: Measuring the Impact of Generative Engine Optimization on Electoral Visibility](http://arxiv.org/abs/2610.21330v1)**
+93. **[Hybrid Generative-Tagging Decoding for Efficient Product Attribute-Value Extraction](http://arxiv.org/abs/2610.21329v1)**
+94. **[DocPilot: Interactive Agent Orchestration and Training for Long Visual Document Understanding](http://arxiv.org/abs/2610.21327v1)**
+95. **[ZoomCap: Evidence-Routed Visual Zooming for Recoverable Visual Information Transfer](http://arxiv.org/abs/2610.21320v1)**
+96. **[PocketTSLM: Deploying an On-Device Soft-Prompt Time-Series Language Model for Privacy-Preserving Smartphone Reasoning](http://arxiv.org/abs/2610.21308v1)**
+97. **[VALCON: Benchmarking and Enhancing Value Consistency in Large Language Models via Dual-Role Variation](http://arxiv.org/abs/2610.21304v1)**
+98. **[Making every stage of medical device document assessment with large language models deterministic](http://arxiv.org/abs/2610.21300v1)**
+99. **[Bias Control and Injection for Multi-Agent Aggregation](http://arxiv.org/abs/2610.21290v1)**
+100. **[TimeCap: A Scalable Open-Source Pipeline for Captioning Wearable Health Time-Series Data](http://arxiv.org/abs/2610.21274v1)**
+101. **[Auditing Escalation Reliability in Healthcare LLM Agents: A Perturbation-Controlled Benchmark of Workflow-State Failures](http://arxiv.org/abs/2610.21270v1)**
+102. **[TRACER: Trajectory-Aware Tool Retrieval for LLM Agents](http://arxiv.org/abs/2610.21267v1)**
+103. **[Behavioral Compositionality of Sparse Autoencoder Representations](http://arxiv.org/abs/2610.21261v1)**
+104. **[Isolating a Language Model's Judgment with a Label-Free Subspace](http://arxiv.org/abs/2610.21256v1)**
+105. **[LLM-Based Weak Annotation for Cybersecurity Tweet Classification: A Teacher-Student Framework](http://arxiv.org/abs/2610.21254v1)**
+106. **[FGSS-BO: Feedback-Guided Hypothesis Management for LLM-Based Bayesian Optimization](http://arxiv.org/abs/2610.21246v1)**
+107. **[System1-Arena: Which Decisions Can Be Left to System 1?](http://arxiv.org/abs/2610.21244v1)**
+108. **[Representation Redistribution in Sparse Autoencoders](http://arxiv.org/abs/2610.21240v1)**
+109. **[What Should We Remove? Evaluating the Reliability and Costs of RLVR Data Decontamination](http://arxiv.org/abs/2610.21229v1)**
+110. **[KBS: A Korean Benchmark Suite for Foundation Model Evaluation](http://arxiv.org/abs/2610.21227v1)**
+111. **[Entertain, then Cancel: How Thinking Makes Reasoning Models Read Some and Or Literally](http://arxiv.org/abs/2610.21204v1)**
+112. **[Who May Release an Agent's Promise? Standing over Commitments in Multi-Party Chat](http://arxiv.org/abs/2610.21203v1)**
+113. **[Beyond Retrieval Failure: Understanding Why LLMs Miss Evidence in Multi-Hop RAG](http://arxiv.org/abs/2610.21184v1)**
+114. **[Judging the Judges: Confidence and Disagreement in Rubrics as Rewards](http://arxiv.org/abs/2610.21179v1)**
+115. **[Language Models Share a Readout Bottleneck in Working Memory](http://arxiv.org/abs/2610.21176v1)**
+116. **[From Long Context to Selective Memory:A Survey of Memory-Centric Compression for Large Language Models](http://arxiv.org/abs/2610.21165v1)**
+117. **[Automatic Sentence Completion Using Bengali Audio Speech with a Transformer-Based Early Speech Recognition System](http://arxiv.org/abs/2610.21164v1)**
+118. **[Stop Training Against Soft Users: Mentalized Adversarial Self-Play for Proactive Dialogue](http://arxiv.org/abs/2610.21156v1)**
+119. **[CARE-SD: Explainable Reasoning Architecture for Local SLM Self-Disclosure Analysis in Textual Data](http://arxiv.org/abs/2610.21151v1)**
+120. **[From Observation to Intervention: Distilling Self-Generated In-Context Demonstrations via Executable Causal Intervention](http://arxiv.org/abs/2610.21149v1)**
+121. **[CoSTA: Compressed Speech Token Adaptation for Efficient Spoken Dialogue Models](http://arxiv.org/abs/2610.21143v1)**
+122. **[When Judges Agree and Are Wrong: Consistency-Accuracy Dissociation as a Blind Spot for Label-Free Evaluation](http://arxiv.org/abs/2610.21128v1)**
+123. **[Compression Does Not End at Selection: Post-Selection Positional Geometry for Sparse KV Caches](http://arxiv.org/abs/2610.21126v1)**
+124. **[Kolab: Benchmarking Human-Agent Collaboration in Long-Horizon Workflows](http://arxiv.org/abs/2610.21109v1)**
+125. **[Planning Commitment of LLM under Partial Observability](http://arxiv.org/abs/2610.21108v1)**
+126. **[ToolBottleneckBench: Measuring Tool-Agent Performance under Controlled Pressures and Fixed Harness Budgets](http://arxiv.org/abs/2610.21098v1)**
+127. **[MemComposer: Learning to Assemble Memories for LLM Agents via Reinforcement Learning](http://arxiv.org/abs/2610.21091v1)**
+128. **[A Jury, Not an Electorate: Label-Free Reliability Estimation for Ensembles of Language Models](http://arxiv.org/abs/2610.21085v1)**
+129. **[Multimodal AI Detection for Math-Heavy Scientific Text](http://arxiv.org/abs/2610.21062v1)**
+130. **[Athanor: An Agent-Native System for Autonomous Post-Training Research](http://arxiv.org/abs/2610.21055v1)**
+131. **[SHIP: Structured and Hierarchical Insight with Privacy](http://arxiv.org/abs/2610.21048v1)**
+132. **[PremiseCheck: Efficient Fact-Checking of Human and AI Peer Reviews](http://arxiv.org/abs/2610.21046v1)**
+133. **[ReviewPilot: A Multi-Agent System for Screening and Data Extraction in Systematic Reviews](http://arxiv.org/abs/2610.21042v1)**
+134. **[INCONVENIENT: A Benchmark to Assess LLM Generalization Capabilities from Convenience Samples](http://arxiv.org/abs/2610.21038v1)**
+135. **[Learning When to Think: Utility-Guided Adaptive Reasoning for Efficient Text Retrieval](http://arxiv.org/abs/2610.21030v1)**
 
-cs.CL共找到 139 篇论文。
+cs.CL共找到 135 篇论文。
 
 ---
 ### 机器人学 (cs.RO)
-**最近发布日期**: 2026-10-14
+**最近发布日期**: 2026-10-15
 
-1. **[SafeDriveVLA: Navigation-Conditioned World Model Dreaming for Conflict-Aware End-to-End Autonomous Driving](http://arxiv.org/abs/2610.20609v1)**
-2. **[Modeling and Understanding Neural Weights of Humanoid Policies with Diffusion](http://arxiv.org/abs/2610.20606v1)**
-3. **[Hierarchical Residual Policy Learning for Real-World Mobile Manipulation with Sparse Human Guidance](http://arxiv.org/abs/2610.20607v1)**
-4. **[CoWear: Towards Collaborative Wearable Inertial Localization with Multiple Smart Devices](http://arxiv.org/abs/2610.20596v1)**
-5. **[PingpongDuo: Agile Humanoid Table Tennis Doubles with Safe Team Coordination](http://arxiv.org/abs/2610.20579v1)**
-6. **[KinoGen: Customizable Humanoid Loco-Manipulation References via Kinematically Grounded Video Generation](http://arxiv.org/abs/2610.20552v1)**
-7. **[EarlyCommit: Calibrated Word-by-Word Commitment for Robots Acting Before You Finish Speaking](http://arxiv.org/abs/2610.20531v1)**
-8. **[Physical Time as a Missing Dimension of Robot Policy Memory Dynamics](http://arxiv.org/abs/2610.20524v1)**
-9. **[Graph-Reweighted Behavior Cloning with Human Interventions for Precise Robotic Manipulation](http://arxiv.org/abs/2610.20504v1)**
-10. **[Towards Certifiable State Estimation under Observability Degeneracy](http://arxiv.org/abs/2610.20490v1)**
-11. **[Tiered-Resolution Volumetric Mapping for Real-Time Simultaneous Planning and Mapping on Natural Outdoor Environments](http://arxiv.org/abs/2610.20476v1)**
-12. **[AdaRSI: On-Demand Recursive Self-Improvement for Embodied Agents](http://arxiv.org/abs/2610.20474v1)**
-13. **[DD-GBP: Anytime Multi-Arm Planning and Continuous Execution via Distributed Dynamic Gaussian Belief Propagation](http://arxiv.org/abs/2610.20460v1)**
-14. **[Towards Agentic Robots: Model, Data, Environment, and Harness](http://arxiv.org/abs/2610.20442v1)**
-15. **[When Do Discrete Actions Make Good Continuous Controllers?](http://arxiv.org/abs/2610.20429v1)**
-16. **[Human Demonstrations as Post-Training Data for Any Robot Body: Retargeting the Object, Not the Hand](http://arxiv.org/abs/2610.20351v1)**
-17. **[AutoRSR: Automated Real-to-Sim-to-Real Data Generation for Scalable Robot Learning](http://arxiv.org/abs/2610.20336v1)**
-18. **[VIGOR-MPC: Vision-Guided Objective Regulation MPC](http://arxiv.org/abs/2610.20333v1)**
-19. **[TacClaw-Infinity: A Large-Scale Vision-Tactile-Language-Action Dataset for Dexterous Manipulation](http://arxiv.org/abs/2610.20320v1)**
-20. **[Efficient Test-Time Adaptation For Robot Policies](http://arxiv.org/abs/2610.20318v1)**
-21. **[Learning-Based Adaptive MPC for Magnetorquer-Only Satellite Attitude Control](http://arxiv.org/abs/2610.20280v1)**
-22. **[Safe Reinforcement Learning with Receding-Horizon Safety Critic and Differentiable Action Shields](http://arxiv.org/abs/2610.20255v1)**
-23. **[FPTAS for Polygonal Multi-Robot Motion Planning](http://arxiv.org/abs/2610.20244v1)**
-24. **[Learning Navigation from Multimodal Demonstrations with Geometric Candidate Modes](http://arxiv.org/abs/2610.20241v1)**
-25. **[Smart Fusion for Adaptive Visual-IMU Weighting in cuVSLAM Sparse Bundle Adjustment](http://arxiv.org/abs/2610.20226v1)**
-26. **[ObjDream: Guiding Vision-Language-Action Models with Object-Level Understanding and Future State Prediction](http://arxiv.org/abs/2610.20223v1)**
-27. **[Investigating Behavior Cloning from Few Demonstrations for Autonomous Driving based on Bird's-Eye View in Simulated Cities](http://arxiv.org/abs/2610.20203v1)**
-28. **[Atomic-WAM: Execution-Grounded Atomic-Motion Reasoning for World Action Models](http://arxiv.org/abs/2610.20157v1)**
-29. **[Enabling Tidying Tasks in Robotic Vacuum Cleaners via a Geometry-Induced Self-Locking Deployable Linkage](http://arxiv.org/abs/2610.20150v1)**
-30. **[Tactile-Guided Robot Learning: From Representation Learning to Foundation Models](http://arxiv.org/abs/2610.20134v1)**
-31. **[HM3D-M3: A Benchmark for Multi-Agent, Multi-Modal, Multi-Object Goal Navigation](http://arxiv.org/abs/2610.20121v1)**
-32. **[FoveaVLA: Foveation Actions Replace the Wrist Camera in VLAs](http://arxiv.org/abs/2610.20064v1)**
-33. **[MorphAct: Robot Policies Morphing with the Worlds They Act In](http://arxiv.org/abs/2610.20019v1)**
-34. **[Why 3D Reconstruction Breaks Down on Under-Ice AUV Video, and How to Predict It](http://arxiv.org/abs/2610.19993v1)**
-35. **[Complementary Future Token Pruning for World Action Models](http://arxiv.org/abs/2610.19957v1)**
-36. **[MUCO: A Mani-Unit-Structured Manipulation Framework for Compositional Long-Horizon Robot Tasks](http://arxiv.org/abs/2610.19913v1)**
-37. **[Active Perception of Upper-Limb Functional Mobility through Human-Robot Handovers](http://arxiv.org/abs/2610.19896v1)**
-38. **[FOMI: A Force-Feedback Manipulation Interface for Teaching Contact-Rich Manipulation](http://arxiv.org/abs/2610.19839v1)**
-39. **[What Matters for World Modeling in Vision-Language-Action Models?](http://arxiv.org/abs/2610.19825v1)**
-40. **[Learning from Demonstrations meets Symbolic Control - A Supervisory Control Architecture for Formal Certification of Learned Motion](http://arxiv.org/abs/2610.19815v1)**
-41. **[Design and Characterization of a Unified Continuum Robot Actuation Platform](http://arxiv.org/abs/2610.19798v1)**
-42. **[Refine Actions If Needed: Adaptive Action Chunk Refinement for Robot Manipulation](http://arxiv.org/abs/2610.19765v1)**
-43. **[Mixed-Reality Feedback Control: Towards Blending of Control and Digital Twinning](http://arxiv.org/abs/2610.19759v1)**
-44. **[Coordi-pi: Coordination-Aware Dual-Hand Action Representation for Bimanual Dexterous Manipulation](http://arxiv.org/abs/2610.19753v1)**
-45. **[One-shot Human Video-Guided Adaptation for Vision-Language-Action Models](http://arxiv.org/abs/2610.19746v1)**
-46. **[HyperLoop: Hyperspectral-Assisted Loop Closure Detection in 3D-SLAM for Planetary Exploration](http://arxiv.org/abs/2610.19742v1)**
-47. **[What Happens to the Goal? Distinct Failures of Policy Alignment in Goal Misgeneralization](http://arxiv.org/abs/2610.19731v1)**
-48. **[Uncertainty-Driven Self-Play for Robust Multi-Agent Driving Policies](http://arxiv.org/abs/2610.19714v1)**
-49. **[ACRO: Actor-Critic Rollout Orchestration](http://arxiv.org/abs/2610.19677v1)**
-50. **[Accelerating VLA Inference with Perturbation Informed Execution](http://arxiv.org/abs/2610.19656v1)**
-51. **[Eye, Robot: Learning Expressive Gaze Dynamics via a VLM-Guided Transformer-VAE](http://arxiv.org/abs/2610.19635v1)**
-52. **[E2DRL: End-to-End Differentiable Reinforcement Learning for 3D Obstacle Avoidance in Quadruped Robots](http://arxiv.org/abs/2610.19627v1)**
-53. **[F2A-ObjectNav: An Adaptive Agentic Architecture for Object-Goal Navigation](http://arxiv.org/abs/2610.19618v1)**
-54. **[Instruction-Conditioned Motion Control for Robotic Arms: Language-to-Code Decomposition and Reinforcement Learning](http://arxiv.org/abs/2610.19617v1)**
-55. **[PolyMorph: Learning Locomotion Policy for Cross-Embodiment Adaptation](http://arxiv.org/abs/2610.19615v1)**
-56. **[ForceBench: Benchmarking Force Integration for Robotic Manipulation](http://arxiv.org/abs/2610.19604v1)**
-57. **[Cracking Mobile Manipulation: From Failure Diagnosis to Agentic Robot System](http://arxiv.org/abs/2610.19600v1)**
-58. **[RoboSpan: Learning Modular Coordination Policies for High-DoF Whole-Body Mobile Manipulation with Teleoperation](http://arxiv.org/abs/2610.19594v1)**
-59. **[Back on Track: Deployment-time Policy Improvement via World Model Planning](http://arxiv.org/abs/2610.19579v1)**
-60. **[GS-PRM: Gaussian Visual Roadmap for Image-Goal Navigation](http://arxiv.org/abs/2610.19541v1)**
-61. **[Dual-arm Cooperation for Tabletop Wiping with Temporal Object Removal](http://arxiv.org/abs/2610.19527v1)**
-62. **[Dungeon and Visibility World Generator](http://arxiv.org/abs/2610.19523v1)**
-63. **[HiFun: a Hierarchical Framework for Efficient Functional Dexterous Manipulation Learning](http://arxiv.org/abs/2610.19518v1)**
-64. **[VLRLA: Deployment-Time Adaptation of Vision-Language-Action Models through In-Context Reinforcement Learning](http://arxiv.org/abs/2610.19517v1)**
-65. **[Robota-Embed: Unified VLA Embeddings for Robot In-Context Learning and Evolution](http://arxiv.org/abs/2610.19495v1)**
-66. **[IMU-Bench: Benchmarking Wrist IMU Representations Across Kinematic, Semantic and Clinical Tasks](http://arxiv.org/abs/2610.19481v1)**
-67. **[Active Generative Simulation: Meta-Learning What to Simulate for Sim-and-Real Policy Co-Training](http://arxiv.org/abs/2610.19479v1)**
-68. **[Spacecraft Pose Tracking via Kinematic Prediction and Selective Event Correction](http://arxiv.org/abs/2610.19465v1)**
-69. **[Paraphrase Consensus Is Not Self-Consistency: Instruction Reliance and Robustness in VLA Policies](http://arxiv.org/abs/2610.19438v1)**
-70. **[$S^3$-Nav: Structured Spatial-Semantic Decision Making for Language-Guided Robot Navigation](http://arxiv.org/abs/2610.19431v1)**
-71. **[From Failures to Learnable Worlds: Policy-Conditioned Environment Generation for Navigation Agents](http://arxiv.org/abs/2610.19420v1)**
-72. **[A VR Training System for Robot-Assisted Vascular Intervention with Dual-Mode Control and Model-Based Interaction Response](http://arxiv.org/abs/2610.19413v1)**
-73. **[Topology-Preserving Multi-Usage Pipe Centerline Refinement under Permanent Tubular Occupancy](http://arxiv.org/abs/2610.19403v1)**
-74. **[A Master-to-Simulation Interface with Demonstration-Trajectory Guidance for Vascular Intervention](http://arxiv.org/abs/2610.19395v1)**
-75. **[Beyond Kinematic Tracking: Preserving Expressive Characteristics in Humanoid Whole-Body Control](http://arxiv.org/abs/2610.19393v1)**
-76. **[Seeing, Maintaining, and Learning: The Evolution of Multimodal Agent Memory](http://arxiv.org/abs/2610.19366v1)**
-77. **[VLX-Go: Robust Embodied Tracking through Multi-Stage Learning and On-Policy Refinement](http://arxiv.org/abs/2610.19361v1)**
-78. **[Probabilistic Physics Digital Twin for Human-Robot Interaction](http://arxiv.org/abs/2610.19336v1)**
-79. **[NavAble: A Large-Scale Dataset and Synthetic Data Generation Pipeline for Blind Navigation](http://arxiv.org/abs/2610.19330v1)**
+1. **[LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation](http://arxiv.org/abs/2610.22372v1)**
+2. **[Value as Memory: Online Value-Guided Post-training for General Robot Policies](http://arxiv.org/abs/2610.22368v1)**
+3. **[T2-z: Test-Time Optimization of Environment Latents for Robotic World Models](http://arxiv.org/abs/2610.22364v1)**
+4. **[Perceive, Predict, and Plan: a Unified World Action Model for Egocentric Dexterous Manipulation](http://arxiv.org/abs/2610.22363v1)**
+5. **[CoDA: Co-Evolution of Data Engines and Action Policies](http://arxiv.org/abs/2610.22362v1)**
+6. **[GeoState: Learning View-Decoupled Geometry States for 3D World Modeling](http://arxiv.org/abs/2610.22343v1)**
+7. **[Spark-0: Scaling Spatially Aligned Tactile Pretraining for Robot Dexterous Manipulation](http://arxiv.org/abs/2610.22342v1)**
+8. **[Dexterity from Supervised Play](http://arxiv.org/abs/2610.22340v1)**
+9. **[Sim-to-Real Reinforcement Learning for Path-Safe Target Reaching in Robotic Harvesting of Hydroponic Lettuce](http://arxiv.org/abs/2610.22337v1)**
+10. **[Illumination-Aware Active Perception for Spacecraft Inspection](http://arxiv.org/abs/2610.22335v1)**
+11. **[Mem4Act: Learning Effective Latent Memory for Long-Horizon Robotic Manipulation](http://arxiv.org/abs/2610.22323v1)**
+12. **[Asking Smarter Questions: Targeted Active Preference Learning for Underspecified Rewards](http://arxiv.org/abs/2610.22285v1)**
+13. **[Auditable and Deployable Multi-Agent Motion Planning via Posetal Games from Legal Guidelines](http://arxiv.org/abs/2610.22277v1)**
+14. **[Safe and Fuel-Efficient Motion Planning for Lunar Propulsive Drones](http://arxiv.org/abs/2610.22225v1)**
+15. **[Robust Multi-Agent Pursuit with Preemptive Communication via Reachability-Based Control Barrier Functions](http://arxiv.org/abs/2610.22198v1)**
+16. **[MOSS: Mode-Oriented Source Shaping for Robot Flow Matching Policies](http://arxiv.org/abs/2610.22193v1)**
+17. **[Whole-Body Dexterity](http://arxiv.org/abs/2610.22184v1)**
+18. **[REKI: Registering Knowledge in VLAs](http://arxiv.org/abs/2610.22178v1)**
+19. **[Inertially Significant Humanoid Teleoperation via Whole Body Model Predictive Control and Online Parameter Estimation](http://arxiv.org/abs/2610.22176v1)**
+20. **[FastVLA: Task-Conditioned and Temporally Adaptive Visual Token Compression for Efficient Vision-Language-Action Models](http://arxiv.org/abs/2610.22146v1)**
+21. **[Compliant GMT: Making General Motion Tracking Compliant via Residual Reference Adaptation](http://arxiv.org/abs/2610.22119v1)**
+22. **[CF-Splat: Closed-Form Triangle Splatting with Mesh Priors](http://arxiv.org/abs/2610.22108v1)**
+23. **[Onboard Lightweight LLM Reasoning for Human-Aware Safe UAV Navigation](http://arxiv.org/abs/2610.22092v1)**
+24. **[CBF-Based Control Allocation for Omnidirectional Tiltrotor Aerial Robots](http://arxiv.org/abs/2610.22057v1)**
+25. **[Plans Are Not Executions: Adapting Frozen World-Model Planners to Controller-Induced Execution Shift](http://arxiv.org/abs/2610.22041v1)**
+26. **[DemoStream: Batched Task-and-Motion-Plan Optimization for Automated Learning from Demonstration](http://arxiv.org/abs/2610.22020v1)**
+27. **[VP-EVT: Active Visibility Preservation for Embodied Visual Tracking](http://arxiv.org/abs/2610.21999v1)**
+28. **[VeriVLA: Adaptive Test-Time Verification for Flow-Based VLAs with Latent World Models](http://arxiv.org/abs/2610.21985v1)**
+29. **[GRID-Planner: Graph-Structured Relational Reward Shaping for Diffusion Planning](http://arxiv.org/abs/2610.21984v1)**
+30. **[Towards bio-inspired visual navigation: a neuromorphic navigation paradigm for MAVs](http://arxiv.org/abs/2610.21978v1)**
+31. **[Perceptual Comparisons of Viscoelastic Renderings: Fractional- vs Integer-Order Models](http://arxiv.org/abs/2610.21965v1)**
+32. **[De-Risking Robotic Welding for In-Space Metal Joining Through Physics-Grounded Digital Twins](http://arxiv.org/abs/2610.21939v1)**
+33. **[TS-WAM: Temporal Latent Actions and World-Action Coupling for Vision-Language Robot Control](http://arxiv.org/abs/2610.21922v1)**
+34. **[What Should Robot Policies Learn to Predict? Rethinking Supervision Targets in Vision-Language-Action Learning](http://arxiv.org/abs/2610.21915v1)**
+35. **[Sub-Millisecond Reflexes for Continuous Physical Human-Robot Interaction](http://arxiv.org/abs/2610.21913v1)**
+36. **[MAGMA: Multiplier-Augmented Geometric Motion Algorithm](http://arxiv.org/abs/2610.21852v1)**
+37. **[Time-Optimal Ergodic Retrieval](http://arxiv.org/abs/2610.21823v1)**
+38. **[Cross-Embodiment Causal Transfer from Human Videos to Robot Manipulation](http://arxiv.org/abs/2610.21798v1)**
+39. **[Trajectory-based Diffusion from One-shot Human Video for Generalizable Manipulation](http://arxiv.org/abs/2610.21792v1)**
+40. **[DeciCAD: Harness-Grounded Learning of Action Policies for CAD Agents](http://arxiv.org/abs/2610.21755v1)**
+41. **[Comfortably Stuck: Evaluation Pitfalls in Bench2Drive's Closed-Loop Protocol](http://arxiv.org/abs/2610.21741v1)**
+42. **[Uni-PNP: Unified Prehensile and Non-prehensile Policy Learning for Generalizable Object Pose Reaching](http://arxiv.org/abs/2610.21735v1)**
+43. **[MAIA: Anticipating Interaction Anomalies in Contact-Rich Manipulation via Multimodal World Models](http://arxiv.org/abs/2610.21686v1)**
+44. **[Diffeomorphic Hidden-State Steering: Improving Imitation Learning Policy Robustness through Expert Hidden-State Geometry](http://arxiv.org/abs/2610.21666v1)**
+45. **[SPEAR: Selective Preference Elicitation with Adaptive Rewards for VLM-Guided Robotic Manipulation](http://arxiv.org/abs/2610.21621v1)**
+46. **[Training-Free Target-Aware Refinement of 3D Gaussian Language Map](http://arxiv.org/abs/2610.21619v1)**
+47. **[A Flow-Theoretic Multimodal Control Framework Fusing Mental and Physical Engagement for Upper-Limb Rehabilitation](http://arxiv.org/abs/2610.21590v1)**
+48. **[AVALON: Zero-Shot Indoor Navigation with Human-Seeded Topological Memory](http://arxiv.org/abs/2610.21586v1)**
+49. **[Attribution-Gated Joint Estimation of Intention and Capability for Assist-as-Needed Upper-Limb Robots](http://arxiv.org/abs/2610.21534v1)**
+50. **[Multi-Teacher On-Policy Distillation for Flow-Based Vision-Language-Action Models](http://arxiv.org/abs/2610.21522v1)**
+51. **[TRACE: Typed Reference-Aware Conversational Editing for Humanoid Motion Diffusion](http://arxiv.org/abs/2610.21515v1)**
+52. **[Location-Based Safety Management with Wearable Seamless Indoor-Outdoor Positioning](http://arxiv.org/abs/2610.21503v1)**
+53. **[A 2D Image Feedback-Based Autonomous Endovascular Navigation Method: A Perception and Control Framework](http://arxiv.org/abs/2610.21481v1)**
+54. **[CarryOn: A Dual-Loop Harness for Personalized and Reliable Robot Assistance](http://arxiv.org/abs/2610.21453v1)**
+55. **[X-Fly: Learning to Reach and Stop in Full-Chunk Aerial Vision-Language Navigation](http://arxiv.org/abs/2610.21450v1)**
+56. **[Policy-Aligned Predictive Verification for Adaptive VLA Action-Chunk Execution](http://arxiv.org/abs/2610.21434v1)**
+57. **[MuSTMM: Learning Sound-Triggered Mobile Manipulation across Multiple Scenes](http://arxiv.org/abs/2610.21429v1)**
+58. **[CLAD: Keypoint Matching Using Global Line Correspondences](http://arxiv.org/abs/2610.21409v1)**
+59. **[Modular Inverse Dynamics and Wrench Recovery for Closed-Chain Mechanisms Using Path Assembly](http://arxiv.org/abs/2610.21400v1)**
+60. **[Fast-VLA: You Only Think Once for Robot Manipulation](http://arxiv.org/abs/2610.21389v1)**
+61. **[From Optical Flow to Safety: Visual Safety Certification via Scale-Free Relative Motion](http://arxiv.org/abs/2610.21374v1)**
+62. **[LTM: Latent Transition Based In-Context Memory for Vision-Language-Action Models](http://arxiv.org/abs/2610.21362v1)**
+63. **[Hierarchical Building-Floo-Room Framework for Privacy-Preserving Autonomous Delivery in Large-Scale Buildings](http://arxiv.org/abs/2610.21361v1)**
+64. **[A Black-Box Positioning Solution for Effortless Integration in Wearable Navigation](http://arxiv.org/abs/2610.21353v1)**
+65. **[CQDC-Warp: GPU-Accelerated Differentiable Quasi-Dynamic Simulation for Contact-Rich Manipulation](http://arxiv.org/abs/2610.21349v1)**
+66. **[MR-MPCC: Model Predictive Contouring Control for Robotic Manipulator Tracking under Moving Reference Frames](http://arxiv.org/abs/2610.21292v1)**
+67. **[LICOA: Learning Instruction-Conditioned Optical Actions for Mobile Spatial Augmented Reality](http://arxiv.org/abs/2610.21282v1)**
+68. **[Do VLAs Really Follow Instructions? Diagnosing How-Level Instruction Following in Vision-Language-Action Models](http://arxiv.org/abs/2610.21251v1)**
+69. **[CLIS-MPPI: Closed-Loop Model Predictive Path Integral Control With Initial-State Sampling Under Execution Delay](http://arxiv.org/abs/2610.21239v1)**
+70. **[Vision-Guided Closed-Loop Autonomous Navigation of Light-Driven Janus Microbots](http://arxiv.org/abs/2610.21222v1)**
+71. **[An Agentic Framework for Proactive Robots with Procedural Assistance Memory](http://arxiv.org/abs/2610.21211v1)**
+72. **[LIN-SLAM: Lightweight LiDAR--Inertial Neural SLAM for Real-Time Onboard Navigation](http://arxiv.org/abs/2610.21199v1)**
+73. **[Evo-DexBench: Benchmarking Generalization across Related Tasks for Dexterous Manipulation](http://arxiv.org/abs/2610.21180v1)**
+74. **[When to Ask for Help: A Decision-Theoretic Account and Measurement Standard for Slow-Module Scheduling in Dual-System Vision-Language-Action Models](http://arxiv.org/abs/2610.21160v1)**
+75. **[KODA: Kinematics--Observation Data Alignment for Humanoid Learning from Human Egocentric Demonstration](http://arxiv.org/abs/2610.21152v1)**
+76. **[Manifold Generative Annealing for Contact Constraint-aware Impedance Control with Reinforcement Learning Prior](http://arxiv.org/abs/2610.21140v1)**
+77. **[Slip-Induced Fall Suppression During Cornering for a Remotely Operated Motorcycle with a Rear-Wheel-Swing Mechanism](http://arxiv.org/abs/2610.21089v1)**
+78. **[RoPE-Flow: Monocular Vision-based Robot Pose Estimation via 2D Graph-Conditioned 3D Flow Matching](http://arxiv.org/abs/2610.21086v1)**
 
-cs.RO共找到 79 篇论文。
+cs.RO共找到 78 篇论文。
 
 ---
