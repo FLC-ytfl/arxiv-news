@@ -1,6 +1,6 @@
 # ArXiv Daily News
 
-更新时间(UTC): 2026-10-24T08:44:12Z
+更新时间(UTC): 2026-10-25T09:00:21Z
 
 📄 完整信息请访问 [GitHub Pages](https://flc-ytfl.github.io/arxiv-news/)
 
